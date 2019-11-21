@@ -15,5 +15,5 @@
 
 footer {
   background: #073007;
-  height: 100%;
+  box-shadow: 0 50vh 0 50vh #073007;
 }

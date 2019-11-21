@@ -1,0 +1,19 @@
+@import url(//fonts.googleapis.com/css?family=Josefin+Sans|Courgette);
+
+.josefinSans {
+  font-family: 'Josefin Sans';
+}
+
+.courgette {
+  font-family: 'Courgette';
+}
+
+.landing-background-img {
+  background: url("images/landing-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+footer {
+  background: #073007;
+  height: 100%;
+}

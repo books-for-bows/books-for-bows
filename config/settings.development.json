@@ -9,5 +9,71 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultBook": [
+    {
+      "title": "Chemistry: A Molecular Approach (4th Edition)",
+      "author": "Nivaldo J. Tro",
+      "ISBN": 9780134112831,
+      "price": 85,
+      "description": "Hardcover, Published January 2016, List Price: $299.99",
+      "condition":"excellent"
+    },
+    {
+      "title": "C Programming Language (2nd Edition)",
+      "author": "Brian W. Kernighan, Dennis M. Ritchie",
+      "ISBN": 9780131103627,
+      "price": 22,
+      "description": "Paperback, Published April 1988, List Price: $67.00",
+      "condition":"fair"
+    },
+    {
+      "title": "Looking at Movies (Sixth Edition)",
+      "author": "Dave Monahan",
+      "ISBN": 9780393674712,
+      "price": 15,
+      "description": "Loose Leaf, Published November 2018, List Price: $79.95",
+      "condition": "good"
+    }
+  ],
+
+  "defaultListing": [
+    {
+      "title": "Chemistry: A Molecular Approach (4th Edition)",
+      "ISBN": 9780134112831,
+      "quantity": 1,
+      "course": "CHEM 161, 162"
+    },
+    {
+      "title": "C Programming Language (2nd Edition)",
+      "ISBN": 9780131103627,
+      "quantity": 1,
+      "course": "ICS 212"
+    },
+    {
+      "title": "Looking at Movies (Sixth Edition)",
+      "ISBN": 9780393674712,
+      "quantity": 1,
+      "course": "ASAN	330"
+    }
+  ],
+
+  "defaultUsers": [
+    {
+      "name": "Janine",
+      "booksSold": 6,
+      "major": "Computer Science"
+    },
+    {
+      "name": "Sven",
+      "booksSold": 6,
+      "major": "Computer Engineering"
+    },
+    {
+      "name": "Antony",
+      "booksSold": 6,
+      "major": "English"
+    }
   ]
 }

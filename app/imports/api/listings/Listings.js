@@ -7,10 +7,15 @@ const Listings = new Mongo.Collection('Listings');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const ListingsSchema = new SimpleSchema({
-  title: String,
+  price: String,
   ISBN: Number,
   quantity: Number,
-  course: String,
+  description: String,
+  binding: {
+    type: String,
+    allowedValues: ['loose leaf', 'spiral', 'paperback', 'hardcover'],
+    defaultValue: 'loose leaf',
+  },
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

@@ -1,29 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Image, Label } from 'semantic-ui-react';
+import { _ } from 'meteor/underscore';
+import { Card, Image } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
-export default class Book extends React.Component {
-
-  render() {
-    return (
+const Book = (props) => (
       <Card>
-        <Image src={ this.props.book.image }/>
+        <Image src={ props.book.image }/>
         <Card.Content>
-          <Card.Header>{ this.props.book.title }</Card.Header>
+          <Card.Header>{ props.book.title }</Card.Header>
           <Card.Meta>
-            { this.props.book.author }
+            { _.map(props.book.authors, (author) => author) }
             <br/>
-            ISBN: { this.props.book.ISBN }
+            ISBN: { props.book.isbn }
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <Label color='blue'>{ this.props.book.course }</Label>
+          <Link to={`/shelf/${props.book._id}`}>View Listing</Link>
         </Card.Content>
       </Card>
-    );
-  }
-}
+);
 
 Book.propTypes = {
   book: PropTypes.object.isRequired,
 };
+
+export default Book;

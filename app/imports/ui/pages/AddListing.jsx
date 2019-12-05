@@ -14,10 +14,8 @@ import SimpleSchema from 'simpl-schema';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
-  seller: String,
   price: String,
   ISBN: Number,
-  quantity: Number,
   description: String,
   binding: {
     type: String,
@@ -31,9 +29,9 @@ class AddListing extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { seller, price, ISBN, quantity, description, binding } = data;
-     const owner = Meteor.user().username;
-    Listings.insert({ seller, price, ISBN, quantity, description, binding, owner },
+    const { price, ISBN, description, binding } = data;
+     const seller = Meteor.user().username;
+    Listings.insert({ seller, price, ISBN, description, binding },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -53,10 +51,8 @@ class AddListing extends React.Component {
             <Header as="h2" textAlign="center">Add Listing</Header>
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
-                <TextField name='seller'/>
                 <TextField name='price'/>
                 <NumField name='ISBN' decimal={false}/>
-                <NumField name='quantity' decimal={false}/>
                 <TextField name='description'/>
                 <SelectField name='binding'/>
                 <SubmitField value='Submit'/>

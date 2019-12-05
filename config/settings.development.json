@@ -13,28 +13,74 @@
 
   "defaultBook": [
     {
-      "title": "Chemistry: A Molecular Approach (4th Edition)",
-      "author": "Nivaldo J. Tro",
-      "ISBN": 9780134112831,
-      "price": 85,
-      "description": "Hardcover, Published January 2016, List Price: $299.99",
-      "condition":"excellent"
+      "publisher": "Copley Custom Textbooks",
+      "image": "https://images.isbndb.com/covers/57/93/9781581525793.jpg",
+      "title_long": "Hawai'i: Center Of The Pacific (hawaiian Studies 107 Reader)",
+      "edition": "2",
+      "pages": 544,
+      "date_published": "2008",
+      "authors": [
+        "Copley Custom Textbooks"
+      ],
+      "title": "Hawai'i: Center Of The Pacific (hawaiian Studies 107 Reader)",
+      "isbn13": "9781581525793",
+      "msrp": "0.00",
+      "binding": "Unknown Binding",
+      "publish_date": "2008",
+      "isbn": "1581525796"
     },
     {
-      "title": "C Programming Language (2nd Edition)",
-      "author": "Brian W. Kernighan, Dennis M. Ritchie",
-      "ISBN": 9780131103627,
-      "price": 22,
-      "description": "Paperback, Published April 1988, List Price: $67.00",
-      "condition":"fair"
+      "publisher": "Prentice Hall",
+      "language": "Eng",
+      "image": "https://images.isbndb.com/covers/36/27/9780131103627.jpg",
+      "title_long": "C Programming Language",
+      "edition": "2",
+      "date_published": "1988",
+      "subjects": [
+        "C (computer Program Language)"
+      ],
+      "authors": [
+        "Kernighan, Brian W.",
+        "Ritchie, Dennis M."
+      ],
+      "title": "C Programming Language",
+      "msrp": "0.00",
+      "publish_date": "1988",
+      "isbn": "9780131103627"
     },
     {
-      "title": "Looking at Movies (Sixth Edition)",
-      "author": "Dave Monahan",
-      "ISBN": 9780393674712,
-      "price": 15,
-      "description": "Loose Leaf, Published November 2018, List Price: $79.95",
-      "condition": "good"
+      "publisher": "W. W. Norton & Company",
+      "image": "https://images.isbndb.com/covers/47/12/9780393674712.jpg",
+      "title_long": "Looking At Movies (sixth Edition)",
+      "edition": "6",
+      "date_published": "2018",
+      "authors": [
+        "Dave Monahan"
+      ],
+      "title": "Looking At Movies (sixth Edition)",
+      "isbn13": "9780393674712",
+      "msrp": "0.00",
+      "binding": "Loose Leaf",
+      "publish_date": "2018",
+      "isbn": "0393674711"
+    },
+    {
+      "publisher": "Pearson,",
+      "language": "Eng",
+      "image": "https://images.isbndb.com/covers/28/31/9780134112831.jpg",
+      "title_long": "Chemistry",
+      "edition": "4",
+      "date_published": "2017",
+      "subjects": [
+        "Chemistry, Physical And Theoretical"
+      ],
+      "authors": [
+        "Tro, Nivaldo J."
+      ],
+      "title": "Chemistry",
+      "msrp": "0.00",
+      "publish_date": "2017",
+      "isbn": "9780134112831"
     }
   ],
 
@@ -42,20 +88,23 @@
     {
       "title": "Chemistry: A Molecular Approach (4th Edition)",
       "ISBN": 9780134112831,
-      "quantity": 1,
-      "course": "CHEM 161, 162"
+      "price": "$100",
+      "description": "CHEM 161, 162",
+      "binding": "hardcover"
     },
     {
       "title": "C Programming Language (2nd Edition)",
       "ISBN": 9780131103627,
-      "quantity": 1,
-      "course": "ICS 212"
+      "price": "$100",
+      "description": "ICS 212",
+      "binding": "hardcover"
     },
     {
       "title": "Looking at Movies (Sixth Edition)",
       "ISBN": 9780393674712,
-      "quantity": 1,
-      "course": "ASAN 330"
+      "price": "$100",
+      "description": "ASAN 330",
+      "binding": "hardcover"
     }
   ],
 

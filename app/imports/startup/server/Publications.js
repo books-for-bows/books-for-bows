@@ -21,6 +21,6 @@ Meteor.publish('StuffAdmin', function publish() {
   return this.ready();
 });
 
-Meteor.publish('Book', () => Books.find());
+Meteor.publish('Books', () => Books.find());
 
 Meteor.publish('Listings', () => Listings.find());

@@ -15,12 +15,10 @@ const BooksSchema = new SimpleSchema({
   date_published: Date,
   edition: String,
   image: String,
-  msrp: Number,
   publish_date: String,
   authors: [
       String,
   ],
-  binding: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

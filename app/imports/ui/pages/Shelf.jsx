@@ -1,9 +1,11 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Table, Header, Loader, Grid, Image } from 'semantic-ui-react';
-import { Listings } from '/imports/api/listing/Listings';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Listings } from '../../api/listings/Listings';
+import { Books } from '../../api/books/Books';
+
 import ListingItem from '../components/ListingItem';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -56,16 +58,21 @@ class Shelf extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 Shelf.propTypes = {
-  book: PropTypes.object.isRequired,
+  book: PropTypes.object,
   listings: PropTypes.array.isRequired,
+  ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-export default withTracker(() => {
+export default withTracker(({ match }) => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Listings');
+  const subscription1 = Meteor.subscribe('Listings');
+  const subscription2 = Meteor.subscribe('Books');
+  const id = match.params._id;
+
   return {
     listings: Listings.find({}).fetch(),
-    ready: subscription.ready(),
+    ready: subscription1.ready() && subscription2.ready(),
+    book: Books.findOne(id),
   };
 })(Shelf);

@@ -29,7 +29,7 @@ class UserProfile extends React.Component {
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {this.props.listings.map((listing) => <ProfileItem key={listing._id} stuff={listing} />)}
+              {this.props.listings.map((listing) => <ProfileItem key={listing._id} listings={listing} />)}
             </Table.Body>
           </Table>
         </Container>

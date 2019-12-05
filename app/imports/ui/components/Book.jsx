@@ -25,5 +25,5 @@ export default class Book extends React.Component {
 }
 
 Book.propTypes = {
-  book: PropTypes.object.isRequired
+  book: PropTypes.object.isRequired,
 };

@@ -106,23 +106,5 @@
       "description": "ASAN 330",
       "binding": "hardcover"
     }
-  ],
-
-  "defaultUsers": [
-    {
-      "name": "Janine",
-      "booksSold": 6,
-      "major": "Computer Science"
-    },
-    {
-      "name": "Sven",
-      "booksSold": 6,
-      "major": "Computer Engineering"
-    },
-    {
-      "name": "Antony",
-      "booksSold": 6,
-      "major": "English"
-    }
   ]
 }

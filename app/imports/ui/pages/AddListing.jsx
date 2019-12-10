@@ -1,5 +1,4 @@
 import React from 'react';
-import { Books } from '/imports/api/books/Books';
 import { Listings } from '/imports/api/listings/Listings';
 import { Grid, Segment, Header, Image } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
@@ -10,6 +9,7 @@ import SubmitField from 'uniforms-semantic/SubmitField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
+import { HTTP } from 'meteor/http';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import SimpleSchema from 'simpl-schema';
 
@@ -36,7 +36,7 @@ class AddListing extends React.Component {
   state = {
     isbn: 0,
     book: undefined,
-    show_book: false,
+    book_found: undefined,
   };
 
   /** On submit, insert the data. */
@@ -56,8 +56,27 @@ class AddListing extends React.Component {
 
   handleChange(isbn) {
     if (isbn.toString().length === 10 || isbn.toString().length === 13) {
-      const book = Books.findOne({ isbn: isbn.toString() });
-      this.setState({ isbn: isbn, book: book });
+      const url = 'https://openlibrary.org/api/books';
+      HTTP.get(
+        url,
+        {
+          params: {
+            bibkeys: `ISBN:${isbn.toString()}`,
+            format: 'json',
+            jscmd: 'data',
+          },
+        },
+        (error, result) => {
+          if (!error) {
+            const book = result.data[`ISBN:${isbn.toString()}`];
+            if (book !== undefined) {
+              this.setState({ isbn: isbn, book: book, book_found: true });
+            } else {
+              this.setState({ isbn: isbn, book_found: false });
+            }
+          }
+        },
+      );
     }
   }
 
@@ -68,20 +87,26 @@ class AddListing extends React.Component {
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Add Listing</Header>
-            { this.state.book !== undefined &&
+            { this.state.book !== undefined && this.state.book_found &&
               <Grid.Row columns={2}>
                 <Grid.Column>
-                  <Image size="small" src={this.state.book.image}/>
+                  { this.state.book.cover ? ([
+                      <Image size="small" key="cover" src={this.state.book.cover.small}/>,
+                    ]) : 'No Cover Found'
+                  }
                   <Header as="h4">{this.state.book.title}</Header>
                 </Grid.Column>
                 <Grid.Column>
-                  Author: {this.state.book.authors} <br/>
-                  ISBN: {this.state.book.isbn} <br/>
-                  Edition: {this.state.book.edition} <br/>
-                  Publisher: {this.state.book.publisher} <br/>
-                  Publish Date: {this.state.book.publish_date}
+                  Author: {this.state.book.authors ?
+                    this.state.book.authors.map(author => `${author.name}, `) : 'None'} <br/>
+                  ISBN: {this.state.isbn} <br/>
+                  Publisher: {this.state.book.publishers ? this.state.book.publishers[0].name : 'None'}<br/>
+                  Publish Date: {this.state.book.publish_date ? this.state.book.publish_date : 'None'}
                 </Grid.Column>
               </Grid.Row>
+            }
+            { this.state.book_found === false &&
+                <Header as="h4">Book Not Found.</Header>
             }
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
               <Segment>

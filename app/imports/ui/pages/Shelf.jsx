@@ -1,9 +1,11 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Table, Header, Loader, Grid, Image } from 'semantic-ui-react';
-import { Listings } from '/imports/api/listings/Listings';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Listings } from '../../api/listings/Listings';
+import { Books } from '../../api/books/Books';
+
 import ListingItem from '../components/ListingItem';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -16,20 +18,22 @@ class Shelf extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    const book = Books.findOne({ _id: this.props.book_id });
+
     return (
         <Container>
           <Header as="h1" textAlign="center">Shelf</Header>
           <Grid columns={4} container>
             <Grid.Column width={4}>
-              <Image size="medium" centered src={this.props.book.image}/>
-              <Header as="h2">{this.props.book.title}</Header>
+              <Image size="medium" centered src={book.image}/>
+              <Header as="h2">{book.title}</Header>
               <Grid>
                 <Grid.Column>
-                  Author: {this.props.book.author} <br/>
-                  ISBN: {this.props.book.isbn} <br/>
-                  Edition: {this.props.book.edition} <br/>
-                  Publisher: {this.props.book.publisher} <br/>
-                  Publish Date: {this.props.book.date_published}
+                  Author: {book.authors} <br/>
+                  ISBN: {book.isbn} <br/>
+                  Edition: {book.edition} <br/>
+                  Publisher: {book.publisher} <br/>
+                  Publish Date: {book.publish_date}
                 </Grid.Column>
               </Grid>
             </Grid.Column>
@@ -44,7 +48,7 @@ class Shelf extends React.Component {
                   </Table.Row>
                 </Table.Header>
                 <Table.Body>
-                  {this.props.listings.map((listing) => <ListingItem key={listing.isbn} listing={listing} />)}
+                  {Listings.find().fetch().map((listing) => <ListingItem key={listing.isbn} listing={listing} />)}
                 </Table.Body>
               </Table>
             </Grid.Column>
@@ -56,17 +60,18 @@ class Shelf extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 Shelf.propTypes = {
-  book: PropTypes.object.isRequired,
-  listings: PropTypes.array.isRequired,
-  ready: PropTypes.bool,
+  book_id: PropTypes.string.isRequired,
+  ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-export default withTracker(() => {
+export default withTracker(({ match }) => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Listings');
+  const subscription1 = Meteor.subscribe('Listings');
+  const subscription2 = Meteor.subscribe('Books');
+
   return {
-    listings: Listings.find({}).fetch(),
-    ready: subscription.ready(),
+    ready: subscription1.ready() && subscription2.ready(),
+    book_id: match.params._id,
   };
 })(Shelf);

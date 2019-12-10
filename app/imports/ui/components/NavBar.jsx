@@ -10,13 +10,12 @@ import { Roles } from 'meteor/alanning:roles';
 class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '10px', background: '#097528' };
-    const fontSize = { 'font-size': '1.5rem' };
     return (
         <Menu style={menuStyle} attached="top" borderless inverted>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header inverted as='h1'>
               <span className='josefinSans'>Books</span>
-              <span style={fontSize} className='courgette' > for </span>
+              <span style={{ fontSize: '1.5rem' }} className='courgette' > for </span>
               <span className='josefinSans'>Bows </span>
               <Image src="images/temp-logo.png" size='small'/>
             </Header>
@@ -30,7 +29,7 @@ class NavBar extends React.Component {
             Marketplace
           </Menu.Item>
           {this.props.currentUser ? (
-              [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
+              [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Listing</Menu.Item>,
                 <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
           ) : ''}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (

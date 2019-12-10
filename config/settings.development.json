@@ -9,5 +9,92 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultBook": [
+    {
+      "publisher": "Copley Custom Textbooks",
+      "image": "https://images.isbndb.com/covers/57/93/9781581525793.jpg",
+      "title_long": "Hawai'i: Center Of The Pacific (hawaiian Studies 107 Reader)",
+      "edition": "2",
+      "date_published": "2008",
+      "authors": [
+        "Copley Custom Textbooks"
+      ],
+      "title": "Hawai'i: Center Of The Pacific (hawaiian Studies 107 Reader)",
+      "isbn13": "9781581525793",
+      "publish_date": "2008",
+      "isbn": "1581525796"
+    },
+    {
+      "publisher": "Prentice Hall",
+      "image": "https://images.isbndb.com/covers/36/27/9780131103627.jpg",
+      "title_long": "C Programming Language",
+      "edition": "2",
+      "date_published": "1988",
+      "authors": [
+        "Kernighan, Brian W.",
+        "Ritchie, Dennis M."
+      ],
+      "title": "C Programming Language",
+      "publish_date": "1988",
+      "isbn": "0000000000",
+      "isbn13": "9780131103627"
+    },
+    {
+      "publisher": "W. W. Norton & Company",
+      "image": "https://images.isbndb.com/covers/47/12/9780393674712.jpg",
+      "title_long": "Looking At Movies (sixth Edition)",
+      "edition": "6",
+      "date_published": "2018",
+      "authors": [
+        "Dave Monahan"
+      ],
+      "title": "Looking At Movies (sixth Edition)",
+      "isbn13": "9780393674712",
+      "publish_date": "2018",
+      "isbn": "0393674711"
+    },
+    {
+      "publisher": "Pearson,",
+      "image": "https://images.isbndb.com/covers/28/31/9780134112831.jpg",
+      "title_long": "Chemistry",
+      "edition": "4",
+      "date_published": "2017",
+      "authors": [
+        "Tro, Nivaldo J."
+      ],
+      "title": "Chemistry",
+      "publish_date": "2017",
+      "isbn": "9780134112831",
+      "isbn13": "0000000000000"
+    }
+  ],
+
+  "defaultListing": [
+    {
+      "title": "Chemistry: A Molecular Approach (4th Edition)",
+      "ISBN": 9780134112831,
+      "price": "$100",
+      "description": "CHEM 161, 162",
+      "binding": "hardcover",
+      "seller": "john@foo.com"
+    },
+    {
+      "title": "C Programming Language (2nd Edition)",
+      "ISBN": 9780131103627,
+      "price": "$100",
+      "description": "ICS 212",
+      "binding": "hardcover",
+      "seller": "john@foo.com"
+    },
+    {
+      "title": "Looking at Movies (Sixth Edition)",
+      "ISBN": 9780393674712,
+      "price": "$100",
+      "description": "ASAN 330",
+      "binding": "hardcover",
+      "seller": "john@foo.com"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Table, Header, Loader, Grid, Image } from 'semantic-ui-react';
-import { Listings } from '/imports/api/listing/Listings';
+import { Listings } from '/imports/api/listings/Listings';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ListingItem from '../components/ListingItem';
@@ -58,6 +58,7 @@ class Shelf extends React.Component {
 Shelf.propTypes = {
   book: PropTypes.object.isRequired,
   listings: PropTypes.array.isRequired,
+  ready: PropTypes.bool,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */

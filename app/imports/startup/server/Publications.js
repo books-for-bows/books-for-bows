@@ -1,6 +1,8 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
+import { Books } from '../../api/books/Books';
+import { Listings } from '../../api/listings/Listings';
 
 /** This subscription publishes only the documents associated with the logged in user */
 Meteor.publish('Stuff', function publish() {
@@ -18,3 +20,7 @@ Meteor.publish('StuffAdmin', function publish() {
   }
   return this.ready();
 });
+
+Meteor.publish('Listings', () => Listings.find());
+
+Meteor.publish('Books', () => Books.find());

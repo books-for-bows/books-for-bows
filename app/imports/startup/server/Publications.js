@@ -5,6 +5,22 @@ import { Books } from '../../api/books/Books';
 import { Listings } from '../../api/listings/Listings';
 
 /** This subscription publishes only the documents associated with the logged in user */
+Meteor.publish('Listings', function publish() {
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Listings.find({ seller: username });
+  }
+  return this.ready();
+});
+
+/** This subscription publishes all documents regardless of user, but only if the logged in user is the Admin. */
+Meteor.publish('ListingsAdmin', function publish() {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Listings.find();
+  }
+  return this.ready();
+});
+
 Meteor.publish('Stuff', function publish() {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;

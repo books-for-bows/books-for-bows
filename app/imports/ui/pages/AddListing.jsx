@@ -100,7 +100,8 @@ class AddListing extends React.Component {
                   Author: {this.state.book.authors ?
                     this.state.book.authors.map(author => `${author.name}, `) : 'None'} <br/>
                   ISBN: {this.state.isbn} <br/>
-                  Publisher: {this.state.book.publishers ? this.state.book.publishers[0].name : 'None'}<br/>
+                  Publisher: {this.state.book.publishers ?
+                    this.state.book.publishers.map(publisher => `${publisher.name}, `) : 'None'}<br/>
                   Publish Date: {this.state.book.publish_date ? this.state.book.publish_date : 'None'}
                 </Grid.Column>
               </Grid.Row>
@@ -111,7 +112,7 @@ class AddListing extends React.Component {
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
               <Segment>
                 <TextField name='price'/>
-                <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)} value={this.state.isbn}/>
+                <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)}/>
                 <TextField name='description'/>
                 <SelectField name='binding'/>
                 <SubmitField value='Submit'/>

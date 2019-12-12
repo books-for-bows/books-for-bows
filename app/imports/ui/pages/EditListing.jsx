@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
+import { Grid, Loader, Header, Segment, Image } from 'semantic-ui-react';
 import swal from 'sweetalert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
@@ -12,17 +12,27 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import 'uniforms-bridge-simple-schema-2';
-import { Listings, ListingsSchema } from '/imports/api/listings/Listings'; // required for Uniforms
+import { HTTP } from 'meteor/http';
+import { Listings, ListingsSchema } from '/imports/api/listings/Listings';
+import { Redirect } from 'react-router'; // required for Uniforms
 
 /** Renders the Page for editing a single document. */
 class EditListing extends React.Component {
+
+  state = {
+    redirect: false,
+    isbn: 0,
+    book: undefined,
+    book_found: undefined,
+  };
 
   /** On successful submit, insert the data. */
   submit(data) {
     const { price, ISBN, description, binding, _id } = data;
     Listings.update(_id, { $set: { price, ISBN, description, binding } }, (error) => (error ?
       swal('Error', error.message, 'error') :
-      swal('Success', 'Item updated successfully', 'success')));
+      swal('Success', 'Listing updated successfully', 'success')));
+    this.setState({ redirect: true });
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -30,12 +40,58 @@ class EditListing extends React.Component {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
+  handleChange(isbn) {
+    if (isbn.toString().length === 10 || isbn.toString().length === 13) {
+      const url = 'https://openlibrary.org/api/books';
+      HTTP.get(
+          url,
+          {
+            params: {
+              bibkeys: `ISBN:${isbn.toString()}`,
+              format: 'json',
+              jscmd: 'data',
+            },
+          },
+          (error, result) => {
+            if (!error) {
+              const book = result.data[`ISBN:${isbn.toString()}`];
+              if (book !== undefined) {
+                this.setState({ isbn: isbn, book: book, book_found: true });
+              } else {
+                this.setState({ isbn: isbn, book_found: false });
+              }
+            }
+          },
+      );
+    }
+  }
+
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
+    this.handleChange(this.props.doc.ISBN);
     return (
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Edit Listing</Header>
+            { this.state.book !== undefined && this.state.book_found &&
+            <Grid.Row columns={2}>
+              <Grid.Column>
+                { this.state.book.cover ? ([
+                  <Image size="small" key="cover" src={this.state.book.cover.small}/>,
+                ]) : 'No Cover Found'
+                }
+                <Header as="h4">{this.state.book.title}</Header>
+              </Grid.Column>
+              <Grid.Column>
+                Author: {this.state.book.authors ?
+                  this.state.book.authors.map(author => `${author.name}, `) : 'None'} <br/>
+                ISBN: {this.state.isbn} <br/>
+                Publisher: {this.state.book.publishers ?
+                  this.state.book.publishers.map(publisher => `${publisher.name}, `) : 'None'}<br/>
+                Publish Date: {this.state.book.publish_date ? this.state.book.publish_date : 'None'}
+              </Grid.Column>
+            </Grid.Row>
+            }
             <AutoForm schema={ListingsSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
                 <TextField name='price'/>
@@ -47,6 +103,8 @@ class EditListing extends React.Component {
                 <HiddenField name='seller' />
               </Segment>
             </AutoForm>
+            {this.state.redirect && <Redirect to="/profile" />}
+
           </Grid.Column>
         </Grid>
     );

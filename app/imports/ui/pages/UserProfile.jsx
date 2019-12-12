@@ -26,6 +26,7 @@ class UserProfile extends React.Component {
                 <Table.HeaderCell>ISBN</Table.HeaderCell>
                 <Table.HeaderCell>Description</Table.HeaderCell>
                 <Table.HeaderCell>Binding</Table.HeaderCell>
+                <Table.HeaderCell>Edit</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
@@ -47,8 +48,9 @@ UserProfile.propTypes = {
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Listings');
+  const user = Meteor.user().username;
   return {
-    listings: Listings.find({}).fetch(),
+    listings: Listings.find({ seller: user }).fetch(),
     ready: subscription.ready(),
   };
 })(UserProfile);

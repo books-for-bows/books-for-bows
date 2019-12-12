@@ -19,11 +19,10 @@ class Shelf extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const book = Books.findOne({ _id: this.props.book_id });
-
     return (
         <Container>
           <Header as="h1" textAlign="center">Shelf</Header>
-          <Grid columns={4} container>
+          <Grid columns={2} >
             <Grid.Column width={4}>
               <Image size="medium" centered src={book.image}/>
               <Header as="h2">{book.title}</Header>
@@ -37,14 +36,14 @@ class Shelf extends React.Component {
                 </Grid.Column>
               </Grid>
             </Grid.Column>
-            <Grid.Column width={4}>
-              <Table celled>
+            <Grid.Column>
+              <Table celled padded striped>
                 <Table.Header>
                   <Table.Row>
                     <Table.HeaderCell>Price</Table.HeaderCell>
-                    <Table.HeaderCell>Condition</Table.HeaderCell>
                     <Table.HeaderCell>Binding</Table.HeaderCell>
                     <Table.HeaderCell>Seller</Table.HeaderCell>
+                    <Table.HeaderCell>Description</Table.HeaderCell>
                   </Table.Row>
                 </Table.Header>
                 <Table.Body>

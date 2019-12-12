@@ -4,7 +4,7 @@ import { Listings } from '../../api/listings/Listings';
 import { CourseBooks } from '../../api/coursebooks/CourseBooks';
 
 /* eslint-disable no-console */
-const coursebooksJson = JSON.parse(Assets.getText('uhclubs.json'));
+const coursebooksJson = JSON.parse(Assets.getText('coursebooks.json'));
 /** Initialize the database with a default data document. */
 
 function addBook(data) {

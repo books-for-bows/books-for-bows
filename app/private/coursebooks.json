@@ -1,0 +1,5857 @@
+[
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "200",
+    "isbn": "9780135979884"
+  },
+  {
+    "dept": "ACC",
+    "course": "321",
+    "isbn": "9780135626191"
+  },
+  {
+    "dept": "ACC",
+    "course": "321",
+    "isbn": "9780135626191"
+  },
+  {
+    "dept": "ACC",
+    "course": "323",
+    "isbn": "9781264072019"
+  },
+  {
+    "dept": "ACC",
+    "course": "323",
+    "isbn": "9781264072019"
+  },
+  {
+    "dept": "ACC",
+    "course": "401",
+    "isbn": "9780357700037"
+  },
+  {
+    "dept": "ACC",
+    "course": "401",
+    "isbn": "9780357700037"
+  },
+  {
+    "dept": "ACC",
+    "course": "407",
+    "isbn": "9780357700037"
+  },
+  {
+    "dept": "ACC",
+    "course": "407",
+    "isbn": "9780357109168"
+  },
+  {
+    "dept": "ACC",
+    "course": "409",
+    "isbn": "9781259538872"
+  },
+  {
+    "dept": "ACC",
+    "course": "409",
+    "isbn": "9781259538872"
+  },
+  {
+    "dept": "ACC",
+    "course": "415",
+    "isbn": "9781264064021"
+  },
+  {
+    "dept": "ACC",
+    "course": "418",
+    "isbn": "9780135987094"
+  },
+  {
+    "dept": "ACC",
+    "course": "418",
+    "isbn": "9780135987094"
+  },
+  {
+    "dept": "ACC",
+    "course": "418",
+    "isbn": "9780135987094"
+  },
+  {
+    "dept": "ACC",
+    "course": "616",
+    "isbn": "9780132984669"
+  },
+  {
+    "dept": "ACC",
+    "course": "638",
+    "isbn": "9780808048091"
+  },
+  {
+    "dept": "ACC",
+    "course": "638",
+    "isbn": "9781508305491"
+  },
+  {
+    "dept": "ACM",
+    "course": "255",
+    "isbn": "9781259534959"
+  },
+  {
+    "dept": "ACM",
+    "course": "255",
+    "isbn": "9780231142939"
+  },
+  {
+    "dept": "ACM",
+    "course": "255",
+    "isbn": "9781260485127"
+  },
+  {
+    "dept": "ACM",
+    "course": "310",
+    "isbn": "9781932907056"
+  },
+  {
+    "dept": "ACM",
+    "course": "310",
+    "isbn": "9781932907056"
+  },
+  {
+    "dept": "ACM",
+    "course": "316",
+    "isbn": "9780865478978"
+  },
+  {
+    "dept": "ACM",
+    "course": "318",
+    "isbn": "9780865478978"
+  },
+  {
+    "dept": "ACM",
+    "course": "350",
+    "isbn": "9781932907452"
+  },
+  {
+    "dept": "ACM",
+    "course": "350",
+    "isbn": "9780671213329"
+  },
+  {
+    "dept": "ACM",
+    "course": "350",
+    "isbn": "9780060391683"
+  },
+  {
+    "dept": "ACM",
+    "course": "370",
+    "isbn": "9780941188241"
+  },
+  {
+    "dept": "ACM",
+    "course": "375",
+    "isbn": "9780240818450"
+  },
+  {
+    "dept": "ACM",
+    "course": "386",
+    "isbn": "9780240807799"
+  },
+  {
+    "dept": "ACM",
+    "course": "386",
+    "isbn": "9780240807799"
+  },
+  {
+    "dept": "ACM",
+    "course": "420",
+    "isbn": "9780240807799"
+  },
+  {
+    "dept": "ACM",
+    "course": "460",
+    "isbn": "9780078038426"
+  },
+  {
+    "dept": "AMST",
+    "course": "111",
+    "isbn": "9781594483295"
+  },
+  {
+    "dept": "AMST",
+    "course": "111",
+    "isbn": "9781608469468"
+  },
+  {
+    "dept": "AMST",
+    "course": "111",
+    "isbn": "9780525434801"
+  },
+  {
+    "dept": "AMST",
+    "course": "111",
+    "isbn": "9780465028023"
+  },
+  {
+    "dept": "AMST",
+    "course": "111",
+    "isbn": "9780224086813"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780195085570"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780062748201"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780195085570"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780062748201"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780195085570"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780062748201"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780195085570"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780062748201"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780195085570"
+  },
+  {
+    "dept": "AMST",
+    "course": "150",
+    "isbn": "9780062748201"
+  },
+  {
+    "dept": "AMST",
+    "course": "201",
+    "isbn": "9781608465620"
+  },
+  {
+    "dept": "AMST",
+    "course": "201",
+    "isbn": "9780822356950"
+  },
+  {
+    "dept": "AMST",
+    "course": "201",
+    "isbn": "9781608466252"
+  },
+  {
+    "dept": "AMST",
+    "course": "201",
+    "isbn": "9781568584638"
+  },
+  {
+    "dept": "AMST",
+    "course": "201",
+    "isbn": "9781608465620"
+  },
+  {
+    "dept": "AMST",
+    "course": "201",
+    "isbn": "9780822356950"
+  },
+  {
+    "dept": "AMST",
+    "course": "201",
+    "isbn": "9781608466252"
+  },
+  {
+    "dept": "AMST",
+    "course": "201",
+    "isbn": "9781568584638"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9781583225813"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9780824820596"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9781785355431"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9780743456081"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9781583225813"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9780824820596"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9781785355431"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9780743456081"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9780316014991"
+  },
+  {
+    "dept": "AMST",
+    "course": "211",
+    "isbn": "9780316014991"
+  },
+  {
+    "dept": "AMST",
+    "course": "212",
+    "isbn": "9781478006497"
+  },
+  {
+    "dept": "AMST",
+    "course": "212",
+    "isbn": "9780824820596"
+  },
+  {
+    "dept": "AMST",
+    "course": "212",
+    "isbn": "9780824878245"
+  },
+  {
+    "dept": "AMST",
+    "course": "212",
+    "isbn": "9781478006497"
+  },
+  {
+    "dept": "AMST",
+    "course": "212",
+    "isbn": "9780824820596"
+  },
+  {
+    "dept": "AMST",
+    "course": "212",
+    "isbn": "9780824878245"
+  },
+  {
+    "dept": "AMST",
+    "course": "340",
+    "isbn": "9780415999786"
+  },
+  {
+    "dept": "AMST",
+    "course": "340",
+    "isbn": "9780312422196"
+  },
+  {
+    "dept": "AMST",
+    "course": "340",
+    "isbn": "9780415999823"
+  },
+  {
+    "dept": "AMST",
+    "course": "345",
+    "isbn": "9780300213867"
+  },
+  {
+    "dept": "AMST",
+    "course": "345",
+    "isbn": "9780803265646"
+  },
+  {
+    "dept": "AMST",
+    "course": "345",
+    "isbn": "9780300213867"
+  },
+  {
+    "dept": "AMST",
+    "course": "345",
+    "isbn": "9780803265646"
+  },
+  {
+    "dept": "AMST",
+    "course": "352",
+    "isbn": "9781566397766"
+  },
+  {
+    "dept": "AMST",
+    "course": "352",
+    "isbn": "9780813530253"
+  },
+  {
+    "dept": "AMST",
+    "course": "373",
+    "isbn": "9780295993539"
+  },
+  {
+    "dept": "AMST",
+    "course": "373",
+    "isbn": "9781885030511"
+  },
+  {
+    "dept": "AMST",
+    "course": "423",
+    "isbn": "9780500203736"
+  },
+  {
+    "dept": "AMST",
+    "course": "432",
+    "isbn": "9781400033416"
+  },
+  {
+    "dept": "AMST",
+    "course": "432",
+    "isbn": "9780807055151"
+  },
+  {
+    "dept": "AMST",
+    "course": "432",
+    "isbn": "9780140437492"
+  },
+  {
+    "dept": "AMST",
+    "course": "432",
+    "isbn": "9781319048785"
+  },
+  {
+    "dept": "AMST",
+    "course": "432",
+    "isbn": "9780520285637"
+  },
+  {
+    "dept": "AMST",
+    "course": "442",
+    "isbn": "9781608469468"
+  },
+  {
+    "dept": "AMST",
+    "course": "442",
+    "isbn": "9780062124296"
+  },
+  {
+    "dept": "AMST",
+    "course": "442",
+    "isbn": "9781603093958"
+  },
+  {
+    "dept": "AMST",
+    "course": "442",
+    "isbn": "9780822343219"
+  },
+  {
+    "dept": "AMST",
+    "course": "442",
+    "isbn": "9781451697391"
+  },
+  {
+    "dept": "AMST",
+    "course": "483",
+    "isbn": "9780226239736"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780822352075"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780674017597"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780674076068"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780226533315"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780520244993"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780822358756"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780374531157"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780691165707"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780226159416"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780674979840"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780822370758"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780520283367"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780520270879"
+  },
+  {
+    "dept": "AMST",
+    "course": "600",
+    "isbn": "9780674939554"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780674076068"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780802143006"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780307946430"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9781620974810"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780674416918"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780822358756"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780812218732"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780374531157"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780520268104"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9781631493249"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780143114253"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780742544741"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9781505223378"
+  },
+  {
+    "dept": "AMST",
+    "course": "616",
+    "isbn": "9780061120060"
+  },
+  {
+    "dept": "AMST",
+    "course": "675",
+    "isbn": "9780471473770"
+  },
+  {
+    "dept": "AMST",
+    "course": "683",
+    "isbn": "9780415053884"
+  },
+  {
+    "dept": "AMST",
+    "course": "683",
+    "isbn": "9781941963036"
+  },
+  {
+    "dept": "AMST",
+    "course": "683",
+    "isbn": "9781138240179"
+  },
+  {
+    "dept": "AMST",
+    "course": "684",
+    "isbn": "9781933253152"
+  },
+  {
+    "dept": "ANSC",
+    "course": "200",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ANSC",
+    "course": "244",
+    "isbn": "9781845936310"
+  },
+  {
+    "dept": "ANSC",
+    "course": "462",
+    "isbn": "9780965764834"
+  },
+  {
+    "dept": "ANTH",
+    "course": "151",
+    "isbn": "9780199764563"
+  },
+  {
+    "dept": "ANTH",
+    "course": "151",
+    "isbn": "9780199764563"
+  },
+  {
+    "dept": "ANTH",
+    "course": "151",
+    "isbn": "9780199764563"
+  },
+  {
+    "dept": "ANTH",
+    "course": "151",
+    "isbn": "9780199764563"
+  },
+  {
+    "dept": "ANTH",
+    "course": "151",
+    "isbn": "9780199764563"
+  },
+  {
+    "dept": "ANTH",
+    "course": "151",
+    "isbn": "9780199764563"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9781285733371"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9781285733371"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9781285733371"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9781285733371"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9781285733371"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780441478125"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780192853462"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780441478125"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780192853462"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780441478125"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780192853462"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9781285733371"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780441478125"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780192853462"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780441478125"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780192853462"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780441478125"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780192853462"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780155002401"
+  },
+  {
+    "dept": "ANTH",
+    "course": "152",
+    "isbn": "9780190679026"
+  },
+  {
+    "dept": "ANTH",
+    "course": "210",
+    "isbn": "9780500841389"
+  },
+  {
+    "dept": "ANTH",
+    "course": "301",
+    "isbn": "9780143113669"
+  },
+  {
+    "dept": "ANTH",
+    "course": "301",
+    "isbn": "9780374533403"
+  },
+  {
+    "dept": "ANTH",
+    "course": "301",
+    "isbn": "9780520228146"
+  },
+  {
+    "dept": "ANTH",
+    "course": "323",
+    "isbn": "9780520292819"
+  },
+  {
+    "dept": "ANTH",
+    "course": "345",
+    "isbn": "9780195181784"
+  },
+  {
+    "dept": "ANTH",
+    "course": "345",
+    "isbn": "9780190232467"
+  },
+  {
+    "dept": "ANTH",
+    "course": "368",
+    "isbn": "9780520272217"
+  },
+  {
+    "dept": "ANTH",
+    "course": "415",
+    "isbn": "9780300240214"
+  },
+  {
+    "dept": "ANTH",
+    "course": "415",
+    "isbn": "9780618773572"
+  },
+  {
+    "dept": "ANTH",
+    "course": "429",
+    "isbn": "9780822353638"
+  },
+  {
+    "dept": "ANTH",
+    "course": "429",
+    "isbn": "9780415533294"
+  },
+  {
+    "dept": "ANTH",
+    "course": "429",
+    "isbn": "9781560989202"
+  },
+  {
+    "dept": "ANTH",
+    "course": "458",
+    "isbn": "9781138188846"
+  },
+  {
+    "dept": "ANTH",
+    "course": "464",
+    "isbn": "9780520303416"
+  },
+  {
+    "dept": "ANTH",
+    "course": "473",
+    "isbn": "9780306480683"
+  },
+  {
+    "dept": "ANTH",
+    "course": "483",
+    "isbn": "9780824838690"
+  },
+  {
+    "dept": "ANTH",
+    "course": "483",
+    "isbn": "9780822355625"
+  },
+  {
+    "dept": "ANTH",
+    "course": "483",
+    "isbn": "9780226263106"
+  },
+  {
+    "dept": "ANTH",
+    "course": "623",
+    "isbn": "9780520292819"
+  },
+  {
+    "dept": "ARAB",
+    "course": "101",
+    "isbn": "9781589016323"
+  },
+  {
+    "dept": "ARAB",
+    "course": "101",
+    "isbn": "9781626166868"
+  },
+  {
+    "dept": "ARAB",
+    "course": "101",
+    "isbn": "9780071742931"
+  },
+  {
+    "dept": "ARCH",
+    "course": "271",
+    "isbn": "9780415719162"
+  },
+  {
+    "dept": "ARCH",
+    "course": "271",
+    "isbn": "9780190646455"
+  },
+  {
+    "dept": "ARCH",
+    "course": "473",
+    "isbn": "9780500203736"
+  },
+  {
+    "dept": "ARCH",
+    "course": "628",
+    "isbn": "9780471473770"
+  },
+  {
+    "dept": "ART",
+    "course": "130",
+    "isbn": "9780963872821"
+  },
+  {
+    "dept": "ART",
+    "course": "130",
+    "isbn": "9780963872821"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ART",
+    "course": "175",
+    "isbn": "9780134786773"
+  },
+  {
+    "dept": "ART",
+    "course": "207",
+    "isbn": "9781138206311"
+  },
+  {
+    "dept": "ART",
+    "course": "242",
+    "isbn": "9780812239324"
+  },
+  {
+    "dept": "ART",
+    "course": "242",
+    "isbn": "9781617690228"
+  },
+  {
+    "dept": "ART",
+    "course": "265",
+    "isbn": "9781474232425"
+  },
+  {
+    "dept": "ART",
+    "course": "308B",
+    "isbn": "9781861890740"
+  },
+  {
+    "dept": "ART",
+    "course": "343",
+    "isbn": "9780812239324"
+  },
+  {
+    "dept": "ART",
+    "course": "343",
+    "isbn": "9781476793313"
+  },
+  {
+    "dept": "ART",
+    "course": "385",
+    "isbn": "9780520294813"
+  },
+  {
+    "dept": "ART",
+    "course": "400B",
+    "isbn": "9781433116490"
+  },
+  {
+    "dept": "ART",
+    "course": "400B",
+    "isbn": "9780520260764"
+  },
+  {
+    "dept": "ART",
+    "course": "405",
+    "isbn": "9781501146169"
+  },
+  {
+    "dept": "ART",
+    "course": "405",
+    "isbn": "9780393337129"
+  },
+  {
+    "dept": "ART",
+    "course": "470D",
+    "isbn": "9780131882478"
+  },
+  {
+    "dept": "ART",
+    "course": "470D",
+    "isbn": "9780205705818"
+  },
+  {
+    "dept": "ART",
+    "course": "475C",
+    "isbn": "9780192842381"
+  },
+  {
+    "dept": "ART",
+    "course": "475C",
+    "isbn": "9780062060877"
+  },
+  {
+    "dept": "ART",
+    "course": "476",
+    "isbn": "9780500203644"
+  },
+  {
+    "dept": "ART",
+    "course": "476",
+    "isbn": "9780674036222"
+  },
+  {
+    "dept": "ART",
+    "course": "476",
+    "isbn": "9780136128724"
+  },
+  {
+    "dept": "ART",
+    "course": "479",
+    "isbn": "9780824810696"
+  },
+  {
+    "dept": "ART",
+    "course": "479",
+    "isbn": "9780930897819"
+  },
+  {
+    "dept": "ART",
+    "course": "479",
+    "isbn": "9780226845609"
+  },
+  {
+    "dept": "ART",
+    "course": "479",
+    "isbn": "9780824855871"
+  },
+  {
+    "dept": "ART",
+    "course": "479",
+    "isbn": "9780930897826"
+  },
+  {
+    "dept": "ASAN",
+    "course": "320C",
+    "isbn": "9781138501522"
+  },
+  {
+    "dept": "ASAN",
+    "course": "320C",
+    "isbn": "9780873323994"
+  },
+  {
+    "dept": "ASAN",
+    "course": "330",
+    "isbn": "9780393674712"
+  },
+  {
+    "dept": "ASAN",
+    "course": "600C",
+    "isbn": "9780226239736"
+  },
+  {
+    "dept": "ASAN",
+    "course": "600K",
+    "isbn": "9780804754088"
+  },
+  {
+    "dept": "ASAN",
+    "course": "600K",
+    "isbn": "9780801486968"
+  },
+  {
+    "dept": "ASAN",
+    "course": "650",
+    "isbn": "9781503602939"
+  },
+  {
+    "dept": "ASAN",
+    "course": "650",
+    "isbn": "9780824869816"
+  },
+  {
+    "dept": "ASAN",
+    "course": "650",
+    "isbn": "9780804747912"
+  },
+  {
+    "dept": "ASAN",
+    "course": "650",
+    "isbn": "9780824876685"
+  },
+  {
+    "dept": "ASAN",
+    "course": "650",
+    "isbn": "9780520288287"
+  },
+  {
+    "dept": "ASAN",
+    "course": "650",
+    "isbn": "9780804708494"
+  },
+  {
+    "dept": "ASAN",
+    "course": "687",
+    "isbn": "9780231156899"
+  },
+  {
+    "dept": "ASAN",
+    "course": "687",
+    "isbn": "9781137332356"
+  },
+  {
+    "dept": "ASL",
+    "course": "101",
+    "isbn": "9780970587602"
+  },
+  {
+    "dept": "ASL",
+    "course": "101",
+    "isbn": "9781581212105"
+  },
+  {
+    "dept": "ASL",
+    "course": "101",
+    "isbn": "9780970587602"
+  },
+  {
+    "dept": "ASL",
+    "course": "101",
+    "isbn": "9781581212105"
+  },
+  {
+    "dept": "ASL",
+    "course": "201",
+    "isbn": "9780970587602"
+  },
+  {
+    "dept": "ASL",
+    "course": "201",
+    "isbn": "9781581211313"
+  },
+  {
+    "dept": "ASTR",
+    "course": "110",
+    "isbn": "9780134899893"
+  },
+  {
+    "dept": "ASTR",
+    "course": "110",
+    "isbn": "9780134602080"
+  },
+  {
+    "dept": "ASTR",
+    "course": "110",
+    "isbn": "9780134602080"
+  },
+  {
+    "dept": "ASTR",
+    "course": "110L",
+    "isbn": "9780691177885"
+  },
+  {
+    "dept": "ASTR",
+    "course": "110L",
+    "isbn": "9780691177885"
+  },
+  {
+    "dept": "ASTR",
+    "course": "110L",
+    "isbn": "9780691177885"
+  },
+  {
+    "dept": "ASTR",
+    "course": "130",
+    "isbn": "9780806119199"
+  },
+  {
+    "dept": "ASTR",
+    "course": "130",
+    "isbn": "9780471329763"
+  },
+  {
+    "dept": "ASTR",
+    "course": "241",
+    "isbn": "9780321595584"
+  },
+  {
+    "dept": "ASTR",
+    "course": "300",
+    "isbn": "9781107572560"
+  },
+  {
+    "dept": "ATMO",
+    "course": "101",
+    "isbn": "9780840049339"
+  },
+  {
+    "dept": "ATMO",
+    "course": "101",
+    "isbn": "9781285462363"
+  },
+  {
+    "dept": "ATMO",
+    "course": "101",
+    "isbn": "9781305628458"
+  },
+  {
+    "dept": "ATMO",
+    "course": "101L",
+    "isbn": "9781621378884"
+  },
+  {
+    "dept": "ATMO",
+    "course": "101L",
+    "isbn": "9781621378884"
+  },
+  {
+    "dept": "ATMO",
+    "course": "303",
+    "isbn": "9780127329512"
+  },
+  {
+    "dept": "ATMO",
+    "course": "310",
+    "isbn": "9780809045020"
+  },
+  {
+    "dept": "ATMO",
+    "course": "310",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ATMO",
+    "course": "600",
+    "isbn": "9780123848666"
+  },
+  {
+    "dept": "ATMO",
+    "course": "620",
+    "isbn": "9780127329512"
+  },
+  {
+    "dept": "BE",
+    "course": "460",
+    "isbn": "9780122208515"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172",
+    "isbn": "9780357091586"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172",
+    "isbn": "9781337393089"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781930882355"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9781617317651"
+  },
+  {
+    "dept": "BIOL",
+    "course": "172L",
+    "isbn": "9780321984258"
+  },
+  {
+    "dept": "BIOL",
+    "course": "265",
+    "isbn": "9781305881716"
+  },
+  {
+    "dept": "BIOL",
+    "course": "265",
+    "isbn": "9781337897624"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780321934789"
+  },
+  {
+    "dept": "BIOL",
+    "course": "275",
+    "isbn": "9780134381244"
+  },
+  {
+    "dept": "BIOL",
+    "course": "297",
+    "isbn": "9781936221486"
+  },
+  {
+    "dept": "BIOL",
+    "course": "304",
+    "isbn": "9780190664046"
+  },
+  {
+    "dept": "BIOL",
+    "course": "304",
+    "isbn": "9781476793313"
+  },
+  {
+    "dept": "BIOL",
+    "course": "305",
+    "isbn": "9781605356181"
+  },
+  {
+    "dept": "BIOL",
+    "course": "402",
+    "isbn": "9781464126116"
+  },
+  {
+    "dept": "BIOL",
+    "course": "402",
+    "isbn": "9781464126116"
+  },
+  {
+    "dept": "BIOL",
+    "course": "407",
+    "isbn": "9781464187438"
+  },
+  {
+    "dept": "BLAW",
+    "course": "200",
+    "isbn": "9781680754520"
+  },
+  {
+    "dept": "BLAW",
+    "course": "200",
+    "isbn": "9781680754520"
+  },
+  {
+    "dept": "BLAW",
+    "course": "200",
+    "isbn": "9781680754520"
+  },
+  {
+    "dept": "BLAW",
+    "course": "200",
+    "isbn": "9781680754520"
+  },
+  {
+    "dept": "BOT",
+    "course": "107",
+    "isbn": "9780615129532"
+  },
+  {
+    "dept": "BOT",
+    "course": "107",
+    "isbn": "9780615129532"
+  },
+  {
+    "dept": "BOT",
+    "course": "107",
+    "isbn": "9780615129532"
+  },
+  {
+    "dept": "BOT",
+    "course": "107",
+    "isbn": "9780615129532"
+  },
+  {
+    "dept": "BOT",
+    "course": "107",
+    "isbn": "9780615129532"
+  },
+  {
+    "dept": "BOT",
+    "course": "107",
+    "isbn": "9780615129532"
+  },
+  {
+    "dept": "BOT",
+    "course": "305",
+    "isbn": "9781605356181"
+  },
+  {
+    "dept": "BUS",
+    "course": "200",
+    "isbn": "9780136562757"
+  },
+  {
+    "dept": "BUS",
+    "course": "200",
+    "isbn": "9780136562757"
+  },
+  {
+    "dept": "BUS",
+    "course": "200",
+    "isbn": "9780136562757"
+  },
+  {
+    "dept": "BUS",
+    "course": "200",
+    "isbn": "9780136562757"
+  },
+  {
+    "dept": "BUS",
+    "course": "200",
+    "isbn": "9780136562757"
+  },
+  {
+    "dept": "BUS",
+    "course": "209",
+    "isbn": "9781323919699"
+  },
+  {
+    "dept": "BUS",
+    "course": "209",
+    "isbn": "9781323919699"
+  },
+  {
+    "dept": "BUS",
+    "course": "209",
+    "isbn": "9781323919699"
+  },
+  {
+    "dept": "BUS",
+    "course": "209",
+    "isbn": "9781323919699"
+  },
+  {
+    "dept": "BUS",
+    "course": "209",
+    "isbn": "9781323919699"
+  },
+  {
+    "dept": "BUS",
+    "course": "209",
+    "isbn": "9781323919699"
+  },
+  {
+    "dept": "BUS",
+    "course": "209",
+    "isbn": "9781323919699"
+  },
+  {
+    "dept": "BUS",
+    "course": "209",
+    "isbn": "9781323919699"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780135180341"
+  },
+  {
+    "dept": "BUS",
+    "course": "310",
+    "isbn": "9780133990584"
+  },
+  {
+    "dept": "BUS",
+    "course": "311",
+    "isbn": "9781323828021"
+  },
+  {
+    "dept": "BUS",
+    "course": "311",
+    "isbn": "9780134639871"
+  },
+  {
+    "dept": "BUS",
+    "course": "311",
+    "isbn": "9780134639871"
+  },
+  {
+    "dept": "BUS",
+    "course": "311",
+    "isbn": "9780134639871"
+  },
+  {
+    "dept": "BUS",
+    "course": "311",
+    "isbn": "9781323828021"
+  },
+  {
+    "dept": "BUS",
+    "course": "311",
+    "isbn": "9780134639871"
+  },
+  {
+    "dept": "BUS",
+    "course": "311",
+    "isbn": "9781323828021"
+  },
+  {
+    "dept": "BUS",
+    "course": "311",
+    "isbn": "9780134639871"
+  },
+  {
+    "dept": "BUS",
+    "course": "312",
+    "isbn": "9780135639269"
+  },
+  {
+    "dept": "BUS",
+    "course": "312",
+    "isbn": "9780135639269"
+  },
+  {
+    "dept": "BUS",
+    "course": "312",
+    "isbn": "9780135639269"
+  },
+  {
+    "dept": "BUS",
+    "course": "312",
+    "isbn": "9780357158975"
+  },
+  {
+    "dept": "BUS",
+    "course": "312",
+    "isbn": "9780357158975"
+  },
+  {
+    "dept": "BUS",
+    "course": "312",
+    "isbn": "9780135639269"
+  },
+  {
+    "dept": "BUS",
+    "course": "312",
+    "isbn": "9780357158975"
+  },
+  {
+    "dept": "BUS",
+    "course": "313",
+    "isbn": "9780135326060"
+  },
+  {
+    "dept": "BUS",
+    "course": "313",
+    "isbn": "9780134725369"
+  },
+  {
+    "dept": "BUS",
+    "course": "313",
+    "isbn": "9780135326060"
+  },
+  {
+    "dept": "BUS",
+    "course": "313",
+    "isbn": "9780135326060"
+  },
+  {
+    "dept": "BUS",
+    "course": "313",
+    "isbn": "9780134725369"
+  },
+  {
+    "dept": "BUS",
+    "course": "313",
+    "isbn": "9780135326060"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9780134476117"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9781323919910"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9780134476117"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9781323919910"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9781260703900"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9780357195635"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9780357195635"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9780134476117"
+  },
+  {
+    "dept": "BUS",
+    "course": "314",
+    "isbn": "9781323919910"
+  },
+  {
+    "dept": "BUS",
+    "course": "315",
+    "isbn": "9781305502215"
+  },
+  {
+    "dept": "BUS",
+    "course": "315",
+    "isbn": "9781305502215"
+  },
+  {
+    "dept": "BUS",
+    "course": "315",
+    "isbn": "9781305502215"
+  },
+  {
+    "dept": "BUS",
+    "course": "315",
+    "isbn": "9781305502215"
+  },
+  {
+    "dept": "BUS",
+    "course": "315",
+    "isbn": "9781305502215"
+  },
+  {
+    "dept": "BUS",
+    "course": "315",
+    "isbn": "9781305502215"
+  },
+  {
+    "dept": "BUS",
+    "course": "315",
+    "isbn": "9781305502215"
+  },
+  {
+    "dept": "BUS",
+    "course": "345",
+    "isbn": "9781308959849"
+  },
+  {
+    "dept": "BUS",
+    "course": "345",
+    "isbn": "9781260141825"
+  },
+  {
+    "dept": "BUS",
+    "course": "345",
+    "isbn": "9781308959849"
+  },
+  {
+    "dept": "BUS",
+    "course": "345",
+    "isbn": "9781308959849"
+  },
+  {
+    "dept": "BUS",
+    "course": "345",
+    "isbn": "9781260549980"
+  },
+  {
+    "dept": "BUS",
+    "course": "345",
+    "isbn": "9781260141825"
+  },
+  {
+    "dept": "BUS",
+    "course": "345",
+    "isbn": "9781308959849"
+  },
+  {
+    "dept": "BUS",
+    "course": "620",
+    "isbn": "9781625271969"
+  },
+  {
+    "dept": "BUS",
+    "course": "620",
+    "isbn": "9781119042310"
+  },
+  {
+    "dept": "BUS",
+    "course": "624",
+    "isbn": "9781618532329"
+  },
+  {
+    "dept": "CEE",
+    "course": "270",
+    "isbn": "9781118807330"
+  },
+  {
+    "dept": "CEE",
+    "course": "270",
+    "isbn": "9781118807330"
+  },
+  {
+    "dept": "CEE",
+    "course": "271",
+    "isbn": "9780136129165"
+  },
+  {
+    "dept": "CEE",
+    "course": "320",
+    "isbn": "9781260152067"
+  },
+  {
+    "dept": "CEE",
+    "course": "320",
+    "isbn": "9781260152067"
+  },
+  {
+    "dept": "CEE",
+    "course": "320",
+    "isbn": "9781260152067"
+  },
+  {
+    "dept": "CEE",
+    "course": "330",
+    "isbn": "9780073401140"
+  },
+  {
+    "dept": "CEE",
+    "course": "330",
+    "isbn": "9780073401140"
+  },
+  {
+    "dept": "CEE",
+    "course": "330",
+    "isbn": "9780073401140"
+  },
+  {
+    "dept": "CEE",
+    "course": "355",
+    "isbn": "9781305970939"
+  },
+  {
+    "dept": "CEE",
+    "course": "355",
+    "isbn": "9780190209667"
+  },
+  {
+    "dept": "CEE",
+    "course": "355",
+    "isbn": "9780190209667"
+  },
+  {
+    "dept": "CEE",
+    "course": "355",
+    "isbn": "9780190209667"
+  },
+  {
+    "dept": "CEE",
+    "course": "361",
+    "isbn": "9781119305026"
+  },
+  {
+    "dept": "CEE",
+    "course": "370",
+    "isbn": "9780357700037"
+  },
+  {
+    "dept": "CEE",
+    "course": "370",
+    "isbn": "9781337093347"
+  },
+  {
+    "dept": "CEE",
+    "course": "370L",
+    "isbn": "9781337093347"
+  },
+  {
+    "dept": "CEE",
+    "course": "370L",
+    "isbn": "9781337093347"
+  },
+  {
+    "dept": "CEE",
+    "course": "370L",
+    "isbn": "9781337093347"
+  },
+  {
+    "dept": "CEE",
+    "course": "375",
+    "isbn": "9780134320533"
+  },
+  {
+    "dept": "CEE",
+    "course": "375",
+    "isbn": "9780134320533"
+  },
+  {
+    "dept": "CEE",
+    "course": "375",
+    "isbn": "9780134320533"
+  },
+  {
+    "dept": "CEE",
+    "course": "381",
+    "isbn": "9780134622088"
+  },
+  {
+    "dept": "CEE",
+    "course": "431",
+    "isbn": "9780132337175"
+  },
+  {
+    "dept": "CEE",
+    "course": "461",
+    "isbn": "9781934154700"
+  },
+  {
+    "dept": "CEE",
+    "course": "472",
+    "isbn": "9781119256809"
+  },
+  {
+    "dept": "CEE",
+    "course": "485",
+    "isbn": "9780133485967"
+  },
+  {
+    "dept": "CEE",
+    "course": "485",
+    "isbn": "9780133485967"
+  },
+  {
+    "dept": "CEE",
+    "course": "696",
+    "isbn": "9780415413527"
+  },
+  {
+    "dept": "CEE",
+    "course": "696",
+    "isbn": "9781118259917"
+  },
+  {
+    "dept": "CHEM",
+    "course": "100",
+    "isbn": "9780135838419"
+  },
+  {
+    "dept": "CHEM",
+    "course": "110",
+    "isbn": "9781260160826"
+  },
+  {
+    "dept": "CHEM",
+    "course": "131",
+    "isbn": "9780357700037"
+  },
+  {
+    "dept": "CHEM",
+    "course": "131",
+    "isbn": "9780357006993"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161",
+    "isbn": "9780135645246"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161",
+    "isbn": "9780134112831"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161",
+    "isbn": "9780135645246"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "161L",
+    "isbn": "9781533915832"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780135649046"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162",
+    "isbn": "9780134066288"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617408021"
+  },
+  {
+    "dept": "CHEM",
+    "course": "162L",
+    "isbn": "9781617406898"
+  },
+  {
+    "dept": "CHEM",
+    "course": "171",
+    "isbn": "9780134566030"
+  },
+  {
+    "dept": "CHEM",
+    "course": "171",
+    "isbn": "9780133387803"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272",
+    "isbn": "9785138210002"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272",
+    "isbn": "9781119340577"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272",
+    "isbn": "9781119340515"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272",
+    "isbn": "9785138210002"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272",
+    "isbn": "9781119340577"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272",
+    "isbn": "9781119340515"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "272L",
+    "isbn": "9781617405594"
+  },
+  {
+    "dept": "CHEM",
+    "course": "273",
+    "isbn": "9781119340577"
+  },
+  {
+    "dept": "CHEM",
+    "course": "273",
+    "isbn": "9781119340515"
+  },
+  {
+    "dept": "CHEM",
+    "course": "273L",
+    "isbn": "9781617408274"
+  },
+  {
+    "dept": "CHEM",
+    "course": "273L",
+    "isbn": "9781617408274"
+  },
+  {
+    "dept": "CHEM",
+    "course": "273L",
+    "isbn": "9781617408274"
+  },
+  {
+    "dept": "CHEM",
+    "course": "273L",
+    "isbn": "9781617408274"
+  },
+  {
+    "dept": "CHEM",
+    "course": "351",
+    "isbn": "9780935702996"
+  },
+  {
+    "dept": "CHEM",
+    "course": "425",
+    "isbn": "9780321811059"
+  },
+  {
+    "dept": "CHEM",
+    "course": "425L",
+    "isbn": "9783527324729"
+  },
+  {
+    "dept": "CHEM",
+    "course": "425L",
+    "isbn": "9783527324729"
+  },
+  {
+    "dept": "CHEM",
+    "course": "425L",
+    "isbn": "9783527324729"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911370"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911363"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911356"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911349"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911318"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9780887276972"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911370"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911363"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911356"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911349"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911318"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9780887276972"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911370"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911363"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911356"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911349"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911318"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9780887276972"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911370"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911363"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911356"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911349"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9781622911318"
+  },
+  {
+    "dept": "CHN",
+    "course": "101",
+    "isbn": "9780887276972"
+  },
+  {
+    "dept": "CHN",
+    "course": "101A",
+    "isbn": "9781622911370"
+  },
+  {
+    "dept": "CHN",
+    "course": "101A",
+    "isbn": "9781622911363"
+  },
+  {
+    "dept": "CHN",
+    "course": "101A",
+    "isbn": "9781622911356"
+  },
+  {
+    "dept": "CHN",
+    "course": "101A",
+    "isbn": "9781622911349"
+  },
+  {
+    "dept": "CHN",
+    "course": "101A",
+    "isbn": "9781622911318"
+  },
+  {
+    "dept": "CHN",
+    "course": "101A",
+    "isbn": "9780887276972"
+  },
+  {
+    "dept": "CHN",
+    "course": "201",
+    "isbn": "9781622911561"
+  },
+  {
+    "dept": "CHN",
+    "course": "201",
+    "isbn": "9781622911578"
+  },
+  {
+    "dept": "CHN",
+    "course": "201",
+    "isbn": "9781622911585"
+  },
+  {
+    "dept": "CHN",
+    "course": "201",
+    "isbn": "9781622911561"
+  },
+  {
+    "dept": "CHN",
+    "course": "201",
+    "isbn": "9781622911578"
+  },
+  {
+    "dept": "CHN",
+    "course": "201",
+    "isbn": "9781622911585"
+  },
+  {
+    "dept": "CHN",
+    "course": "301",
+    "isbn": "9780887274343"
+  },
+  {
+    "dept": "CHN",
+    "course": "301",
+    "isbn": "9780415636360"
+  },
+  {
+    "dept": "CHN",
+    "course": "455",
+    "isbn": "9781405175838"
+  },
+  {
+    "dept": "CHN",
+    "course": "461",
+    "isbn": "9789004325135"
+  },
+  {
+    "dept": "CLAS",
+    "course": "121",
+    "isbn": "9780520248427"
+  },
+  {
+    "dept": "CLAS",
+    "course": "121",
+    "isbn": "9780520248434"
+  },
+  {
+    "dept": "CLAS",
+    "course": "121",
+    "isbn": "9789774166877"
+  },
+  {
+    "dept": "CLAS",
+    "course": "121",
+    "isbn": "9781452144382"
+  },
+  {
+    "dept": "CLAS",
+    "course": "121",
+    "isbn": "9780195170245"
+  },
+  {
+    "dept": "CLAS",
+    "course": "121",
+    "isbn": "9780061252778"
+  },
+  {
+    "dept": "CLAS",
+    "course": "122",
+    "isbn": "9780226308807"
+  },
+  {
+    "dept": "CLAS",
+    "course": "122",
+    "isbn": "9780226308982"
+  },
+  {
+    "dept": "CLAS",
+    "course": "122",
+    "isbn": "9780253033598"
+  },
+  {
+    "dept": "CLAS",
+    "course": "122",
+    "isbn": "9780140268867"
+  },
+  {
+    "dept": "CLAS",
+    "course": "122",
+    "isbn": "9780140443332"
+  },
+  {
+    "dept": "CLAS",
+    "course": "122",
+    "isbn": "9780140512359"
+  },
+  {
+    "dept": "CLAS",
+    "course": "122",
+    "isbn": "9780801891342"
+  },
+  {
+    "dept": "CLAS",
+    "course": "122",
+    "isbn": "9780023153105"
+  },
+  {
+    "dept": "CLAS",
+    "course": "301",
+    "isbn": "9780310533498"
+  },
+  {
+    "dept": "CLAS",
+    "course": "301",
+    "isbn": "9780310533559"
+  },
+  {
+    "dept": "CLAS",
+    "course": "305",
+    "isbn": "9780900416354"
+  },
+  {
+    "dept": "CLAS",
+    "course": "305",
+    "isbn": "9780061252778"
+  },
+  {
+    "dept": "CLAS",
+    "course": "329",
+    "isbn": "9781502892577"
+  },
+  {
+    "dept": "CLAS",
+    "course": "329",
+    "isbn": "9781624664977"
+  },
+  {
+    "dept": "CLAS",
+    "course": "329",
+    "isbn": "9780062046284"
+  },
+  {
+    "dept": "CLAS",
+    "course": "329",
+    "isbn": "9780393326420"
+  },
+  {
+    "dept": "CLAS",
+    "course": "329",
+    "isbn": "9780393356250"
+  },
+  {
+    "dept": "CLAS",
+    "course": "329",
+    "isbn": "9780889227002"
+  },
+  {
+    "dept": "CLAS",
+    "course": "329",
+    "isbn": "9780140440850"
+  },
+  {
+    "dept": "COM",
+    "course": "201",
+    "isbn": "9780190646653"
+  },
+  {
+    "dept": "COM",
+    "course": "201",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COM",
+    "course": "310",
+    "isbn": "9780195321050"
+  },
+  {
+    "dept": "COM",
+    "course": "320",
+    "isbn": "9781433131233"
+  },
+  {
+    "dept": "COM",
+    "course": "320",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COM",
+    "course": "331",
+    "isbn": "9781138240391"
+  },
+  {
+    "dept": "COM",
+    "course": "337",
+    "isbn": "9780415740036"
+  },
+  {
+    "dept": "COM",
+    "course": "340",
+    "isbn": "9780078036774"
+  },
+  {
+    "dept": "COM",
+    "course": "401",
+    "isbn": "9781544332680"
+  },
+  {
+    "dept": "COM",
+    "course": "421",
+    "isbn": "9781506358031"
+  },
+  {
+    "dept": "COM",
+    "course": "422",
+    "isbn": "9781133712916"
+  },
+  {
+    "dept": "COM",
+    "course": "432",
+    "isbn": "9780199328437"
+  },
+  {
+    "dept": "COM",
+    "course": "433",
+    "isbn": "9780399529863"
+  },
+  {
+    "dept": "COM",
+    "course": "460",
+    "isbn": "9781538112588"
+  },
+  {
+    "dept": "COM",
+    "course": "475",
+    "isbn": "9780205608119"
+  },
+  {
+    "dept": "COM",
+    "course": "611",
+    "isbn": "9781412918138"
+  },
+  {
+    "dept": "COM",
+    "course": "633",
+    "isbn": "9781479837243"
+  },
+  {
+    "dept": "COM",
+    "course": "633",
+    "isbn": "9781250215789"
+  },
+  {
+    "dept": "COM",
+    "course": "644",
+    "isbn": "9781138682962"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "151",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "251A",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "301",
+    "isbn": "9780073534305"
+  },
+  {
+    "dept": "COMG",
+    "course": "364",
+    "isbn": "9780205609994"
+  },
+  {
+    "dept": "COMG",
+    "course": "364",
+    "isbn": "9781138630611"
+  },
+  {
+    "dept": "COMG",
+    "course": "364",
+    "isbn": "9780205609994"
+  },
+  {
+    "dept": "COMG",
+    "course": "364",
+    "isbn": "9781138630611"
+  },
+  {
+    "dept": "COMG",
+    "course": "380",
+    "isbn": "9780205945238"
+  },
+  {
+    "dept": "COMG",
+    "course": "381",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "381",
+    "isbn": "9780205006083"
+  },
+  {
+    "dept": "COMG",
+    "course": "385",
+    "isbn": "9781285444628"
+  },
+  {
+    "dept": "COMG",
+    "course": "385",
+    "isbn": "9780761923510"
+  },
+  {
+    "dept": "COMG",
+    "course": "455",
+    "isbn": "9781577666493"
+  },
+  {
+    "dept": "COMG",
+    "course": "455",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "COMG",
+    "course": "602",
+    "isbn": "9780134507101"
+  },
+  {
+    "dept": "COMG",
+    "course": "685",
+    "isbn": "9780761923510"
+  },
+  {
+    "dept": "CUL",
+    "course": "610",
+    "isbn": "9780143105824"
+  },
+  {
+    "dept": "CUL",
+    "course": "610",
+    "isbn": "9780140445688"
+  },
+  {
+    "dept": "CUL",
+    "course": "610",
+    "isbn": "9780393304510"
+  },
+  {
+    "dept": "CUL",
+    "course": "610",
+    "isbn": "9780679752554"
+  },
+  {
+    "dept": "CUL",
+    "course": "610",
+    "isbn": "9780674006713"
+  },
+  {
+    "dept": "DH",
+    "course": "231",
+    "isbn": "9781496332080"
+  },
+  {
+    "dept": "DH",
+    "course": "231",
+    "isbn": "9780323396349"
+  },
+  {
+    "dept": "DH",
+    "course": "231",
+    "isbn": "9781608311460"
+  },
+  {
+    "dept": "DH",
+    "course": "231",
+    "isbn": "9780323263238"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9781941807729"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9781451195248"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9781451193114"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9780323477192"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9780975251928"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9781975117504"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9781556644221"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9780323171229"
+  },
+  {
+    "dept": "DH",
+    "course": "238",
+    "isbn": "9781496335005"
+  },
+  {
+    "dept": "DH",
+    "course": "250",
+    "isbn": "9781496383426"
+  },
+  {
+    "dept": "DH",
+    "course": "367",
+    "isbn": "9780803625778"
+  },
+  {
+    "dept": "DH",
+    "course": "369",
+    "isbn": "9781496360083"
+  },
+  {
+    "dept": "DH",
+    "course": "390",
+    "isbn": "9780133077728"
+  },
+  {
+    "dept": "DH",
+    "course": "390",
+    "isbn": "9781496384027"
+  },
+  {
+    "dept": "DH",
+    "course": "473",
+    "isbn": "9780134255460"
+  },
+  {
+    "dept": "DH",
+    "course": "475",
+    "isbn": "9780132913089"
+  },
+  {
+    "dept": "DH",
+    "course": "475",
+    "isbn": "9781416062554"
+  },
+  {
+    "dept": "DIS",
+    "course": "383",
+    "isbn": "9781942001577"
+  },
+  {
+    "dept": "DIS",
+    "course": "383",
+    "isbn": "9781107622791"
+  },
+  {
+    "dept": "DIS",
+    "course": "383",
+    "isbn": "9781931145060"
+  },
+  {
+    "dept": "DIS",
+    "course": "681",
+    "isbn": "9781598571639"
+  },
+  {
+    "dept": "DIS",
+    "course": "681",
+    "isbn": "9780199739790"
+  },
+  {
+    "dept": "DIS",
+    "course": "683",
+    "isbn": "9780814751343"
+  },
+  {
+    "dept": "DIS",
+    "course": "683",
+    "isbn": "9781138930230"
+  },
+  {
+    "dept": "DNCE",
+    "course": "651",
+    "isbn": "9780226239736"
+  },
+  {
+    "dept": "DNCE",
+    "course": "651",
+    "isbn": "9781603292627"
+  },
+  {
+    "dept": "DNCE",
+    "course": "651",
+    "isbn": "9780190698072"
+  },
+  {
+    "dept": "EALL",
+    "course": "271",
+    "isbn": "9780802150585"
+  },
+  {
+    "dept": "EALL",
+    "course": "271",
+    "isbn": "9780679729532"
+  },
+  {
+    "dept": "EALL",
+    "course": "272",
+    "isbn": "9780860081913"
+  },
+  {
+    "dept": "EALL",
+    "course": "272",
+    "isbn": "9780394722184"
+  },
+  {
+    "dept": "EALL",
+    "course": "272",
+    "isbn": "9780140455625"
+  },
+  {
+    "dept": "EALL",
+    "course": "272",
+    "isbn": "9780860081913"
+  },
+  {
+    "dept": "EALL",
+    "course": "272",
+    "isbn": "9780394722184"
+  },
+  {
+    "dept": "EALL",
+    "course": "272",
+    "isbn": "9780140455625"
+  },
+  {
+    "dept": "EALL",
+    "course": "384",
+    "isbn": "9781939161871"
+  },
+  {
+    "dept": "EALL",
+    "course": "384",
+    "isbn": "9780824834098"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781464143878"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781319108625"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781464143878"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781319108625"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781464143878"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781319108625"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781464143878"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781319108625"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781464143878"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781319108625"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781464143878"
+  },
+  {
+    "dept": "ECON",
+    "course": "130",
+    "isbn": "9781319108625"
+  },
+  {
+    "dept": "ECON",
+    "course": "130A",
+    "isbn": "9781337802178"
+  },
+  {
+    "dept": "ECON",
+    "course": "130A",
+    "isbn": "9781337096553"
+  },
+  {
+    "dept": "ECON",
+    "course": "131",
+    "isbn": "9781319108519"
+  },
+  {
+    "dept": "ECON",
+    "course": "131",
+    "isbn": "9780135637210"
+  },
+  {
+    "dept": "ECON",
+    "course": "131",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ECON",
+    "course": "131",
+    "isbn": "9781305971509"
+  },
+  {
+    "dept": "ECON",
+    "course": "131",
+    "isbn": "9781337096584"
+  },
+  {
+    "dept": "ECON",
+    "course": "300",
+    "isbn": "9781259290633"
+  },
+  {
+    "dept": "ECON",
+    "course": "300",
+    "isbn": "9781319106058"
+  },
+  {
+    "dept": "ECON",
+    "course": "300",
+    "isbn": "9781319106058"
+  },
+  {
+    "dept": "ECON",
+    "course": "301",
+    "isbn": "9780393689884"
+  },
+  {
+    "dept": "ECON",
+    "course": "301",
+    "isbn": "9780134683430"
+  },
+  {
+    "dept": "ECON",
+    "course": "301",
+    "isbn": "9780135692820"
+  },
+  {
+    "dept": "ECON",
+    "course": "301",
+    "isbn": "9780135692820"
+  },
+  {
+    "dept": "ECON",
+    "course": "321",
+    "isbn": "9781337927154"
+  },
+  {
+    "dept": "ECON",
+    "course": "321",
+    "isbn": "9781337683685"
+  },
+  {
+    "dept": "ECON",
+    "course": "336",
+    "isbn": "9780415676786"
+  },
+  {
+    "dept": "ECON",
+    "course": "336",
+    "isbn": "9781610915892"
+  },
+  {
+    "dept": "ECON",
+    "course": "356",
+    "isbn": "9780393919684"
+  },
+  {
+    "dept": "ECON",
+    "course": "356",
+    "isbn": "9780393124446"
+  },
+  {
+    "dept": "ECON",
+    "course": "415",
+    "isbn": "9781292002972"
+  },
+  {
+    "dept": "ECON",
+    "course": "425",
+    "isbn": "9781337742771"
+  },
+  {
+    "dept": "ECON",
+    "course": "427",
+    "isbn": "9780300244663"
+  },
+  {
+    "dept": "ECON",
+    "course": "427",
+    "isbn": "9780987507112"
+  },
+  {
+    "dept": "ECON",
+    "course": "427",
+    "isbn": "9781461471370"
+  },
+  {
+    "dept": "ECON",
+    "course": "442",
+    "isbn": "9780321464484"
+  },
+  {
+    "dept": "ECON",
+    "course": "442",
+    "isbn": "9781610390934"
+  },
+  {
+    "dept": "ECON",
+    "course": "460",
+    "isbn": "9780136463016"
+  },
+  {
+    "dept": "ECON",
+    "course": "461",
+    "isbn": "9780134725918"
+  },
+  {
+    "dept": "ECON",
+    "course": "496",
+    "isbn": "9780262514958"
+  },
+  {
+    "dept": "ECON",
+    "course": "496",
+    "isbn": "9780691177892"
+  },
+  {
+    "dept": "ECON",
+    "course": "496",
+    "isbn": "9781683304302"
+  },
+  {
+    "dept": "ECON",
+    "course": "607",
+    "isbn": "9780262035811"
+  },
+  {
+    "dept": "ECON",
+    "course": "607",
+    "isbn": "9780262038669"
+  },
+  {
+    "dept": "ECON",
+    "course": "607",
+    "isbn": "9780674750968"
+  },
+  {
+    "dept": "ECON",
+    "course": "627",
+    "isbn": "9781577660965"
+  },
+  {
+    "dept": "ECON",
+    "course": "627",
+    "isbn": "9780521585293"
+  },
+  {
+    "dept": "ECON",
+    "course": "627",
+    "isbn": "9780393957334"
+  },
+  {
+    "dept": "EDCS",
+    "course": "432",
+    "isbn": "9780807756232"
+  },
+  {
+    "dept": "EDCS",
+    "course": "432",
+    "isbn": "9781101939529"
+  },
+  {
+    "dept": "EDCS",
+    "course": "432",
+    "isbn": "9780143127550"
+  },
+  {
+    "dept": "EDCS",
+    "course": "432",
+    "isbn": "9781627470636"
+  },
+  {
+    "dept": "EDCS",
+    "course": "432",
+    "isbn": "9780375714573"
+  },
+  {
+    "dept": "EDCS",
+    "course": "432",
+    "isbn": "9781524763282"
+  },
+  {
+    "dept": "EDCS",
+    "course": "432",
+    "isbn": "9781250129987"
+  },
+  {
+    "dept": "EDEA",
+    "course": "602",
+    "isbn": "9780134519364"
+  },
+  {
+    "dept": "EDEA",
+    "course": "650",
+    "isbn": "9781138668997"
+  },
+  {
+    "dept": "EDEA",
+    "course": "650",
+    "isbn": "9781433805615"
+  },
+  {
+    "dept": "EDEA",
+    "course": "650",
+    "isbn": "9781119281825"
+  },
+  {
+    "dept": "EDEA",
+    "course": "657",
+    "isbn": "9780415803267"
+  },
+  {
+    "dept": "EDEA",
+    "course": "695",
+    "isbn": "9781433805615"
+  },
+  {
+    "dept": "EDEA",
+    "course": "704",
+    "isbn": "9781848139503"
+  },
+  {
+    "dept": "EDEA",
+    "course": "704",
+    "isbn": "9781506330204"
+  },
+  {
+    "dept": "EDEA",
+    "course": "780N",
+    "isbn": "9781517903862"
+  },
+  {
+    "dept": "EDEA",
+    "course": "780N",
+    "isbn": "9780813588698"
+  },
+  {
+    "dept": "EDEA",
+    "course": "780N",
+    "isbn": "9780816680481"
+  },
+  {
+    "dept": "EDEF",
+    "course": "310",
+    "isbn": "9780807749814"
+  },
+  {
+    "dept": "EDEF",
+    "course": "352",
+    "isbn": "9780679781127"
+  },
+  {
+    "dept": "EDEF",
+    "course": "360",
+    "isbn": "9780743247542"
+  },
+  {
+    "dept": "EDEF",
+    "course": "360",
+    "isbn": "9781555974268"
+  },
+  {
+    "dept": "EDEF",
+    "course": "360",
+    "isbn": "9780823271108"
+  },
+  {
+    "dept": "EDEF",
+    "course": "360",
+    "isbn": "9780525436140"
+  },
+  {
+    "dept": "EDEF",
+    "course": "360",
+    "isbn": "9780743247542"
+  },
+  {
+    "dept": "EDEF",
+    "course": "360",
+    "isbn": "9781555974268"
+  },
+  {
+    "dept": "EDEF",
+    "course": "360",
+    "isbn": "9780823271108"
+  },
+  {
+    "dept": "EDEF",
+    "course": "360",
+    "isbn": "9780525436140"
+  },
+  {
+    "dept": "EDEF",
+    "course": "651",
+    "isbn": "9780226983301"
+  },
+  {
+    "dept": "EDEF",
+    "course": "651",
+    "isbn": "9780700608386"
+  },
+  {
+    "dept": "EDEF",
+    "course": "651",
+    "isbn": "9780674637825"
+  },
+  {
+    "dept": "EDEF",
+    "course": "651",
+    "isbn": "9780300079432"
+  },
+  {
+    "dept": "EDEF",
+    "course": "651",
+    "isbn": "9780674416710"
+  },
+  {
+    "dept": "EDEF",
+    "course": "651",
+    "isbn": "9780809001545"
+  },
+  {
+    "dept": "EDEF",
+    "course": "651",
+    "isbn": "9781403969385"
+  },
+  {
+    "dept": "EDEF",
+    "course": "683",
+    "isbn": "9780134679020"
+  },
+  {
+    "dept": "EDEP",
+    "course": "311",
+    "isbn": "9780134774329"
+  },
+  {
+    "dept": "EDEP",
+    "course": "311",
+    "isbn": "9780134774329"
+  },
+  {
+    "dept": "EDEP",
+    "course": "429",
+    "isbn": "9781506333830"
+  },
+  {
+    "dept": "EDEP",
+    "course": "601",
+    "isbn": "9781544337494"
+  },
+  {
+    "dept": "EDEP",
+    "course": "601",
+    "isbn": "9781544337494"
+  },
+  {
+    "dept": "EDEP",
+    "course": "606",
+    "isbn": "9781506329765"
+  },
+  {
+    "dept": "EDEP",
+    "course": "611",
+    "isbn": "9780134985275"
+  },
+  {
+    "dept": "EDEP",
+    "course": "616",
+    "isbn": "9781506339863"
+  },
+  {
+    "dept": "EDEP",
+    "course": "631",
+    "isbn": "9780134614908"
+  },
+  {
+    "dept": "EDEP",
+    "course": "631",
+    "isbn": "9780674729018"
+  },
+  {
+    "dept": "EDEP",
+    "course": "657",
+    "isbn": "9781412967754"
+  },
+  {
+    "dept": "EDEP",
+    "course": "657",
+    "isbn": "9780205579358"
+  },
+  {
+    "dept": "EE",
+    "course": "211",
+    "isbn": "9781259657054"
+  },
+  {
+    "dept": "EE",
+    "course": "211",
+    "isbn": "9781259657054"
+  },
+  {
+    "dept": "EE",
+    "course": "211",
+    "isbn": "9781259657054"
+  },
+  {
+    "dept": "EE",
+    "course": "211",
+    "isbn": "9781259657054"
+  },
+  {
+    "dept": "EE",
+    "course": "213",
+    "isbn": "9781259657054"
+  },
+  {
+    "dept": "EE",
+    "course": "213",
+    "isbn": "9781259657054"
+  },
+  {
+    "dept": "EE",
+    "course": "260",
+    "isbn": "9780134776453"
+  },
+  {
+    "dept": "EE",
+    "course": "260",
+    "isbn": "9780131456587"
+  },
+  {
+    "dept": "EE",
+    "course": "260",
+    "isbn": "9780134776453"
+  },
+  {
+    "dept": "EE",
+    "course": "260",
+    "isbn": "9780131456587"
+  },
+  {
+    "dept": "EE",
+    "course": "260",
+    "isbn": "9780134776453"
+  },
+  {
+    "dept": "EE",
+    "course": "260",
+    "isbn": "9780131456587"
+  },
+  {
+    "dept": "EE",
+    "course": "315",
+    "isbn": "9780138147570"
+  },
+  {
+    "dept": "EE",
+    "course": "324",
+    "isbn": "9780073529585"
+  },
+  {
+    "dept": "EE",
+    "course": "326",
+    "isbn": "9780199339136"
+  },
+  {
+    "dept": "EE",
+    "course": "342",
+    "isbn": "9781886529236"
+  },
+  {
+    "dept": "EE",
+    "course": "343",
+    "isbn": "9780190686840"
+  },
+  {
+    "dept": "EE",
+    "course": "343",
+    "isbn": "9780195331455"
+  },
+  {
+    "dept": "EE",
+    "course": "361",
+    "isbn": "9780128017333"
+  },
+  {
+    "dept": "EE",
+    "course": "361",
+    "isbn": "9781523364022"
+  },
+  {
+    "dept": "EE",
+    "course": "362",
+    "isbn": "9780357700037"
+  },
+  {
+    "dept": "EE",
+    "course": "362",
+    "isbn": "9780495391326"
+  },
+  {
+    "dept": "EE",
+    "course": "371",
+    "isbn": "9781577667834"
+  },
+  {
+    "dept": "EE",
+    "course": "415",
+    "isbn": "9781307493290"
+  },
+  {
+    "dept": "EE",
+    "course": "416",
+    "isbn": "9780133356724"
+  },
+  {
+    "dept": "EE",
+    "course": "435",
+    "isbn": "9781305886957"
+  },
+  {
+    "dept": "EE",
+    "course": "468",
+    "isbn": "9780985673529"
+  },
+  {
+    "dept": "EE",
+    "course": "480",
+    "isbn": "9780123749796"
+  },
+  {
+    "dept": "EE",
+    "course": "491D",
+    "isbn": "9780692196380"
+  },
+  {
+    "dept": "EE",
+    "course": "491F",
+    "isbn": "9780134659862"
+  },
+  {
+    "dept": "EE",
+    "course": "495",
+    "isbn": "9780072831153"
+  },
+  {
+    "dept": "EE",
+    "course": "602",
+    "isbn": "9780262033848"
+  },
+  {
+    "dept": "EE",
+    "course": "618",
+    "isbn": "9781886529434"
+  },
+  {
+    "dept": "EE",
+    "course": "618",
+    "isbn": "9781886529441"
+  },
+  {
+    "dept": "EE",
+    "course": "624",
+    "isbn": "9780470083017"
+  },
+  {
+    "dept": "EE",
+    "course": "640",
+    "isbn": "9780198572220"
+  },
+  {
+    "dept": "EE",
+    "course": "640",
+    "isbn": "9781107100121"
+  },
+  {
+    "dept": "EE",
+    "course": "650",
+    "isbn": "9780199959570"
+  },
+  {
+    "dept": "EE",
+    "course": "681",
+    "isbn": "9780471676003"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781680366778"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780816646272"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780143105039"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780312440824"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781319057442"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780143105039"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780393631685"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781680366778"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781885030276"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781680366778"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780816646272"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780393631685"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781680366778"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780062282712"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781554813803"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781319057442"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781680366778"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780816646272"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780816646272"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781680366778"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781680366778"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780824839758"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9781680366778"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780393682991"
+  },
+  {
+    "dept": "ENG",
+    "course": "100",
+    "isbn": "9780393682991"
+  },
+  {
+    "dept": "ENG",
+    "course": "100A",
+    "isbn": "9780134678733"
+  },
+  {
+    "dept": "ENG",
+    "course": "100A",
+    "isbn": "9780385744034"
+  },
+  {
+    "dept": "ENG",
+    "course": "100A",
+    "isbn": "9781603292627"
+  },
+  {
+    "dept": "ENG",
+    "course": "200",
+    "isbn": "9780226239736"
+  },
+  {
+    "dept": "ENG",
+    "course": "270",
+    "isbn": "9780824807283"
+  },
+  {
+    "dept": "ENG",
+    "course": "270",
+    "isbn": "9780393352566"
+  },
+  {
+    "dept": "ENG",
+    "course": "270",
+    "isbn": "9781554810437"
+  },
+  {
+    "dept": "ENG",
+    "course": "271",
+    "isbn": "9780674072220"
+  },
+  {
+    "dept": "ENG",
+    "course": "271",
+    "isbn": "9780393932430"
+  },
+  {
+    "dept": "ENG",
+    "course": "271",
+    "isbn": "9781559363129"
+  },
+  {
+    "dept": "ENG",
+    "course": "271",
+    "isbn": "9781559361675"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9781551118987"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9781553793762"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780064407724"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780435131081"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780824818227"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780824817060"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9781543195071"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780345434944"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780770436254"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780816646272"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780062244987"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9781885030276"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9781519641632"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780910043830"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780873362061"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9780816534029"
+  },
+  {
+    "dept": "ENG",
+    "course": "272",
+    "isbn": "9781869692995"
+  },
+  {
+    "dept": "ENG",
+    "course": "273",
+    "isbn": "9781583335505"
+  },
+  {
+    "dept": "ENG",
+    "course": "273",
+    "isbn": "9780295745756"
+  },
+  {
+    "dept": "ENG",
+    "course": "273",
+    "isbn": "9780986005077"
+  },
+  {
+    "dept": "ENG",
+    "course": "273",
+    "isbn": "9780819569554"
+  },
+  {
+    "dept": "ENG",
+    "course": "273",
+    "isbn": "9781517903862"
+  },
+  {
+    "dept": "ENG",
+    "course": "273",
+    "isbn": "9780822370840"
+  },
+  {
+    "dept": "ENG",
+    "course": "273",
+    "isbn": "9780816646272"
+  },
+  {
+    "dept": "ENG",
+    "course": "303",
+    "isbn": "9780765641748"
+  },
+  {
+    "dept": "ENG",
+    "course": "306",
+    "isbn": "9780205175482"
+  },
+  {
+    "dept": "ENG",
+    "course": "306",
+    "isbn": "9780205175482"
+  },
+  {
+    "dept": "ENG",
+    "course": "306",
+    "isbn": "9781603292627"
+  },
+  {
+    "dept": "ENG",
+    "course": "306",
+    "isbn": "9781451697391"
+  },
+  {
+    "dept": "ENG",
+    "course": "306",
+    "isbn": "9780205175482"
+  },
+  {
+    "dept": "ENG",
+    "course": "307",
+    "isbn": "9780143114949"
+  },
+  {
+    "dept": "ENG",
+    "course": "307",
+    "isbn": "9780735222847"
+  },
+  {
+    "dept": "ENG",
+    "course": "311",
+    "isbn": "9780618871711"
+  },
+  {
+    "dept": "ENG",
+    "course": "311",
+    "isbn": "9780486284996"
+  },
+  {
+    "dept": "ENG",
+    "course": "311",
+    "isbn": "9780374500016"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9781632430526"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9781556593833"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9780544582897"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9780195395655"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9781416531746"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9780321277619"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9780385423397"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9780872864368"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9781946684219"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9781938584091"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9781935247104"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9780544582897"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9780195395655"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9781416531746"
+  },
+  {
+    "dept": "ENG",
+    "course": "313",
+    "isbn": "9780321277619"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9781526121790"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780521715157"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780618871711"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780393352566"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780998743899"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780062851345"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780967418315"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780967418322"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780307276766"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780062132086"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780966822052"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9781571313560"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9781885030511"
+  },
+  {
+    "dept": "ENG",
+    "course": "320",
+    "isbn": "9780966822052"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9780679729525"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9780140441147"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9781585169863"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9780226470498"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9780451531490"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9780253200013"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9780061244186"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9780393930252"
+  },
+  {
+    "dept": "ENG",
+    "course": "321",
+    "isbn": "9780140444254"
+  },
+  {
+    "dept": "ENG",
+    "course": "330",
+    "isbn": "9780199686643"
+  },
+  {
+    "dept": "ENG",
+    "course": "330",
+    "isbn": "9780140422344"
+  },
+  {
+    "dept": "ENG",
+    "course": "330",
+    "isbn": "9781551113999"
+  },
+  {
+    "dept": "ENG",
+    "course": "330",
+    "isbn": "9780679724698"
+  },
+  {
+    "dept": "ENG",
+    "course": "330",
+    "isbn": "9780870135439"
+  },
+  {
+    "dept": "ENG",
+    "course": "330",
+    "isbn": "9780921149927"
+  },
+  {
+    "dept": "ENG",
+    "course": "333",
+    "isbn": "9780141441023"
+  },
+  {
+    "dept": "ENG",
+    "course": "333",
+    "isbn": "9781551111766"
+  },
+  {
+    "dept": "ENG",
+    "course": "333",
+    "isbn": "9780199541898"
+  },
+  {
+    "dept": "ENG",
+    "course": "337",
+    "isbn": "9781285080000"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780345350688"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780812993547"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780679406419"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780679785897"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780385470148"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780618871711"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780935180855"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780910043083"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9781844674183"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780679745587"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780060936228"
+  },
+  {
+    "dept": "ENG",
+    "course": "364",
+    "isbn": "9780385340885"
+  },
+  {
+    "dept": "ENG",
+    "course": "370",
+    "isbn": "9781534308282"
+  },
+  {
+    "dept": "ENG",
+    "course": "370",
+    "isbn": "9780770436254"
+  },
+  {
+    "dept": "ENG",
+    "course": "370",
+    "isbn": "9780914916130"
+  },
+  {
+    "dept": "ENG",
+    "course": "371",
+    "isbn": "9780824816858"
+  },
+  {
+    "dept": "ENG",
+    "course": "371",
+    "isbn": "9780692646960"
+  },
+  {
+    "dept": "ENG",
+    "course": "371",
+    "isbn": "9780824817060"
+  },
+  {
+    "dept": "ENG",
+    "course": "371",
+    "isbn": "9780824807283"
+  },
+  {
+    "dept": "ENG",
+    "course": "371",
+    "isbn": "9780914916130"
+  },
+  {
+    "dept": "ENG",
+    "course": "373",
+    "isbn": "9781400033416"
+  },
+  {
+    "dept": "ENG",
+    "course": "373",
+    "isbn": "9780812993547"
+  },
+  {
+    "dept": "ENG",
+    "course": "373",
+    "isbn": "9781555976903"
+  },
+  {
+    "dept": "ENG",
+    "course": "373",
+    "isbn": "9780486284996"
+  },
+  {
+    "dept": "ENG",
+    "course": "373",
+    "isbn": "9781580911863"
+  },
+  {
+    "dept": "ENG",
+    "course": "373",
+    "isbn": "9780061120060"
+  },
+  {
+    "dept": "ENG",
+    "course": "373",
+    "isbn": "9781250171085"
+  },
+  {
+    "dept": "ENG",
+    "course": "383",
+    "isbn": "9780199558292"
+  },
+  {
+    "dept": "ENG",
+    "course": "383",
+    "isbn": "9780199608522"
+  },
+  {
+    "dept": "ENG",
+    "course": "383",
+    "isbn": "9780064400558"
+  },
+  {
+    "dept": "ENG",
+    "course": "383",
+    "isbn": "9780199553976"
+  },
+  {
+    "dept": "ENG",
+    "course": "408",
+    "isbn": "9780520286726"
+  },
+  {
+    "dept": "ENG",
+    "course": "411",
+    "isbn": "9780979378805"
+  },
+  {
+    "dept": "ENG",
+    "course": "411",
+    "isbn": "9781556593833"
+  },
+  {
+    "dept": "ENG",
+    "course": "413",
+    "isbn": "9780544582897"
+  },
+  {
+    "dept": "ENG",
+    "course": "413",
+    "isbn": "9780060929480"
+  },
+  {
+    "dept": "ENG",
+    "course": "413",
+    "isbn": "9780226616698"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9780679735250"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9780307279446"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9781882295555"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9781558492981"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9780743244916"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9780465052714"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9780393329223"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9780143126829"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9781250117120"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9780871134714"
+  },
+  {
+    "dept": "ENG",
+    "course": "420",
+    "isbn": "9780618706419"
+  },
+  {
+    "dept": "ENG",
+    "course": "440",
+    "isbn": "9780393323375"
+  },
+  {
+    "dept": "ENG",
+    "course": "440",
+    "isbn": "9780393322439"
+  },
+  {
+    "dept": "ENG",
+    "course": "440",
+    "isbn": "9780486800295"
+  },
+  {
+    "dept": "ENG",
+    "course": "440",
+    "isbn": "9780393321982"
+  },
+  {
+    "dept": "ENG",
+    "course": "440",
+    "isbn": "9780393332148"
+  },
+  {
+    "dept": "ENG",
+    "course": "440",
+    "isbn": "9780802126924"
+  },
+  {
+    "dept": "ENG",
+    "course": "447",
+    "isbn": "9780521655439"
+  },
+  {
+    "dept": "ENG",
+    "course": "447",
+    "isbn": "9780415106474"
+  },
+  {
+    "dept": "ENG",
+    "course": "447",
+    "isbn": "9780872206786"
+  },
+  {
+    "dept": "ENG",
+    "course": "480",
+    "isbn": "9780864735935"
+  },
+  {
+    "dept": "ENG",
+    "course": "480",
+    "isbn": "9781949429015"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9780393331660"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9780743484862"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9780140433722"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9780199686643"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9780889713321"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9781472520524"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9781925240283"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9781936787357"
+  },
+  {
+    "dept": "ENG",
+    "course": "482",
+    "isbn": "9780921149927"
+  },
+  {
+    "dept": "ENG",
+    "course": "605",
+    "isbn": "9780874218206"
+  },
+  {
+    "dept": "ENG",
+    "course": "605",
+    "isbn": "9780814109779"
+  },
+  {
+    "dept": "ENG",
+    "course": "605",
+    "isbn": "9780415897457"
+  },
+  {
+    "dept": "ENG",
+    "course": "613D",
+    "isbn": "9780060512187"
+  },
+  {
+    "dept": "ENG",
+    "course": "613D",
+    "isbn": "9780367075880"
+  },
+  {
+    "dept": "ENG",
+    "course": "613D",
+    "isbn": "9780143037019"
+  },
+  {
+    "dept": "ENG",
+    "course": "625B",
+    "isbn": "9780816534029"
+  },
+  {
+    "dept": "ENG",
+    "course": "625B",
+    "isbn": "9781903436592"
+  },
+  {
+    "dept": "ENG",
+    "course": "625B",
+    "isbn": "9781118707852"
+  },
+  {
+    "dept": "ENG",
+    "course": "625B",
+    "isbn": "9780307276766"
+  },
+  {
+    "dept": "ENG",
+    "course": "625B",
+    "isbn": "9780966822052"
+  },
+  {
+    "dept": "ENG",
+    "course": "625B",
+    "isbn": "9781555977672"
+  },
+  {
+    "dept": "ENG",
+    "course": "625C",
+    "isbn": "9781570038549"
+  },
+  {
+    "dept": "ENG",
+    "course": "625C",
+    "isbn": "9780791453568"
+  },
+  {
+    "dept": "ENG",
+    "course": "625C",
+    "isbn": "9780140449747"
+  },
+  {
+    "dept": "ENG",
+    "course": "625C",
+    "isbn": "9780226398174"
+  },
+  {
+    "dept": "ENG",
+    "course": "625C",
+    "isbn": "9780299164744"
+  },
+  {
+    "dept": "ENG",
+    "course": "625C",
+    "isbn": "9780822965794"
+  },
+  {
+    "dept": "ENG",
+    "course": "625E",
+    "isbn": "9781849205634"
+  },
+  {
+    "dept": "ENG",
+    "course": "625E",
+    "isbn": "9781566477239"
+  },
+  {
+    "dept": "ENG",
+    "course": "716C",
+    "isbn": "9780872864368"
+  },
+  {
+    "dept": "ENG",
+    "course": "716C",
+    "isbn": "9781946684219"
+  },
+  {
+    "dept": "ENG",
+    "course": "716C",
+    "isbn": "9780520261297"
+  },
+  {
+    "dept": "ENG",
+    "course": "716C",
+    "isbn": "9781555974077"
+  },
+  {
+    "dept": "ENG",
+    "course": "716C",
+    "isbn": "9781937658885"
+  },
+  {
+    "dept": "ENG",
+    "course": "716C",
+    "isbn": "9780989186124"
+  },
+  {
+    "dept": "ENG",
+    "course": "716C",
+    "isbn": "9781938584091"
+  },
+  {
+    "dept": "ENG",
+    "course": "716C",
+    "isbn": "9780819574343"
+  },
+  {
+    "dept": "ENG",
+    "course": "760O",
+    "isbn": "9780141439723"
+  },
+  {
+    "dept": "ENG",
+    "course": "760O",
+    "isbn": "9780141439471"
+  },
+  {
+    "dept": "ENG",
+    "course": "760O",
+    "isbn": "9780199577033"
+  },
+  {
+    "dept": "ENG",
+    "course": "760O",
+    "isbn": "9780141439556"
+  },
+  {
+    "dept": "ENG",
+    "course": "764",
+    "isbn": "9780812993547"
+  },
+  {
+    "dept": "ENG",
+    "course": "764",
+    "isbn": "9781555976903"
+  },
+  {
+    "dept": "ENG",
+    "course": "764",
+    "isbn": "9780807049105"
+  },
+  {
+    "dept": "ENG",
+    "course": "764",
+    "isbn": "9781894037884"
+  },
+  {
+    "dept": "ENG",
+    "course": "764",
+    "isbn": "9780822222224"
+  },
+  {
+    "dept": "ENG",
+    "course": "764",
+    "isbn": "9781608465774"
+  },
+  {
+    "dept": "ENG",
+    "course": "764",
+    "isbn": "9781250171085"
+  },
+  {
+    "dept": "ENG",
+    "course": "764",
+    "isbn": "9780307387943"
+  },
+  {
+    "dept": "ENG",
+    "course": "773",
+    "isbn": "9781786994608"
+  },
+  {
+    "dept": "ENG",
+    "course": "773",
+    "isbn": "9780816537945"
+  },
+  {
+    "dept": "ENG",
+    "course": "773",
+    "isbn": "9780822363682"
+  },
+  {
+    "dept": "ENG",
+    "course": "773",
+    "isbn": "9780770436254"
+  },
+  {
+    "dept": "ENG",
+    "course": "773",
+    "isbn": "9780803232730"
+  },
+  {
+    "dept": "ENG",
+    "course": "773",
+    "isbn": "9780970329301"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101",
+    "isbn": "9781119629733"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101",
+    "isbn": "9781119629733"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101",
+    "isbn": "9781119629733"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101L",
+    "isbn": "9781307496857"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101L",
+    "isbn": "9781307496857"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101L",
+    "isbn": "9781307496857"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101L",
+    "isbn": "9781307496857"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101L",
+    "isbn": "9781307496857"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101L",
+    "isbn": "9781307496857"
+  },
+  {
+    "dept": "ERTH",
+    "course": "101L",
+    "isbn": "9780134985169"
+  },
+  {
+    "dept": "ERTH",
+    "course": "105",
+    "isbn": "9780357700037"
+  },
+  {
+    "dept": "ERTH",
+    "course": "106",
+    "isbn": "9780321741943"
+  },
+  {
+    "dept": "ERTH",
+    "course": "135",
+    "isbn": "9781319149581"
+  },
+  {
+    "dept": "ERTH",
+    "course": "301",
+    "isbn": "9780199827381"
+  },
+  {
+    "dept": "ERTH",
+    "course": "312",
+    "isbn": "9780133214314"
+  },
+  {
+    "dept": "ES",
+    "course": "301",
+    "isbn": "9780252080364"
+  },
+  {
+    "dept": "ES",
+    "course": "301",
+    "isbn": "9781592137565"
+  },
+  {
+    "dept": "ES",
+    "course": "330",
+    "isbn": "9780824811723"
+  },
+  {
+    "dept": "ES",
+    "course": "330",
+    "isbn": "9782110111111"
+  },
+  {
+    "dept": "ES",
+    "course": "330",
+    "isbn": "9780252084430"
+  },
+  {
+    "dept": "ES",
+    "course": "340",
+    "isbn": "9780870716737"
+  },
+  {
+    "dept": "ES",
+    "course": "340",
+    "isbn": "9780824830441"
+  },
+  {
+    "dept": "ES",
+    "course": "340",
+    "isbn": "9780824832124"
+  },
+  {
+    "dept": "ES",
+    "course": "340",
+    "isbn": "9780824832117"
+  },
+  {
+    "dept": "ES",
+    "course": "350",
+    "isbn": "9780822356950"
+  },
+  {
+    "dept": "ES",
+    "course": "350",
+    "isbn": "9780816680481"
+  },
+  {
+    "dept": "ES",
+    "course": "350",
+    "isbn": "9780824835293"
+  },
+  {
+    "dept": "ES",
+    "course": "360",
+    "isbn": "9780226430577"
+  },
+  {
+    "dept": "ES",
+    "course": "360",
+    "isbn": "9780801477393"
+  },
+  {
+    "dept": "ES",
+    "course": "373",
+    "isbn": "9780295993539"
+  },
+  {
+    "dept": "ES",
+    "course": "373",
+    "isbn": "9781885030511"
+  },
+  {
+    "dept": "ES",
+    "course": "418",
+    "isbn": "9780814736333"
+  },
+  {
+    "dept": "ES",
+    "course": "418",
+    "isbn": "9780195176018"
+  },
+  {
+    "dept": "ES",
+    "course": "418",
+    "isbn": "9780801489433"
+  },
+  {
+    "dept": "ES",
+    "course": "455B",
+    "isbn": "9781609803438"
+  },
+  {
+    "dept": "ES",
+    "course": "455B",
+    "isbn": "9781851685554"
+  }
+]

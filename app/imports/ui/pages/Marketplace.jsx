@@ -10,28 +10,35 @@ import Book from '../components/Book.jsx';
 
 /** Renders the Profile Collection as a set of Cards. */
 class Marketplace extends React.Component {
+  state = {
+    books: [],
+    books_ready: false,
+  };
 
   getBooks() {
-    const url = 'https://www.googleapis.com/books/v1/volumes';
-    const listings = Listings.find({}).fetch();
-    console.log(listings);
-    _.each(_.uniq(_.pluck(listings, 'ISBN')), (book) => {
-      HTTP.get(
-          url,
-          {
-            params: {
-              q: `isbn:${book}`,
-              // key: Meteor.settings.public.api_key,
+    if (!this.state.books_ready) {
+      const url = 'https://www.googleapis.com/books/v1/volumes';
+      const listings = Listings.find({}).fetch();
+      _.each(_.uniq(_.pluck(listings, 'ISBN')), (book) => {
+        HTTP.get(
+            url,
+            {
+              params: {
+                q: `isbn:${book}`,
+                // key: Meteor.settings.public.api_key,
+              },
             },
-          },
-          (error, result) => {
-            if (!error) {
-              this.props.books.push(result.data.items[0].volumeInfo);
-            }
-          },
-      );
-    });
-    console.log(this.props.books);
+            (error, result) => {
+              if (!error) {
+                this.state.books.push(result.data.items[0].volumeInfo);
+                if (this.state.books.length === listings.length) {
+                  this.setState({ books_ready: true });
+                }
+              }
+            },
+        );
+      });
+    }
   }
 
   /** Render the page once subscriptions have been received. */
@@ -44,7 +51,8 @@ class Marketplace extends React.Component {
     return (
         <Container>
           <Card.Group>
-            {_.map(this.props.books, (book) => <Book index={book.industryIdentifiers[0]} book={book}/>)}
+            { this.state.books_ready ?
+                _.map(this.state.books, (book, index) => <Book key={index} book={book}/>) : ''}
           </Card.Group>
         </Container>
     );
@@ -53,7 +61,6 @@ class Marketplace extends React.Component {
 
 Marketplace.propTypes = {
   ready: PropTypes.bool.isRequired,
-  books: PropTypes.array,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
@@ -62,6 +69,5 @@ export default withTracker(() => {
   const sub = Meteor.subscribe('Listings');
   return {
     ready: sub.ready(),
-    books: [],
   };
 })(Marketplace);

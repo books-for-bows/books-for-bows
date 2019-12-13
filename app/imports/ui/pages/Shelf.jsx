@@ -2,37 +2,69 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Table, Header, Loader, Grid, Image } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
+import { HTTP } from 'meteor/http';
 import PropTypes from 'prop-types';
 import { Listings } from '../../api/listings/Listings';
-import { Books } from '../../api/books/Books';
 
 import ListingItem from '../components/ListingItem';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class Shelf extends React.Component {
 
+  state = {
+    book_ready: false,
+    book: {},
+  };
+
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+    this.getBook();
+    return (this.props.ready && this.state.book_ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+  }
+
+  getBook() {
+    if (!this.state.book_ready) {
+      const url = 'https://www.googleapis.com/books/v1/volumes';
+      HTTP.get(
+          url,
+          {
+            params: {
+              q: `isbn:${this.props.book_isbn.toString()}`,
+              // key: Meteor.settings.public.api_key,
+            },
+          },
+          (error, result) => {
+            if (!error) {
+              if (result.data.items.length === 1) {
+                this.setState({ book: result.data.items[0].volumeInfo, book_ready: true });
+              } else {
+                this.setState({ book_ready: false });
+              }
+            }
+          },
+      );
+    }
   }
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    const book = Books.findOne({ _id: this.props.book_id });
     return (
         <Container>
           <Header as="h1" textAlign="center">Shelf</Header>
           <Grid columns={2} >
             <Grid.Column width={4}>
-              <Image size="medium" centered src={book.image}/>
-              <Header as="h2">{book.title}</Header>
+              { this.state.book.imageLinks.thumbnail ? ([
+                <Image key="thumbnail" size="medium" centered src={this.state.book.imageLinks.thumbnail}/>,
+              ]) : 'No Cover Found'}
+              <Header as="h2">{ this.state.book.subtitle ?
+                  `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}</Header>
               <Grid>
                 <Grid.Column>
-                  Author: {book.authors} <br/>
-                  ISBN: {book.isbn} <br/>
-                  Edition: {book.edition} <br/>
-                  Publisher: {book.publisher} <br/>
-                  Publish Date: {book.publish_date}
+                  Author: {this.state.book.authors ?
+                    this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>
+                  ISBN: {this.state.book.industryIdentifiers[0].identifier} <br/>
+                  Publisher: {this.state.book.publisher} <br/>
+                  Publish Date: {this.state.book.publishedDate}
                 </Grid.Column>
               </Grid>
             </Grid.Column>
@@ -47,7 +79,7 @@ class Shelf extends React.Component {
                   </Table.Row>
                 </Table.Header>
                 <Table.Body>
-                  {Listings.find().fetch().map((listing) => <ListingItem key={listing.isbn} listing={listing} />)}
+                  {Listings.find().fetch().map((listing, index) => <ListingItem key={index} listing={listing} />)}
                 </Table.Body>
               </Table>
             </Grid.Column>
@@ -59,7 +91,7 @@ class Shelf extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 Shelf.propTypes = {
-  book_id: PropTypes.string.isRequired,
+  book_isbn: PropTypes.string.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -71,6 +103,6 @@ export default withTracker(({ match }) => {
 
   return {
     ready: subscription1.ready() && subscription2.ready(),
-    book_id: match.params._id,
+    book_isbn: match.params.isbn,
   };
 })(Shelf);

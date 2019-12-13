@@ -6,18 +6,19 @@ import { Link } from 'react-router-dom';
 
 const Book = (props) => (
       <Card>
-        console.log(props.book);
-        { props.book.imageLinks ? <Image key="cover" src={props.book.imageLinks.thumbnail}/> : '' }
+        { props.book.imageLinks ?
+            <Image key="cover" wrapped ui={false} src={props.book.imageLinks.thumbnail}/> : '' }
         <Card.Content>
-          <Card.Header>{ props.book.title }</Card.Header>
+          <Card.Header>{ props.book.subtitle ?
+              `${props.book.title}: ${props.book.subtitle}` : `${props.book.title}`}</Card.Header>
           <Card.Meta>
-            { _.map(props.book.authors, (author) => author) }
+            { _.map(props.book.authors, (author) => `${author}, `) }
             <br/>
             ISBN: { props.book.industryIdentifiers[0].identifier }
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <Link to={`/shelf/${props.book._id}`}>View Listing</Link>
+          <Link to={`/shelf/${props.book.industryIdentifiers[0].identifier}`}>View Listing</Link>
         </Card.Content>
       </Card>
 );

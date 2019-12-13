@@ -48,7 +48,7 @@ class EditListing extends React.Component {
           {
             params: {
               q: `isbn:${isbn.toString()}`,
-              key: Meteor.settings.public.api_key,
+              // key: Meteor.settings.public.api_key,
             },
           },
           (error, result) => {

@@ -55,21 +55,21 @@ class AddListing extends React.Component {
   }
 
   handleChange(isbn) {
-    if (isbn.toString().length === 10 || isbn.toString().length === 13) {
-      const url = 'https://openlibrary.org/api/books';
+    if (isbn && (isbn.toString().length === 10 || isbn.toString().length === 13)) {
+      const url = 'https://www.googleapis.com/books/v1/volumes';
       HTTP.get(
         url,
         {
           params: {
-            bibkeys: `ISBN:${isbn.toString()}`,
-            format: 'json',
-            jscmd: 'data',
+            q: `isbn:${isbn.toString()}`,
+            key: Meteor.settings.public.api_key,
           },
         },
         (error, result) => {
           if (!error) {
-            const book = result.data[`ISBN:${isbn.toString()}`];
+            const book = result.data.items[0].volumeInfo;
             if (book !== undefined) {
+              console.log(isbn);
               this.setState({ isbn: isbn, book: book, book_found: true });
             } else {
               this.setState({ isbn: isbn, book_found: false });
@@ -90,19 +90,19 @@ class AddListing extends React.Component {
             { this.state.book !== undefined && this.state.book_found &&
               <Grid.Row columns={2}>
                 <Grid.Column>
-                  { this.state.book.cover ? ([
-                      <Image size="small" key="cover" src={this.state.book.cover.small}/>,
+                  { this.state.book.imageLinks && this.state.book.imageLinks.thumbnail ? ([
+                      <Image size="small" key="cover" src={this.state.book.imageLinks.thumbnail}/>,
                     ]) : 'No Cover Found'
                   }
-                  <Header as="h4">{this.state.book.title}</Header>
+                  <Header as="h4">{this.state.book.subtitle ?
+                      `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}</Header>
                 </Grid.Column>
                 <Grid.Column>
                   Author: {this.state.book.authors ?
-                    this.state.book.authors.map(author => `${author.name}, `) : 'None'} <br/>
+                    this.state.book.authors.map(author => `${author}, `) : 'None'} <br/>
                   ISBN: {this.state.isbn} <br/>
-                  Publisher: {this.state.book.publishers ?
-                    this.state.book.publishers.map(publisher => `${publisher.name}, `) : 'None'}<br/>
-                  Publish Date: {this.state.book.publish_date ? this.state.book.publish_date : 'None'}
+                  Publisher: {this.state.book.publisher}<br/>
+                  Publish Date: {this.state.book.publishedDate ? this.state.book.publishedDate : 'None'}
                 </Grid.Column>
               </Grid.Row>
             }
@@ -112,7 +112,7 @@ class AddListing extends React.Component {
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
               <Segment>
                 <TextField name='price'/>
-                <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)}/>
+                <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)} value={this.state.isbn}/>
                 <TextField name='description'/>
                 <SelectField name='binding'/>
                 <SubmitField value='Submit'/>

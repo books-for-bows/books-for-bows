@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 
 const Book = (props) => (
       <Card>
-        <Image src={ props.book.image }/>
+        console.log(props.book);
+        { props.book.imageLinks ? <Image key="cover" src={props.book.imageLinks.thumbnail}/> : '' }
         <Card.Content>
           <Card.Header>{ props.book.title }</Card.Header>
           <Card.Meta>
             { _.map(props.book.authors, (author) => author) }
             <br/>
-            ISBN: { props.book.isbn }
+            ISBN: { props.book.industryIdentifiers[0].identifier }
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>

@@ -53,7 +53,7 @@ class EditListing extends React.Component {
           },
           (error, result) => {
             if (!error) {
-              const book = result.data[`ISBN:${isbn.toString()}`];
+              const book = result.data.items[0].volumeInfo;
               if (book !== undefined) {
                 this.setState({ isbn: isbn, book: book, book_found: true });
               } else {

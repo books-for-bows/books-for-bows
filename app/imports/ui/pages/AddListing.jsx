@@ -69,7 +69,6 @@ class AddListing extends React.Component {
           if (!error) {
             const book = result.data.items[0].volumeInfo;
             if (book !== undefined) {
-              console.log(isbn);
               this.setState({ isbn: isbn, book: book, book_found: true });
             } else {
               this.setState({ isbn: isbn, book_found: false });

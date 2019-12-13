@@ -27,6 +27,7 @@ class UserProfile extends React.Component {
                 <Table.HeaderCell>Description</Table.HeaderCell>
                 <Table.HeaderCell>Binding</Table.HeaderCell>
                 <Table.HeaderCell>Edit</Table.HeaderCell>
+                <Table.HeaderCell>Delete</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>

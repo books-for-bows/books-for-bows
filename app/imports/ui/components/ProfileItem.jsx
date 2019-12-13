@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'semantic-ui-react';
+import { Button, Icon, Table } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 
@@ -13,7 +13,14 @@ class ProfileItem extends React.Component {
           <Table.Cell>{this.props.listings.description}</Table.Cell>
           <Table.Cell>{this.props.listings.binding}</Table.Cell>
           <Table.Cell>
-            <Link to={`/edit/${this.props.listings._id}`}>Edit</Link>
+            <Link to={`/edit/${this.props.listings._id}`}>
+              <Button color="blue" icon><Icon name="edit"/></Button>
+            </Link>
+          </Table.Cell>
+          <Table.Cell>
+            <Link to={`/delete/${this.props.listings._id}`}>
+              <Button color="red" icon><Icon name="trash"/></Button>
+            </Link>
           </Table.Cell>
         </Table.Row>
     );

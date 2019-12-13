@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader, Grid, Image } from 'semantic-ui-react';
+import { Table, Header, Loader, Grid, Item } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import { HTTP } from 'meteor/http';
 import PropTypes from 'prop-types';
@@ -49,26 +49,32 @@ class Shelf extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
+        <div>
           <Header as="h1" textAlign="center">Shelf</Header>
-          <Grid columns={2} >
-            <Grid.Column width={4}>
-              { this.state.book.imageLinks.thumbnail ? ([
-                <Image key="thumbnail" size="medium" centered src={this.state.book.imageLinks.thumbnail}/>,
-              ]) : 'No Cover Found'}
-              <Header as="h2">{ this.state.book.subtitle ?
-                  `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}</Header>
-              <Grid>
-                <Grid.Column>
-                  Author: {this.state.book.authors ?
-                    this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>
-                  ISBN: {this.state.book.industryIdentifiers[0].identifier} <br/>
-                  Publisher: {this.state.book.publisher} <br/>
-                  Publish Date: {this.state.book.publishedDate}
-                </Grid.Column>
-              </Grid>
-            </Grid.Column>
-            <Grid.Column>
+          <Grid celled container>
+            <Grid.Row stretched>
+              <Grid.Column verticalAlign="middle" width={6}>
+                <Item.Group>
+                  <Item>
+                    { this.state.book.imageLinks.thumbnail ? ([
+                      <Item.Image key="thumbnail" size="small" src={this.state.book.imageLinks.thumbnail}/>,
+                    ]) : 'No Cover Found'}
+                    <Item.Content verticalAlign="middle">
+                      <Item.Header as="h3">{ this.state.book.subtitle ?
+                          `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}
+                      </Item.Header>
+                      <Item.Description>
+                        Author: {this.state.book.authors ?
+                          this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>
+                        ISBN: {this.state.book.industryIdentifiers[0].identifier} <br/>
+                        Publisher: {this.state.book.publisher} <br/>
+                        Publish Date: {this.state.book.publishedDate}
+                      </Item.Description>
+                    </Item.Content>
+                  </Item>
+                </Item.Group>
+              </Grid.Column>
+              <Grid.Column width={10}>
               <Table celled padded striped>
                 <Table.Header>
                   <Table.Row>
@@ -76,15 +82,20 @@ class Shelf extends React.Component {
                     <Table.HeaderCell>Binding</Table.HeaderCell>
                     <Table.HeaderCell>Seller</Table.HeaderCell>
                     <Table.HeaderCell>Description</Table.HeaderCell>
+                    { Meteor.user().roles && Meteor.user().roles.indexOf('admin') > -1 ? ([
+                      <Table.HeaderCell key={0}>Edit</Table.HeaderCell>,
+                      <Table.HeaderCell key={1}>Delete</Table.HeaderCell>,
+                    ]): null }
                   </Table.Row>
                 </Table.Header>
                 <Table.Body>
-                  {Listings.find().fetch().map((listing, index) => <ListingItem key={index} listing={listing} />)}
+                {Listings.find().fetch().map((listing, index) => <ListingItem key={index} listing={listing} />)}
                 </Table.Body>
-              </Table>
-            </Grid.Column>
+                </Table>
+              </Grid.Column>
+            </Grid.Row>
           </Grid>
-        </Container>
+        </div>
     );
   }
 }

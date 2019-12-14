@@ -1,6 +1,6 @@
 import React from 'react';
 import { Listings } from '/imports/api/listings/Listings';
-import { Grid, Segment, Header, Image } from 'semantic-ui-react';
+import { Grid, Segment, Header, Item } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import NumField from 'uniforms-semantic/NumField';
@@ -62,7 +62,7 @@ class AddListing extends React.Component {
         {
           params: {
             q: `isbn:${isbn.toString()}`,
-            key: Meteor.settings.public.api_key,
+            // key: Meteor.settings.public.api_key,
           },
         },
         (error, result) => {
@@ -83,43 +83,96 @@ class AddListing extends React.Component {
   render() {
     let fRef = null;
     return (
+      <div>
+        <Header as="h2" textAlign="center">Add Listing</Header>
         <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Add Listing</Header>
-            { this.state.book !== undefined && this.state.book_found &&
-              <Grid.Row columns={2}>
-                <Grid.Column>
+          <Grid.Row centered columns={12}>
+            <Grid.Column width={6}>
+              { this.state.book !== undefined && this.state.book_found &&
+              <Item.Group divided>
+                <Item>
                   { this.state.book.imageLinks && this.state.book.imageLinks.thumbnail ? ([
-                      <Image size="small" key="cover" src={this.state.book.imageLinks.thumbnail}/>,
-                    ]) : 'No Cover Found'
-                  }
-                  <Header as="h4">{this.state.book.subtitle ?
-                      `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}</Header>
-                </Grid.Column>
-                <Grid.Column>
-                  Author: {this.state.book.authors ?
-                    this.state.book.authors.map(author => `${author}, `) : 'None'} <br/>
-                  ISBN: {this.state.isbn} <br/>
-                  Publisher: {this.state.book.publisher}<br/>
-                  Publish Date: {this.state.book.publishedDate ? this.state.book.publishedDate : 'None'}
-                </Grid.Column>
-              </Grid.Row>
-            }
-            { this.state.book_found === false &&
-                <Header as="h4">Book Not Found.</Header>
-            }
-            <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
-              <Segment>
-                <TextField name='price'/>
-                <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)} value={this.state.isbn}/>
-                <TextField name='description'/>
-                <SelectField name='binding'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
+                    <Item.Image key="thumbnail" size="small" src={this.state.book.imageLinks.thumbnail}/>,
+                  ]) : 'No Cover Found'}
+                  <Item.Content verticalAlign="middle">
+                    <Item.Header as="h3">{ this.state.book.subtitle ?
+                        `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}
+                    </Item.Header>
+                    <Item.Description>
+                      Author: {this.state.book.authors ?
+                        this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>
+                      ISBN: {this.state.book.industryIdentifiers[0].identifier} <br/>
+                      Publisher: {this.state.book.publisher} <br/>
+                      Publish Date: {this.state.book.publishedDate}
+                    </Item.Description>
+                  </Item.Content>
+                </Item>
+              </Item.Group>
+              }
+              { this.state.book_found === false &&
+              <Header as="h4">Book Not Found.</Header>
+              }
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column>
+              <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
+                <Segment>
+                  <TextField name='price'/>
+                  <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)}
+                            value={this.state.isbn}/>
+                  <TextField name='description'/>
+                  <SelectField name='binding'/>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid.Row>
+
+
+          {/*<Grid.Column>*/}
+          {/*  { this.state.book !== undefined && this.state.book_found &&*/}
+          {/*    <Grid.Row centered>*/}
+          {/*      <Grid.Column>*/}
+          {/*        <Item.Group>*/}
+          {/*          <Item>*/}
+          {/*            { this.state.book.imageLinks && this.state.book.imageLinks.thumbnail ? ([*/}
+          {/*              <Item.Image key="thumbnail" size="small" src={this.state.book.imageLinks.thumbnail}/>,*/}
+          {/*            ]) : 'No Cover Found'}*/}
+          {/*            <Item.Content verticalAlign="middle">*/}
+          {/*              <Item.Header as="h3">{ this.state.book.subtitle ?*/}
+          {/*                  `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}*/}
+          {/*              </Item.Header>*/}
+          {/*              <Item.Description>*/}
+          {/*                Author: {this.state.book.authors ?*/}
+          {/*                  this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>*/}
+          {/*                ISBN: {this.state.book.industryIdentifiers[0].identifier} <br/>*/}
+          {/*                Publisher: {this.state.book.publisher} <br/>*/}
+          {/*                Publish Date: {this.state.book.publishedDate}*/}
+          {/*              </Item.Description>*/}
+          {/*            </Item.Content>*/}
+          {/*          </Item>*/}
+          {/*        </Item.Group>*/}
+          {/*      </Grid.Column>*/}
+          {/*    </Grid.Row>*/}
+          {/*  }*/}
+          {/*  { this.state.book_found === false &&*/}
+          {/*      <Header as="h4">Book Not Found.</Header>*/}
+          {/*  }*/}
+          {/*  <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>*/}
+          {/*    <Segment>*/}
+          {/*      <TextField name='price'/>*/}
+          {/*      <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)} value={this.state.isbn}/>*/}
+          {/*      <TextField name='description'/>*/}
+          {/*      <SelectField name='binding'/>*/}
+          {/*      <SubmitField value='Submit'/>*/}
+          {/*      <ErrorsField/>*/}
+          {/*    </Segment>*/}
+          {/*  </AutoForm>*/}
+          {/*</Grid.Column>*/}
         </Grid>
+      </div>
     );
   }
 }

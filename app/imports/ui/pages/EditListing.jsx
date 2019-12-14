@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Loader, Header, Segment, Image } from 'semantic-ui-react';
+import { Grid, Loader, Header, Segment, Image, Item } from 'semantic-ui-react';
 import swal from 'sweetalert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
@@ -69,43 +69,55 @@ class EditListing extends React.Component {
   renderPage() {
     this.handleChange(this.props.doc.ISBN);
     return (
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Listing</Header>
-            { this.state.book !== undefined && this.state.book_found &&
-            <Grid.Row columns={2}>
-              <Grid.Column>
-                { this.state.book.imageLinks.thumbnail ? ([
-                  <Image size="small" key="cover" src={this.state.book.imageLinks.thumbnail}/>,
-                ]) : 'No Cover Found'
+        <div>
+          <Header as="h2" textAlign="center">Edit Listing</Header>
+          <Grid container centered>
+            <Grid.Row centered columns={12}>
+              <Grid.Column width={6}>
+                { this.state.book !== undefined && this.state.book_found &&
+                <Item.Group divided>
+                  <Item>
+                    { this.state.book.imageLinks && this.state.book.imageLinks.thumbnail ? ([
+                      <Item.Image key="thumbnail" size="small" src={this.state.book.imageLinks.thumbnail}/>,
+                    ]) : 'No Cover Found'}
+                    <Item.Content verticalAlign="middle">
+                      <Item.Header as="h3">{ this.state.book.subtitle ?
+                          `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}
+                      </Item.Header>
+                      <Item.Description>
+                        Author: {this.state.book.authors ?
+                          this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>
+                        ISBN: {this.state.book.industryIdentifiers[0].identifier} <br/>
+                        Publisher: {this.state.book.publisher} <br/>
+                        Publish Date: {this.state.book.publishedDate}
+                      </Item.Description>
+                    </Item.Content>
+                  </Item>
+                </Item.Group>
                 }
-                <Header as="h4">{this.state.book.subtitle ?
-                    `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}</Header>
-              </Grid.Column>
-              <Grid.Column>
-                Author: {this.state.book.authors ?
-                  this.state.book.authors.map(author => `${author}, `) : 'None'} <br/>
-                ISBN: {this.state.isbn} <br/>
-                Publisher: {this.state.book.publisher}<br/>
-                Publish Date: {this.state.book.publishedDate ? this.state.book.publishedDate : 'None'}
+                { this.state.book_found === false &&
+                <Header as="h4">Book Not Found.</Header>
+                }
               </Grid.Column>
             </Grid.Row>
-            }
-            <AutoForm schema={ListingsSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
-              <Segment>
-                <TextField name='price'/>
-                <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)}/>
-                <TextField name='description'/>
-                <SelectField name='binding'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='seller' />
-              </Segment>
-            </AutoForm>
-            {this.state.redirect && <Redirect to="/profile" />}
-
-          </Grid.Column>
-        </Grid>
+            <Grid.Row>
+              <Grid.Column>
+                <AutoForm schema={ListingsSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
+                  <Segment>
+                    <TextField name='price'/>
+                    <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)}/>
+                    <TextField name='description'/>
+                    <SelectField name='binding'/>
+                    <SubmitField value='Submit'/>
+                    <ErrorsField/>
+                    <HiddenField name='seller' />
+                  </Segment>
+                </AutoForm>
+                {this.state.redirect && <Redirect to="/profile" />}
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </div>
     );
   }
 }

@@ -1,9 +1,8 @@
 import React from 'react';
-import { Grid, Loader, Header, Segment, Image, Item } from 'semantic-ui-react';
+import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
 import swal from 'sweetalert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import NumField from 'uniforms-semantic/NumField';
 import SelectField from 'uniforms-semantic/SelectField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
@@ -14,14 +13,15 @@ import PropTypes from 'prop-types';
 import 'uniforms-bridge-simple-schema-2';
 import { HTTP } from 'meteor/http';
 import { Listings, ListingsSchema } from '/imports/api/listings/Listings';
-import { Redirect } from 'react-router'; // required for Uniforms
+import { Redirect } from 'react-router';
+import BookPreview from '../components/BookPreview'; // required for Uniforms
 
 /** Renders the Page for editing a single document. */
 class EditListing extends React.Component {
 
   state = {
     redirect: false,
-    isbn: 0,
+    isbn: '',
     book: undefined,
     book_found: undefined,
   };
@@ -41,24 +41,20 @@ class EditListing extends React.Component {
   }
 
   handleChange(isbn) {
-    if (isbn.toString().length === 10 || isbn.toString().length === 13) {
+    if (isbn.length === 10 || isbn.length === 13) {
       const url = 'https://www.googleapis.com/books/v1/volumes';
       HTTP.get(
           url,
           {
             params: {
-              q: `isbn:${isbn.toString()}`,
+              q: `isbn:${isbn}`,
               // key: Meteor.settings.public.api_key,
             },
           },
           (error, result) => {
             if (!error) {
               const book = result.data.items[0].volumeInfo;
-              if (book !== undefined) {
-                this.setState({ isbn: isbn, book: book, book_found: true });
-              } else {
-                this.setState({ isbn: isbn, book_found: false });
-              }
+              this.setState({ isbn: isbn, book: book, book_found: true });
             }
           },
       );
@@ -74,38 +70,15 @@ class EditListing extends React.Component {
           <Grid container centered>
             <Grid.Row centered columns={12}>
               <Grid.Column width={6}>
-                { this.state.book !== undefined && this.state.book_found &&
-                <Item.Group divided>
-                  <Item>
-                    { this.state.book.imageLinks && this.state.book.imageLinks.thumbnail ? ([
-                      <Item.Image key="thumbnail" size="small" src={this.state.book.imageLinks.thumbnail}/>,
-                    ]) : 'No Cover Found'}
-                    <Item.Content verticalAlign="middle">
-                      <Item.Header as="h3">{ this.state.book.subtitle ?
-                          `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}
-                      </Item.Header>
-                      <Item.Description>
-                        Author: {this.state.book.authors ?
-                          this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>
-                        ISBN: {this.state.book.industryIdentifiers[0].identifier} <br/>
-                        Publisher: {this.state.book.publisher} <br/>
-                        Publish Date: {this.state.book.publishedDate}
-                      </Item.Description>
-                    </Item.Content>
-                  </Item>
-                </Item.Group>
-                }
-                { this.state.book_found === false &&
-                <Header as="h4">Book Not Found.</Header>
-                }
+                <BookPreview book={ this.state.book }/>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
               <Grid.Column>
                 <AutoForm schema={ListingsSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
                   <Segment>
+                    <TextField name='ISBN' disabled/>
                     <TextField name='price'/>
-                    <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)}/>
                     <TextField name='description'/>
                     <SelectField name='binding'/>
                     <SubmitField value='Submit'/>

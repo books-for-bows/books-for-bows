@@ -1,19 +1,20 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Table, Header, Loader, Grid, Item } from 'semantic-ui-react';
+import { Table, Header, Loader, Grid } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import { HTTP } from 'meteor/http';
 import PropTypes from 'prop-types';
 import { Listings } from '../../api/listings/Listings';
 
 import ListingItem from '../components/ListingItem';
+import BookPreview from '../components/BookPreview';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class Shelf extends React.Component {
 
   state = {
     book_ready: false,
-    book: {},
+    book: undefined,
   };
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -54,25 +55,7 @@ class Shelf extends React.Component {
           <Grid celled container>
             <Grid.Row stretched>
               <Grid.Column verticalAlign="middle" width={6}>
-                <Item.Group>
-                  <Item>
-                    { this.state.book.imageLinks.thumbnail ? ([
-                      <Item.Image key="thumbnail" size="small" src={this.state.book.imageLinks.thumbnail}/>,
-                    ]) : 'No Cover Found'}
-                    <Item.Content verticalAlign="middle">
-                      <Item.Header as="h3">{ this.state.book.subtitle ?
-                          `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}
-                      </Item.Header>
-                      <Item.Description>
-                        Author: {this.state.book.authors ?
-                          this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>
-                        ISBN: {this.state.book.industryIdentifiers[0].identifier} <br/>
-                        Publisher: {this.state.book.publisher} <br/>
-                        Publish Date: {this.state.book.publishedDate}
-                      </Item.Description>
-                    </Item.Content>
-                  </Item>
-                </Item.Group>
+                <BookPreview book={ this.state.book }/>
               </Grid.Column>
               <Grid.Column width={10}>
               <Table celled padded striped>

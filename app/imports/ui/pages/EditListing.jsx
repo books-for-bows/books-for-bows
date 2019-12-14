@@ -1,9 +1,8 @@
 import React from 'react';
-import { Grid, Loader, Header, Segment, Image } from 'semantic-ui-react';
+import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
 import swal from 'sweetalert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import NumField from 'uniforms-semantic/NumField';
 import SelectField from 'uniforms-semantic/SelectField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
@@ -14,14 +13,15 @@ import PropTypes from 'prop-types';
 import 'uniforms-bridge-simple-schema-2';
 import { HTTP } from 'meteor/http';
 import { Listings, ListingsSchema } from '/imports/api/listings/Listings';
-import { Redirect } from 'react-router'; // required for Uniforms
+import { Redirect } from 'react-router';
+import BookPreview from '../components/BookPreview'; // required for Uniforms
 
 /** Renders the Page for editing a single document. */
 class EditListing extends React.Component {
 
   state = {
     redirect: false,
-    isbn: 0,
+    isbn: '',
     book: undefined,
     book_found: undefined,
   };
@@ -41,24 +41,20 @@ class EditListing extends React.Component {
   }
 
   handleChange(isbn) {
-    if (isbn.toString().length === 10 || isbn.toString().length === 13) {
+    if (isbn.length === 10 || isbn.length === 13) {
       const url = 'https://www.googleapis.com/books/v1/volumes';
       HTTP.get(
           url,
           {
             params: {
-              q: `isbn:${isbn.toString()}`,
+              q: `isbn:${isbn}`,
               // key: Meteor.settings.public.api_key,
             },
           },
           (error, result) => {
             if (!error) {
               const book = result.data.items[0].volumeInfo;
-              if (book !== undefined) {
-                this.setState({ isbn: isbn, book: book, book_found: true });
-              } else {
-                this.setState({ isbn: isbn, book_found: false });
-              }
+              this.setState({ isbn: isbn, book: book, book_found: true });
             }
           },
       );
@@ -69,43 +65,32 @@ class EditListing extends React.Component {
   renderPage() {
     this.handleChange(this.props.doc.ISBN);
     return (
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Listing</Header>
-            { this.state.book !== undefined && this.state.book_found &&
-            <Grid.Row columns={2}>
-              <Grid.Column>
-                { this.state.book.imageLinks.thumbnail ? ([
-                  <Image size="small" key="cover" src={this.state.book.imageLinks.thumbnail}/>,
-                ]) : 'No Cover Found'
-                }
-                <Header as="h4">{this.state.book.subtitle ?
-                    `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}</Header>
-              </Grid.Column>
-              <Grid.Column>
-                Author: {this.state.book.authors ?
-                  this.state.book.authors.map(author => `${author}, `) : 'None'} <br/>
-                ISBN: {this.state.isbn} <br/>
-                Publisher: {this.state.book.publisher}<br/>
-                Publish Date: {this.state.book.publishedDate ? this.state.book.publishedDate : 'None'}
+        <div>
+          <Header as="h2" textAlign="center">Edit Listing</Header>
+          <Grid container centered>
+            <Grid.Row centered columns={12}>
+              <Grid.Column width={6}>
+                <BookPreview book={ this.state.book }/>
               </Grid.Column>
             </Grid.Row>
-            }
-            <AutoForm schema={ListingsSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
-              <Segment>
-                <TextField name='price'/>
-                <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)}/>
-                <TextField name='description'/>
-                <SelectField name='binding'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='seller' />
-              </Segment>
-            </AutoForm>
-            {this.state.redirect && <Redirect to="/profile" />}
-
-          </Grid.Column>
-        </Grid>
+            <Grid.Row>
+              <Grid.Column>
+                <AutoForm schema={ListingsSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
+                  <Segment>
+                    <TextField name='ISBN' disabled/>
+                    <TextField name='price'/>
+                    <TextField name='description'/>
+                    <SelectField name='binding'/>
+                    <SubmitField value='Submit'/>
+                    <ErrorsField/>
+                    <HiddenField name='seller' />
+                  </Segment>
+                </AutoForm>
+                {this.state.redirect && <Redirect to="/profile" />}
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </div>
     );
   }
 }

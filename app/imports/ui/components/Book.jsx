@@ -6,15 +6,18 @@ import { Link } from 'react-router-dom';
 
 const Book = (props) => (
       <Card>
-        { props.book.imageLinks ?
-            <Image key="cover" wrapped ui={false} src={props.book.imageLinks.thumbnail}/> : '' }
+        <Image key="cover" wrapped ui={false} src={props.book.imageLinks ? props.book.imageLinks.thumbnail :
+                '/images/book-not-found-temp.png'}/>
         <Card.Content>
           <Card.Header>{ props.book.subtitle ?
               `${props.book.title}: ${props.book.subtitle}` : `${props.book.title}`}</Card.Header>
           <Card.Meta>
             { _.map(props.book.authors, (author) => `${author}, `) }
             <br/>
-            ISBN: { props.book.industryIdentifiers[0].identifier }
+            { props.book.industryIdentifiers.map((identifier, index) => {
+              const string = `${identifier.type.replace('_', '')}: ${identifier.identifier}`;
+              return [<span key={-(index + 1)}>{ string }</span>, <br key={index}/>];
+            })}
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>

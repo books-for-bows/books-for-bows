@@ -41,6 +41,7 @@ class AddListing extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
+    this.setState({ isbn: '' });
     const { price, ISBN, description, binding } = data;
     const seller = Meteor.user().username;
     Listings.insert({ seller, price, ISBN, description, binding },
@@ -54,36 +55,38 @@ class AddListing extends React.Component {
       });
   }
 
-  handleChange(isbn) {
-    this.setState({ isbn: isbn });
-    console.log(this.state);
-    if (isbn && (isbn.length === 10 || isbn.length === 13)) {
-      const url = 'https://www.googleapis.com/books/v1/volumes';
-      HTTP.get(
-        url,
-        {
-          params: {
-            q: `isbn:${isbn}`,
-            // key: Meteor.settings.public.api_key,
-          },
-        },
-        (error, result) => {
-          if (!error) {
-            if (result.data.totalItems > 0) {
-              const book = result.data.items[0].volumeInfo;
-              if (book !== undefined) {
-                this.setState({ book: book, book_found: true });
+  handleChange(field, value) {
+    if (field === 'ISBN') {
+      const isbn = value;
+      this.setState({ isbn: isbn });
+      if (isbn && (isbn.length === 10 || isbn.length === 13)) {
+        const url = 'https://www.googleapis.com/books/v1/volumes';
+        HTTP.get(
+            url,
+            {
+              params: {
+                q: `isbn:${isbn}`,
+                // key: Meteor.settings.public.api_key,
+              },
+            },
+            (error, result) => {
+              if (!error) {
+                if (result.data.totalItems > 0) {
+                  const book = result.data.items[0].volumeInfo;
+                  if (book !== undefined) {
+                    this.setState({ book: book, book_found: true });
+                  } else {
+                    this.setState({ book: undefined, book_found: false });
+                  }
+                } else {
+                  this.setState({ book: undefined, book_found: false });
+                }
               } else {
                 this.setState({ book: undefined, book_found: false });
               }
-            } else {
-              this.setState({ book: undefined, book_found: false });
-            }
-          } else {
-            this.setState({ book: undefined, book_found: false });
-          }
-        },
-      );
+            },
+        );
+      }
     }
   }
 
@@ -101,9 +104,10 @@ class AddListing extends React.Component {
           </Grid.Row>
           <Grid.Row>
             <Grid.Column>
-              <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
+              <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}
+                onChange={this.handleChange.bind(this)}>
                 <Segment>
-                  <TextField name='ISBN' onChange={this.handleChange.bind(this)} value={this.state.isbn}/>
+                  <TextField name='ISBN' value={this.state.isbn}/>
                   <TextField name='price'/>
                   <TextField name='description'/>
                   <SelectField name='binding'/>

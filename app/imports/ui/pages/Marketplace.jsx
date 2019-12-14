@@ -30,9 +30,11 @@ class Marketplace extends React.Component {
             },
             (error, result) => {
               if (!error) {
-                this.state.books.push(result.data.items[0].volumeInfo);
-                if (this.state.books.length === listings.length) {
-                  this.setState({ books_ready: true });
+                if (result.data.totalItems > 0) {
+                  this.state.books.push(result.data.items[0].volumeInfo);
+                  if (this.state.books.length === listings.length) {
+                    this.setState({ books_ready: true });
+                  }
                 }
               }
             },

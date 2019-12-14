@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Loader, Card } from 'semantic-ui-react';
+import { Container, Loader, Card, Search, Grid } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { _ } from 'meteor/underscore';
@@ -8,16 +8,22 @@ import { Books } from '../../api/books/Books.js';
 import { Listings } from '../../api/listings/Listings.js';
 import Book from '../components/Book.jsx';
 
-/** Renders the Profile Collection as a set of Cards. */
+/**Fashion a Search Engine that searches through books based on the ISBN */
 class Marketplace extends React.Component {
   /** Render the page once subscriptions have been received. */
   render() {
     return (
-        <Container>
-          <Card.Group>
-            {_.map(this.props.books, (book) => <Book key={book.isbn} book={book}/>)}
-          </Card.Group>
-        </Container>
+        <Grid centered container>
+        <Search
+          fluid
+          placeholder='ISBN'
+          />
+        </Grid>
+        // <Container>
+        //   <Card.Group>
+        //     {_.map(this.Books.title, (book) => <Book key={book.isbn} book={book}/>)}
+        //   </Card.Group>
+        // </Container>
     );
   }
 }

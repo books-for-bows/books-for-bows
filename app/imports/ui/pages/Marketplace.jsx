@@ -19,7 +19,8 @@ class Marketplace extends React.Component {
     if (!this.state.books_ready) {
       const url = 'https://www.googleapis.com/books/v1/volumes';
       const listings = Listings.find({}).fetch();
-      _.each(_.uniq(_.pluck(listings, 'ISBN')), (book) => {
+      const listingsUnique = _.uniq(_.pluck(listings, 'ISBN'));
+      _.each(listingsUnique, (book) => {
         HTTP.get(
             url,
             {
@@ -32,7 +33,7 @@ class Marketplace extends React.Component {
               if (!error) {
                 if (result.data.totalItems > 0) {
                   this.state.books.push(result.data.items[0].volumeInfo);
-                  if (this.state.books.length === listings.length) {
+                  if (this.state.books.length === listingsUnique.length) {
                     this.setState({ books_ready: true });
                   }
                 }
@@ -70,6 +71,6 @@ export default withTracker(() => {
   // Ensure that minimongo is populated with all collections prior to running render().
   const sub = Meteor.subscribe('Listings');
   return {
-    ready: sub.ready(),
+    ready: sub,
   };
 })(Marketplace);

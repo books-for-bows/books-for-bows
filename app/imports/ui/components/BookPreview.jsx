@@ -16,9 +16,9 @@ class BookPreview extends React.Component {
             </Item>
           ) : (
             <Item>
-              { this.props.book.imageLinks && this.props.book.imageLinks.thumbnail ? ([
-                <Item.Image key="thumbnail" size="small" src={this.props.book.imageLinks.thumbnail}/>,
-              ]) : 'No Cover Found'}
+              <Item.Image key="thumbnail" size="small"
+                          src={this.props.book.imageLinks ? this.props.book.imageLinks.thumbnail :
+                              '/images/book-not-found-temp.png'}/>
               <Item.Content verticalAlign="middle">
                 <Item.Header as="h3">{ this.props.book.subtitle ?
                     `${this.props.book.title}: ${this.props.book.subtitle}` : `${this.props.book.title}`}

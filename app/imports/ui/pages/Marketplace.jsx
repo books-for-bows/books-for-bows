@@ -46,14 +46,14 @@ class Marketplace extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+    this.getBooks();
+    return (this.state.books_ready && this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
   renderPage() {
-    this.getBooks();
     return (
         <Container>
-          <Card.Group>
+          <Card.Group centered>
             { this.state.books_ready ?
                 _.map(this.state.books, (book, index) => <Book key={index} book={book}/>) : ''}
           </Card.Group>
@@ -71,6 +71,6 @@ export default withTracker(() => {
   // Ensure that minimongo is populated with all collections prior to running render().
   const sub = Meteor.subscribe('Listings');
   return {
-    ready: sub,
+    ready: sub.ready(),
   };
 })(Marketplace);

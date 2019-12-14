@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { _ } from 'meteor/underscore';
-import { Card, Image, Item } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 const Book = (props) => (
       <Card>
-        { props.book.imageLinks ?
-            <Image key="cover" wrapped ui={false} src={props.book.imageLinks.thumbnail}/> : '' }
+        <Image key="cover" wrapped ui={false} src={props.book.imageLinks ? props.book.imageLinks.thumbnail :
+                '/images/book-not-found-temp.png'}/>
         <Card.Content>
           <Card.Header>{ props.book.subtitle ?
               `${props.book.title}: ${props.book.subtitle}` : `${props.book.title}`}</Card.Header>

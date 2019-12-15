@@ -42,9 +42,8 @@ class Shelf extends React.Component {
                   </Table.Row>
                 </Table.Header>
                 <Table.Body>
-                {Listings.find({ ISBN: this.props.book_isbn }).fetch().map(
-                    (listing, index) => <ListingItem key={index} listing={listing} />
-                    )}
+                {Listings.find({ ISBN: this.props.book_isbn }).fetch()
+                    .map((listing, index) => <ListingItem key={index} listing={listing} />)}
                 </Table.Body>
                 </Table>
               </Grid.Column>

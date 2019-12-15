@@ -4,8 +4,8 @@ import { Table, Header, Loader, Grid } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { Listings } from '../../api/listings/Listings';
 import { Redirect } from 'react-router';
+import { Listings } from '../../api/listings/Listings';
 
 import ListingItem from '../components/ListingItem';
 import BookPreview from '../components/BookPreview';

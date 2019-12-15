@@ -9,7 +9,7 @@ class ListingItem extends React.Component {
   render() {
     return (
         <Table.Row>
-          <Table.Cell singleLine>{this.props.listing.price}</Table.Cell>
+          <Table.Cell singleLine>${this.props.listing.price}</Table.Cell>
           <Table.Cell singleLine>{this.props.listing.binding}</Table.Cell>
           <Table.Cell singleLine>{this.props.listing.seller}</Table.Cell>
           <Table.Cell>{this.props.listing.description}</Table.Cell>

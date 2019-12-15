@@ -3,6 +3,7 @@ import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
 import swal from 'sweetalert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
+import NumField from 'uniforms-semantic/NumField';
 import SelectField from 'uniforms-semantic/SelectField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
@@ -55,7 +56,7 @@ class EditListing extends React.Component {
                 <AutoForm schema={ListingsSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
                   <Segment>
                     <TextField name='ISBN' disabled/>
-                    <TextField name='price'/>
+                    <NumField name='price'/>
                     <TextField name='description'/>
                     <SelectField name='binding'/>
                     <SubmitField value='Submit'/>

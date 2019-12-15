@@ -1,6 +1,5 @@
 import React from 'react';
 import { HTTP } from 'meteor/http';
-import { _ } from 'meteor/underscore';
 import { Item } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 

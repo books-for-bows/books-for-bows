@@ -35,7 +35,7 @@ class Shelf extends React.Component {
                     <Table.HeaderCell>Binding</Table.HeaderCell>
                     <Table.HeaderCell>Seller</Table.HeaderCell>
                     <Table.HeaderCell>Description</Table.HeaderCell>
-                    { Meteor.user().roles && Meteor.user().roles.indexOf('admin') > -1 ? ([
+                    { Meteor.user() && Meteor.user().roles && Meteor.user().roles.indexOf('admin') > -1 ? ([
                       <Table.HeaderCell key={0}>Edit</Table.HeaderCell>,
                       <Table.HeaderCell key={1}>Delete</Table.HeaderCell>,
                     ]) : null }

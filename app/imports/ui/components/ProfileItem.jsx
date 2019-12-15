@@ -8,7 +8,7 @@ class ProfileItem extends React.Component {
   render() {
     return (
         <Table.Row>
-          <Table.Cell>{this.props.listings.price}</Table.Cell>
+          <Table.Cell>${this.props.listings.price}</Table.Cell>
           <Table.Cell>{this.props.listings.ISBN}</Table.Cell>
           <Table.Cell>{this.props.listings.description}</Table.Cell>
           <Table.Cell>{this.props.listings.binding}</Table.Cell>

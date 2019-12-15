@@ -11,20 +11,24 @@ class ListingItem extends React.Component {
         <Table.Row>
           <Table.Cell singleLine>{this.props.listing.price}</Table.Cell>
           <Table.Cell singleLine>{this.props.listing.binding}</Table.Cell>
-          <Table.Cell singleLine>{this.props.listing.seller}</Table.Cell>
+          <Table.Cell singleLine>
+            <a href={`mailto:${this.props.listing.seller}`}>
+            {this.props.listing.seller}
+            </a>
+          </Table.Cell>
           <Table.Cell>{this.props.listing.description}</Table.Cell>
           { Meteor.user() && Meteor.user().roles && Meteor.user().roles.indexOf('admin') > -1 ? ([
-              <Table.Cell key={0}>
-                <Link to={`/edit/${this.props.listing._id}`}>
-                  <Button color="blue" icon><Icon name="edit"/></Button>
-                </Link>
-              </Table.Cell>,
-              <Table.Cell key={1}>
-                <Link to={`/delete/${this.props.listing._id}`}>
-                  <Button color="red" icon><Icon name="trash"/></Button>
-                </Link>
-              </Table.Cell>,
-              ])
+                  <Table.Cell key={0}>
+                    <Link to={`/edit/${this.props.listing._id}`}>
+                      <Button color="blue" icon><Icon name="edit"/></Button>
+                    </Link>
+                  </Table.Cell>,
+                  <Table.Cell key={1}>
+                    <Link to={`/delete/${this.props.listing._id}`}>
+                      <Button color="red" icon><Icon name="trash"/></Button>
+                    </Link>
+                  </Table.Cell>,
+                ])
           : null }
         </Table.Row>
     );

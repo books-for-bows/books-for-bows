@@ -3,9 +3,22 @@ import { Meteor } from 'meteor/meteor';
 import { Button, Icon, Table } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
+import { Roles } from 'meteor/alanning:roles';
+import { Redirect } from 'react-router';
+import { Listings } from '../../api/listings/Listings';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class ListingItem extends React.Component {
+  state = {
+    deleted: false,
+    redirect: false,
+  };
+
+  handleDelete() {
+    this.setState({ deleted: true });
+    Listings.remove(this.props.listing._id);
+  }
+
   render() {
     return (
         <Table.Row>
@@ -13,23 +26,29 @@ class ListingItem extends React.Component {
           <Table.Cell singleLine>{this.props.listing.binding}</Table.Cell>
           <Table.Cell singleLine>
             <a href={`mailto:${this.props.listing.seller}`}>
-            {this.props.listing.seller}
+              {this.props.listing.seller}
             </a>
           </Table.Cell>
           <Table.Cell>{this.props.listing.description}</Table.Cell>
-          { Meteor.user() && Meteor.user().roles && Meteor.user().roles.indexOf('admin') > -1 ? ([
-                  <Table.Cell key={0}>
-                    <Link to={`/edit/${this.props.listing._id}`}>
-                      <Button color="blue" icon><Icon name="edit"/></Button>
-                    </Link>
-                  </Table.Cell>,
-                  <Table.Cell key={1}>
-                    <Link to={`/delete/${this.props.listing._id}`}>
-                      <Button color="red" icon><Icon name="trash"/></Button>
-                    </Link>
-                  </Table.Cell>,
-                ])
-          : null }
+          {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
+                <Table.Cell key={`edit:${this.props.listing._id}`}>
+                  <Link to={`/edit/${this.props.listing._id}`}>
+                    <Button color="blue" icon><Icon name="edit"/></Button>
+                  </Link>
+                </Table.Cell>,
+                <Table.Cell key={`delete:${this.props.listing._id}`}>
+                  {this.state.deleted && <Redirect to={`/shelf/${this.props.listing.ISBN}`}/>}
+                  {this.state.deleted && this.props.index === 0 && <Redirect to={'/marketplace'}/>}
+                  <Button
+                      color="red"
+                      icon
+                      onClick={this.handleDelete.bind(this)}
+                  >
+                    <Icon name="trash"/>
+                  </Button>
+                </Table.Cell>,
+              ])
+              : null}
         </Table.Row>
     );
   }
@@ -38,6 +57,7 @@ class ListingItem extends React.Component {
 /** Require a document to be passed to this component. */
 ListingItem.propTypes = {
   listing: PropTypes.object.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

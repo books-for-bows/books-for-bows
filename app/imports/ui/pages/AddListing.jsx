@@ -59,34 +59,6 @@ class AddListing extends React.Component {
     if (field === 'ISBN') {
       const isbn = value;
       this.setState({ isbn: isbn });
-      if (isbn && (isbn.length === 10 || isbn.length === 13)) {
-        const url = 'https://www.googleapis.com/books/v1/volumes';
-        HTTP.get(
-            url,
-            {
-              params: {
-                q: `isbn:${isbn}`,
-                // key: Meteor.settings.public.api_key,
-              },
-            },
-            (error, result) => {
-              if (!error) {
-                if (result.data.totalItems > 0) {
-                  const book = result.data.items[0].volumeInfo;
-                  if (book !== undefined) {
-                    this.setState({ book: book, book_found: true });
-                  } else {
-                    this.setState({ book: undefined, book_found: false });
-                  }
-                } else {
-                  this.setState({ book: undefined, book_found: false });
-                }
-              } else {
-                this.setState({ book: undefined, book_found: false });
-              }
-            },
-        );
-      }
     }
   }
 
@@ -99,7 +71,7 @@ class AddListing extends React.Component {
         <Grid container centered>
           <Grid.Row centered columns={12}>
             <Grid.Column width={6}>
-              <BookPreview book={ this.state.book } book_found={ this.state.book_found }/>
+              <BookPreview isbn={ this.state.isbn }/>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>

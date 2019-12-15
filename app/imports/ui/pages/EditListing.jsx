@@ -40,37 +40,15 @@ class EditListing extends React.Component {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
-  handleChange(isbn) {
-    if (isbn.length === 10 || isbn.length === 13) {
-      const url = 'https://www.googleapis.com/books/v1/volumes';
-      HTTP.get(
-          url,
-          {
-            params: {
-              q: `isbn:${isbn}`,
-              // key: Meteor.settings.public.api_key,
-            },
-          },
-          (error, result) => {
-            if (!error) {
-              const book = result.data.items[0].volumeInfo;
-              this.setState({ isbn: isbn, book: book, book_found: true });
-            }
-          },
-      );
-    }
-  }
-
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
-    this.handleChange(this.props.doc.ISBN);
     return (
         <div>
           <Header as="h2" textAlign="center">Edit Listing</Header>
           <Grid container centered>
             <Grid.Row centered columns={12}>
               <Grid.Column width={6}>
-                <BookPreview book={ this.state.book }/>
+                <BookPreview isbn={ this.props.doc.ISBN }/>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>

@@ -50,7 +50,7 @@ class Marketplace extends React.Component {
   /** Render the page once subscriptions have been received. */
   render() {
     this.getBooks();
-    if (this.state.books.length === 0) {
+    if (this.props.empty) {
       return this.renderEmpty();
     }
     return (this.state.books_ready && this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -78,6 +78,7 @@ class Marketplace extends React.Component {
 
 Marketplace.propTypes = {
   ready: PropTypes.bool.isRequired,
+  empty: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
@@ -86,5 +87,6 @@ export default withTracker(() => {
   const sub = Meteor.subscribe('Listings');
   return {
     ready: sub.ready(),
+    empty: Listings.find().fetch().length === 0,
   };
 })(Marketplace);

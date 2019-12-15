@@ -21,13 +21,16 @@ class Marketplace extends React.Component {
       const listings = Listings.find({}).fetch();
       const listingsUnique = _.uniq(_.pluck(listings, 'ISBN'));
       _.each(listingsUnique, (book) => {
+        const params = Meteor.settings.public.api_key ? {
+          q: `isbn:${book}`,
+          key: Meteor.settings.public.api_key,
+        } : {
+          q: `isbn:${book}`,
+        };
         HTTP.get(
             url,
             {
-              params: {
-                q: `isbn:${book}`,
-                key: Meteor.settings.public.api_key,
-              },
+              params,
             },
             (error, result) => {
               if (!error) {

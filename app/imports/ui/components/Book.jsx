@@ -27,12 +27,17 @@ class Book extends React.Component {
         </Card.Content>
         {this.props.courses.length > 0 ? (
             <Card.Content extra>
-              {_.map(_.uniq(this.props.courses), (course, index) => <Label color='blue' key={index}>
-                {course.dept} {course.course}</Label>)}
+              <Label.Group>
+                {_.map(_.uniq(this.props.courses,
+                    (coursebook) => coursebook.course), (coursebook, index) => <Label color='blue' key={index}>
+                  {coursebook.dept} {coursebook.course}</Label>)}
+              </Label.Group>
             </Card.Content>
         ) : '' }
         <Card.Content extra>
-          <Link to={`/shelf/${this.props.book.industryIdentifiers[0].identifier}`}>View Listing</Link>
+          <Link to={`/shelf/${_.findWhere(this.props.book.industryIdentifiers, { type: 'ISBN_13' }).identifier}`}>
+            View Listings
+          </Link>
         </Card.Content>
       </Card>
     );

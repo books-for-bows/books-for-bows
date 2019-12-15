@@ -1,9 +1,9 @@
 import React from 'react';
 import { HTTP } from 'meteor/http';
+import { _ } from 'meteor/underscore';
 import { Item } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class BookPreview extends React.Component {
   constructor(props) {
     super(props);

@@ -32,17 +32,16 @@ class AddListing extends React.Component {
 
     this.state = {
       isbn: '',
-      book: undefined,
-      book_found: false,
+      isbn_13: '',
     };
   }
 
   /** On submit, insert the data. */
   submit(data, formRef) {
     this.setState({ isbn: '' });
-    const { price, ISBN, description, binding } = data;
+    const { price, description, binding } = data;
     const seller = Meteor.user().username;
-    Listings.insert({ seller, price, ISBN, description, binding },
+    Listings.insert({ seller, price, ISBN: this.state.isbn_13, description, binding },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -55,9 +54,23 @@ class AddListing extends React.Component {
 
   handleChange(field, value) {
     if (field === 'ISBN') {
-      const isbn = value;
-      this.setState({ isbn: isbn });
+      this.setState({ isbn: value });
+      if (value.length === 10) {
+        this.setState({ isbn: value, isbn_13: this.toISBN13(value) });
+      }
     }
+  }
+
+  toISBN13(isbn) {
+    let isbn10 = isbn.toString().trim();
+    isbn10 = `978${isbn10}`;
+    isbn10 = isbn10.substring(0, 12);
+    let sum = 0;
+    for (let i = 0; i < 12; i++) {
+      sum += isbn10.charAt(i) * ((i % 2 === 0) ? 1 : 3);
+    }
+    sum %= 10;
+    return isbn10 + ((sum > 0) ? 10 - sum : 0);
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */

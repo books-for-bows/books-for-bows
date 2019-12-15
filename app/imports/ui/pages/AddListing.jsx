@@ -3,6 +3,7 @@ import { Listings } from '/imports/api/listings/Listings';
 import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
+import NumField from 'uniforms-semantic/NumField';
 import SelectField from 'uniforms-semantic/SelectField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
@@ -80,7 +81,7 @@ class AddListing extends React.Component {
                 onChange={this.handleChange.bind(this)}>
                 <Segment>
                   <TextField name='ISBN' value={this.state.isbn}/>
-                  <TextField name='price'/>
+                  <NumField name='price'/>
                   <TextField name='description'/>
                   <SelectField name='binding'/>
                   <SubmitField value='Submit'/>

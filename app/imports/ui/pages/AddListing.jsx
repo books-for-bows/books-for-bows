@@ -8,7 +8,6 @@ import SubmitField from 'uniforms-semantic/SubmitField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
-import { HTTP } from 'meteor/http';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import SimpleSchema from 'simpl-schema';
 import BookPreview from '../components/BookPreview';
@@ -30,14 +29,13 @@ class AddListing extends React.Component {
 
   constructor(props) {
     super(props);
-    Meteor.subscribe('Books');
-  }
 
-  state = {
-    isbn: '',
-    book: undefined,
-    book_found: false,
-  };
+    this.state = {
+      isbn: '',
+      book: undefined,
+      book_found: false,
+    };
+  }
 
   /** On submit, insert the data. */
   submit(data, formRef) {

@@ -3,6 +3,7 @@ import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { Books } from '../../api/books/Books';
 import { Listings } from '../../api/listings/Listings';
+import { CourseBooks } from '../../api/coursebooks/CourseBooks';
 
 Meteor.publish('Stuff', function publish() {
   if (this.userId) {
@@ -19,6 +20,8 @@ Meteor.publish('StuffAdmin', function publish() {
   }
   return this.ready();
 });
+
+Meteor.publish('CourseBooks', () => CourseBooks.find());
 
 Meteor.publish('Books', () => Books.find());
 

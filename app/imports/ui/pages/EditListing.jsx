@@ -11,7 +11,6 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import 'uniforms-bridge-simple-schema-2';
-import { HTTP } from 'meteor/http';
 import { Listings, ListingsSchema } from '/imports/api/listings/Listings';
 import { Redirect } from 'react-router';
 import BookPreview from '../components/BookPreview'; // required for Uniforms

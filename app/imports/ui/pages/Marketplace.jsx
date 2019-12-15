@@ -26,7 +26,7 @@ class Marketplace extends React.Component {
             {
               params: {
                 q: `isbn:${book}`,
-                // key: Meteor.settings.public.api_key,
+                key: Meteor.settings.public.api_key,
               },
             },
             (error, result) => {

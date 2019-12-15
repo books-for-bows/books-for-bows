@@ -56,7 +56,7 @@ class EditListing extends React.Component {
                 <AutoForm schema={ListingsSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
                   <Segment>
                     <TextField name='ISBN' disabled/>
-                    <NumField name='price'/>
+                    <NumField name='price' icon='dollar' iconLeft/>
                     <TextField name='description'/>
                     <SelectField name='binding'/>
                     <SubmitField value='Submit'/>

@@ -94,7 +94,7 @@ class AddListing extends React.Component {
                 onChange={this.handleChange.bind(this)}>
                 <Segment>
                   <TextField name='ISBN' value={this.state.isbn}/>
-                  <NumField name='price'/>
+                  <NumField name='price' icon='dollar' iconLeft/>
                   <TextField name='description'/>
                   <SelectField name='binding'/>
                   <SubmitField value='Submit'/>

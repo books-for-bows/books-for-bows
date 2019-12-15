@@ -1,5 +1,6 @@
 import React from 'react';
 import { HTTP } from 'meteor/http';
+import { Meteor } from 'meteor/meteor';
 import { Item } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
@@ -23,13 +24,16 @@ class BookPreview extends React.Component {
   getBook(isbn) {
     if (isbn && (isbn.length === 10 || isbn.length === 13)) {
       const url = 'https://www.googleapis.com/books/v1/volumes';
+      const params = Meteor.settings.public.api_key ? {
+        q: `isbn:${isbn}`,
+        key: Meteor.settings.public.api_key,
+      } : {
+        q: `isbn:${isbn}`,
+      };
       HTTP.get(
           url,
           {
-            params: {
-              q: `isbn:${isbn}`,
-              // key: Meteor.settings.public.api_key,
-            },
+            params,
           },
           (error, result) => {
             if (!error) {

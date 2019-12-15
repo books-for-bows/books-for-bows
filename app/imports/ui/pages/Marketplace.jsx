@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Card, Loader } from 'semantic-ui-react';
+import { Container, Card, Loader, Header } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { HTTP } from 'meteor/http';
@@ -50,6 +50,9 @@ class Marketplace extends React.Component {
   /** Render the page once subscriptions have been received. */
   render() {
     this.getBooks();
+    if (this.state.books.length === 0) {
+      return this.renderEmpty();
+    }
     return (this.state.books_ready && this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
@@ -60,6 +63,14 @@ class Marketplace extends React.Component {
             { this.state.books_ready ?
                 _.map(this.state.books, (book, index) => <Book key={index} book={book}/>) : ''}
           </Card.Group>
+        </Container>
+    );
+  }
+
+  renderEmpty() {
+    return (
+        <Container>
+          <Header as='h1' textAlign='center'>No books currently on the Marketplace</Header>
         </Container>
     );
   }

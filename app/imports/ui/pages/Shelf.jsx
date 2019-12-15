@@ -1,9 +1,11 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Table, Header, Loader, Grid } from 'semantic-ui-react';
+import { Roles } from 'meteor/alanning:roles';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Listings } from '../../api/listings/Listings';
+import { Redirect } from 'react-router';
 
 import ListingItem from '../components/ListingItem';
 import BookPreview from '../components/BookPreview';
@@ -17,6 +19,7 @@ class Shelf extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    const listings = Listings.find({ ISBN: this.props.book_isbn }).fetch();
     return (
         <div>
           <Header as="h1" textAlign="center">Shelf</Header>
@@ -35,18 +38,19 @@ class Shelf extends React.Component {
                     <Table.HeaderCell>Binding</Table.HeaderCell>
                     <Table.HeaderCell>Seller</Table.HeaderCell>
                     <Table.HeaderCell>Description</Table.HeaderCell>
-                    { Meteor.user() && Meteor.user().roles && Meteor.user().roles.indexOf('admin') > -1 ? ([
+                    { Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
                       <Table.HeaderCell key={0}>Edit</Table.HeaderCell>,
                       <Table.HeaderCell key={1}>Delete</Table.HeaderCell>,
                     ]) : null }
                   </Table.Row>
                 </Table.Header>
                 <Table.Body>
-                {Listings.find({ ISBN: this.props.book_isbn }).fetch()
+                  {listings.length === 0 && <Redirect to={'/marketplace'}/>}
+                { listings
                     .map((listing, index) => <ListingItem
                         key={index}
                         listing={listing}
-                        index={index}
+                        length={listings.length}
                     />)}
                 </Table.Body>
                 </Table>

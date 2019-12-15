@@ -4,7 +4,7 @@ import { Button, Icon, Table } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
-import { Redirect } from 'react-router';
+
 import { Listings } from '../../api/listings/Listings';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
@@ -37,8 +37,7 @@ class ListingItem extends React.Component {
                   </Link>
                 </Table.Cell>,
                 <Table.Cell key={`delete:${this.props.listing._id}`}>
-                  {this.state.deleted && <Redirect to={`/shelf/${this.props.listing.ISBN}`}/>}
-                  {this.state.deleted && this.props.index === 0 && <Redirect to={'/marketplace'}/>}
+                  <Link to={`/shelf/${this.props.listing.ISBN}`}>
                   <Button
                       color="red"
                       icon
@@ -46,6 +45,7 @@ class ListingItem extends React.Component {
                   >
                     <Icon name="trash"/>
                   </Button>
+                  </Link>
                 </Table.Cell>,
               ])
               : null}
@@ -57,7 +57,7 @@ class ListingItem extends React.Component {
 /** Require a document to be passed to this component. */
 ListingItem.propTypes = {
   listing: PropTypes.object.isRequired,
-  index: PropTypes.number.isRequired,
+  length: PropTypes.number.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

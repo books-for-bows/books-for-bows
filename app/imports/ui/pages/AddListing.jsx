@@ -58,6 +58,8 @@ class AddListing extends React.Component {
       this.setState({ isbn: value });
       if (value.length === 10) {
         this.setState({ isbn: value, isbn_13: this.toISBN13(value) });
+      } else if (value.length === 13) {
+        this.setState({ isbn_13: value });
       }
     }
   }

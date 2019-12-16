@@ -1,55 +1,45 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Card, Loader } from 'semantic-ui-react';
+import { Container, Card, Loader, Header } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { HTTP } from 'meteor/http';
 import { _ } from 'meteor/underscore';
 import { Listings } from '../../api/listings/Listings.js';
 import Book from '../components/Book.jsx';
+import SearchBar from '/imports/ui/components/SearchBar';
 
 /** Renders the Profile Collection as a set of Cards. */
 class Marketplace extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state.isbn = { value: '' };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
   state = {
     books: [],
     books_ready: false,
-    isbn: String,
   };
-
-  handleChange(event) {
-    this.setState({ value: event.target.isbn.value });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-  }
 
   getBooks() {
     if (!this.state.books_ready) {
       const url = 'https://www.googleapis.com/books/v1/volumes';
       const listings = Listings.find({}).fetch();
-      _.each(_.uniq(_.pluck(listings, 'ISBN')), (book) => {
+      const listingsUnique = _.uniq(_.pluck(listings, 'ISBN'));
+      _.each(listingsUnique, (book) => {
+        const params = Meteor.settings.public.api_key ? {
+          q: `isbn:${book}`,
+          key: Meteor.settings.public.api_key,
+        } : {
+          q: `isbn:${book}`,
+        };
         HTTP.get(
             url,
             {
-              params: {
-                q: `isbn:${book}`,
-                // key: Meteor.settings.public.api_key,
-              },
+              params,
             },
             (error, result) => {
               if (!error) {
-                this.state.books.push(result.data.items[0].volumeInfo);
-                if (this.state.books.length === listings.length) {
-                  this.setState({ books_ready: true });
+                if (result.data.totalItems > 0) {
+                  this.state.books.push(result.data.items[0].volumeInfo);
+                  if (this.state.books.length === listingsUnique.length) {
+                    this.setState({ books_ready: true });
+                  }
                 }
               }
             },
@@ -60,25 +50,30 @@ class Marketplace extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   render() {
-    return (
-        <form onSubmit={this.handleSubmit} centered>
-          <label>
-            ISBN:
-            <input type="text" value={this.state.isbn.value} onChange={this.handleChange}/>
-          </label>
-          <input type="submit" value="Submit"/>
-        </form>
-    );
+    this.getBooks();
+    if (this.props.empty) {
+      return this.renderEmpty();
+    }
+    return (this.state.books_ready && this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
   renderPage() {
-    this.getBooks();
     return (
         <Container>
-          <Card.Group>
+          <SearchBar/>
+          <Card.Group centered>
             {this.state.books_ready ?
                 _.map(this.state.books, (book, index) => <Book key={index} book={book}/>) : ''}
           </Card.Group>
+        </Container>
+    );
+  }
+
+  renderEmpty() {
+    return (
+        <Container>
+          <Header as='h1' textAlign='center'>No books currently on the Marketplace</Header>
+          <SearchBar/>
         </Container>
     );
   }
@@ -86,6 +81,7 @@ class Marketplace extends React.Component {
 
 Marketplace.propTypes = {
   ready: PropTypes.bool.isRequired,
+  empty: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
@@ -94,5 +90,6 @@ export default withTracker(() => {
   const sub = Meteor.subscribe('Listings');
   return {
     ready: sub.ready(),
+    empty: Listings.find().fetch().length === 0,
   };
 })(Marketplace);

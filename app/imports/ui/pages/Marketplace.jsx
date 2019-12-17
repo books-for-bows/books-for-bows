@@ -59,7 +59,7 @@ class Marketplace extends React.Component {
 
   renderPage() {
     return (
-        <Container>
+        <Container centered>
           <SearchBar/>
           <Card.Group centered>
             {this.state.books_ready ?

@@ -60,7 +60,7 @@ class SearchBar extends Component {
         <Grid>
           <Grid.Column>
             <Search fluid
-                    placeholder='Search for a location'
+                    placeholder='ISBN'
                     loading={isLoading}
                     onResultSelect={this.handleResultSelect}
                     onSearchChange={_.debounce(this.handleSearchChange, 500, {

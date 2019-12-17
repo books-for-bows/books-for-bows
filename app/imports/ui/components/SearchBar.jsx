@@ -41,7 +41,7 @@ class SearchBar extends Component {
 
       this.setState({
         isLoading: false,
-        results: _.filter(this.props.locations, isMatch),
+        results: _.filter(this.props.books, isMatch),
       });
     }, 300);
   };
@@ -51,7 +51,7 @@ class SearchBar extends Component {
 
     if (this.state.renderResults) {
       return <Redirect to={{
-        pathname: '/results',
+        pathname: '/Marketplace',
         state: { referrer: results },
       }}/>;
     }
@@ -78,15 +78,15 @@ class SearchBar extends Component {
 
 /** Require an array of Food documents in the props. */
 SearchBar.propTypes = {
-  locations: PropTypes.object.isRequired,
+  books: PropTypes.object.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 export default withTracker(() => {
-  // Get access to Food documents.
+  // Get access to books documents.
   const subscription = Meteor.subscribe('Books');
   return {
-    locations: Books.find({}).fetch(),
+    books: Books.find({}).fetch(),
     ready: subscription.ready(),
   };
 })(SearchBar);

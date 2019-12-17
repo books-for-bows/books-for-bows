@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
 import { Redirect } from 'react-router';
-import { Projects } from '../../api/projects/Projects';
+import { Books } from '../../api/books/Books';
 
 class SearchBar extends Component {
 
@@ -84,9 +84,9 @@ SearchBar.propTypes = {
 
 export default withTracker(() => {
   // Get access to Food documents.
-  const subscription = Meteor.subscribe('Projects');
+  const subscription = Meteor.subscribe('Books');
   return {
-    locations: Projects.find({}).fetch(),
+    locations: Books.find({}).fetch(),
     ready: subscription.ready(),
   };
 })(SearchBar);

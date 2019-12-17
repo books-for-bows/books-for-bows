@@ -60,7 +60,7 @@ class Marketplace extends React.Component {
   renderPage() {
     return (
         <Container centered>
-          <SearchBar/>
+          <SearchBar />
           <Card.Group centered>
             {this.state.books_ready ?
                 _.map(this.state.books, (book, index) => <Book key={index} book={book}/>) : ''}
@@ -71,9 +71,9 @@ class Marketplace extends React.Component {
 
   renderEmpty() {
     return (
-        <Container>
-          <Header as='h1' textAlign='center'>No books currently on the Marketplace</Header>
+        <Container centered>
           <SearchBar/>
+          <Header as='h1' textAlign='center'>No books currently on the Marketplace</Header>
         </Container>
     );
   }

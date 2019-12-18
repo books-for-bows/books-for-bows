@@ -17,3 +17,8 @@ footer {
   background: #073007;
   box-shadow: 0 50vh 0 50vh #073007;
 }
+
+.footerICON {
+  background-color: #21b372 !important;
+  margin: 21px 7px !important;
+}

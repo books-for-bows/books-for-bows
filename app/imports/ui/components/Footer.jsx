@@ -1,17 +1,22 @@
 import React from 'react';
+import { Button } from 'semantic-ui-react';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
     const divStyle = { paddingTop: '15px', color: 'white', marginTop: '1rem' };
     return (
-        <footer>
-          <div style={divStyle} className="ui center aligned container">
+        <footer style={{ height: '150px', backgroundColor: '#000000', color: 'white' }}>
+          <div style={divStyle} className="ui fluid center aligned container">
             <hr />
-            Books for Bows <br />
-            University of Hawaii<br />
-            Honolulu, HI 96822 <br />
-            <a href="https://books-for-bows.github.io/">https://books-for-bows.github.io/</a>
+            <div>
+              <Button circular icon={'github'} className={'footerICON'}/>
+              <Button circular icon={'instagram'} className={'footerICON'}/>
+              <Button circular icon={'facebook f'} className={'footerICON'}/>
+              <Button circular icon={'discord'} className={'footerICON'}/>
+              <Button circular icon={'linkedin'} className={'footerICON'}/>
+            </div>
+            University of Hawaiʻi at Mānoa • 2500 Campus Road • Honolulu, HI 96822
           </div>
         </footer>
     );

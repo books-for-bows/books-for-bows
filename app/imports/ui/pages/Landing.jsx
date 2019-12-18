@@ -1,11 +1,18 @@
 import React from 'react';
-import { Grid, Image, Header, Statistic } from 'semantic-ui-react';
+import { Meteor } from 'meteor/meteor';
+import { Grid, Image, Header, Statistic, Loader } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { withTracker } from 'meteor/react-meteor-data';
 import { Listings } from '../../api/listings/Listings';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
+    return (this.props.ready) ? this.renderLanding() : <Loader active>Getting data</Loader>;
+  }
+
+  renderLanding() {
     return (
         <div className="landing-page">
           <Grid verticalAlign='middle' textAlign='center' style={{ marginTop: '0' }}>
@@ -45,7 +52,7 @@ class Landing extends React.Component {
                   Find the textbook you need for class and compare all available listings for that book in
                   one convenient spot.
                 </p>
-                <Statistic inverted label='Listings' value={ Listings.find().count() } />
+                <Statistic inverted label='Listings' value={Listings.find().count()}/>
               </Grid.Column>
             </Grid.Row>
 
@@ -66,4 +73,14 @@ class Landing extends React.Component {
   }
 }
 
-export default Landing;
+Landing.propTypes = {
+  ready: PropTypes.bool.isRequired,
+};
+
+export default withTracker(() => {
+  // Ensure that minimongo is populated with all collections prior to running render().
+  const sub = Meteor.subscribe('Listings');
+  return {
+    ready: sub.ready(),
+  };
+})(Landing);

@@ -81,7 +81,7 @@ class AddListing extends React.Component {
     let fRef = null;
     return (
       <div>
-        <Header as="h2" textAlign="center">Add Listing</Header>
+        <Header as="h2" textAlign="center" inverted>Add Listing</Header>
         <Grid container centered>
           <Grid.Row centered columns={12}>
             <Grid.Column width={6}>

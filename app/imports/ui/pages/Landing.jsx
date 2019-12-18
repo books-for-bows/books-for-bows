@@ -9,7 +9,7 @@ import { Listings } from '../../api/listings/Listings';
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
-    return (this.props.ready) ? this.renderLanding() : <Loader active>Getting data</Loader>;
+    return (this.props.ready) ? this.renderLanding() : <Loader inverted active>Getting data</Loader>;
   }
 
   renderLanding() {

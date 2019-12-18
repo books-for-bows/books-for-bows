@@ -10,8 +10,12 @@
 }
 
 footer {
-  background: #073007;
-  box-shadow: 0 50vh 0 50vh #073007;
+  background: #000;
+  box-shadow: 0 50vh 0 50vh #000;
+}
+
+body {
+  background-color: #012a45 !important;
 }
 
 .footerICON {

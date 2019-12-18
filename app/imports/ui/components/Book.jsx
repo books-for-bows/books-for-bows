@@ -12,7 +12,7 @@ class Book extends React.Component {
     return (
       <Card>
         <Image key="cover" wrapped ui={false} src={this.props.book.imageLinks ? this.props.book.imageLinks.thumbnail :
-            '/images/book-not-found-temp.png'}/>
+            '/images/no_cover_available.png'}/>
         <Card.Content>
           <Card.Header>{this.props.book.subtitle ?
               `${this.props.book.title}: ${this.props.book.subtitle}` : `${this.props.book.title}`}</Card.Header>

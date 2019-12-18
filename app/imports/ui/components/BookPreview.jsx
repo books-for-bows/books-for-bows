@@ -62,7 +62,7 @@ class BookPreview extends React.Component {
       <Item.Group>
         {(this.state.book_found ? this.renderPage() : (
           <Item>
-            <Item.Image key="thumbnail" size="small" src='/images/book-not-found-temp.png'/>
+            <Item.Image key="thumbnail" size="small" src='/images/no_cover_available.png'/>
             <Item.Content verticalAlign="middle">
               <Item.Header as="h3">Book Not Found</Item.Header>
             </Item.Content>
@@ -77,7 +77,7 @@ class BookPreview extends React.Component {
       <Item>
         <Item.Image key="thumbnail" size="small"
                     src={this.state.book.imageLinks ? this.state.book.imageLinks.thumbnail :
-                        '/images/book-not-found-temp.png'}/>
+                        '/images/no_cover_available.png'}/>
         <Item.Content verticalAlign="middle">
           <Item.Header as="h3">{ this.state.book.subtitle ?
               `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}

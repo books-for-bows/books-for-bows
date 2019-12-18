@@ -1,6 +1,7 @@
 import React from 'react';
-import { Grid, Image, Header } from 'semantic-ui-react';
+import { Grid, Image, Header, Statistic } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import { Listings } from '../../api/listings/Listings';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -44,6 +45,7 @@ class Landing extends React.Component {
                   Find the textbook you need for class and compare all available listings for that book in
                   one convenient spot.
                 </p>
+                <Statistic inverted label='Listings' value={ Listings.find().count() } />
               </Grid.Column>
             </Grid.Row>
 

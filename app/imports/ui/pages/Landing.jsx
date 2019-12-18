@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Image, Header } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -20,11 +21,13 @@ class Landing extends React.Component {
             </Grid.Row>
 
             <Grid.Row className="landing-panel-2">
-              <Grid.Column width={5}>
-                <Header as={'landing-header'}>Browse the Marketplace</Header>
-                <p className="landing-text">
-                  Books For Bows hosts a convenient marketplace full of relevant books.
-                </p>
+              <Grid.Column width={4}>
+                <Link to={'/marketplace'}>
+                  <Header as={'landing-header'} textAlign='left'>Browse the Marketplace</Header>
+                  <p className="landing-text">
+                    Books For Bows hosts a convenient marketplace full of relevant books.
+                  </p>
+                </Link>
               </Grid.Column>
               <Grid.Column width={5}>
                 <Image src={''} style={{ width: '500px' }}/>

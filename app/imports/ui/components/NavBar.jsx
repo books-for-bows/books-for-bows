@@ -8,7 +8,7 @@ import { Menu, Dropdown, Header, Image } from 'semantic-ui-react';
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   render() {
-    const menuStyle = { marginBottom: '10px', background: '#097528' };
+    const menuStyle = { marginBottom: '10px', background: '#000' };
     return (
         <Menu style={menuStyle} attached="top" borderless inverted>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
@@ -16,7 +16,7 @@ class NavBar extends React.Component {
               <span className='josefinSans'>Books</span>
               <span style={{ fontSize: '1.5rem' }} className='courgette' > for </span>
               <span className='josefinSans'>Bows </span>
-              <Image src="images/temp-logo.png" size='small'/>
+              <Image src="images/rainbow-book.png" size='small'/>
             </Header>
           </Menu.Item>
           <Menu.Item

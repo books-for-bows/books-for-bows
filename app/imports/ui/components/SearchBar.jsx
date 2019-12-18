@@ -1,11 +1,29 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { Search, Grid } from 'semantic-ui-react';
+import { Search, Grid, Card, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
 import { Redirect } from 'react-router';
 import { Books } from '../../api/books/Books';
+
+const resultRenderer = ({ name, description, picture }) => <Card>
+  <Card.Content>
+    <Image
+        floated='right'
+        size='mini'
+        src={picture}
+    />
+    <Card.Header>{name}</Card.Header>
+    <Card.Description>{description}</Card.Description>
+  </Card.Content>
+</Card>;
+
+resultRenderer.propTypes = {
+  name: PropTypes.string,
+  description: PropTypes.string,
+  picture: PropTypes.string,
+};
 
 class SearchBar extends Component {
 
@@ -15,6 +33,7 @@ class SearchBar extends Component {
       value: '',
       results: [],
       renderResults: false,
+      name: '',
     };
   }
 
@@ -51,7 +70,7 @@ class SearchBar extends Component {
 
     if (this.state.renderResults) {
       return <Redirect to={{
-        pathname: '/Marketplace',
+        pathname: '/Books',
         state: { referrer: results },
       }}/>;
     }
@@ -68,6 +87,7 @@ class SearchBar extends Component {
                     })}
                     results={results}
                     value={value}
+                    resultRenderer={resultRenderer}
                     {...this.props}
             />
           </Grid.Column>
@@ -86,7 +106,7 @@ export default withTracker(() => {
   // Get access to books documents.
   const subscription = Meteor.subscribe('Books');
   return {
-    books: Books.find({}).fetch(),
+    books: Books.find().fetch(),
     ready: subscription.ready(),
   };
 })(SearchBar);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Card, Loader, Header } from 'semantic-ui-react';
+import { Container, Card, Loader, Header, Grid, Input } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { HTTP } from 'meteor/http';
@@ -12,8 +12,30 @@ import Book from '../components/Book.jsx';
 class Marketplace extends React.Component {
   state = {
     books: [],
+    booksFiltered: [],
     books_ready: false,
+    searchInput: '',
+    searchValue: '',
   };
+
+  updateSearchValue(event) {
+    this.setState({ searchInput: event.target.value });
+  }
+
+  handleSearchClick(c) {
+    if (c.key === 'Enter') {
+      this.setState({ searchValue: this.state.searchInput });
+    }
+  }
+
+  handleSearchButton() {
+    this.setState({ searchValue: this.state.searchInput });
+  }
+
+  searchReset() {
+    this.setState({ searchInput: '' });
+    this.setState({ searchValue: '' });
+  }
 
   getBooks() {
     if (!this.state.books_ready) {
@@ -57,11 +79,36 @@ class Marketplace extends React.Component {
   }
 
   renderPage() {
+    const searchStyle = { paddingLeft: '100px', paddingRight: '100px' };
+    const searchedBooks = this.state.books.filter(
+        (books) => books.title.toLowerCase().indexOf(this.state.searchValue.toLowerCase()) !== -1 ||
+            books.industryIdentifiers[0].identifier.indexOf(this.state.searchValue.toLowerCase()) !== -1 ||
+            books.industryIdentifiers[1].identifier.indexOf(this.state.searchValue.toLowerCase()) !== -1,
+    );
+
     return (
         <Container>
+          <Grid>
+            <Grid.Row centered>
+              <Grid.Column style={searchStyle}>
+                <div id='store-search'>
+                  <Input
+                      type='text'
+                      value={this.state.searchInput}
+                      fluid
+                      size='large'
+                      onChange={this.updateSearchValue.bind(this)}
+                      onKeyPress={this.handleSearchClick.bind(this)}
+                      placeholder='Search Title or ISBN...'
+                      action={{ icon: 'search', onClick: () => this.handleSearchButton() }}
+                  />
+                </div>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
           <Card.Group centered>
             { this.state.books_ready ?
-                _.map(this.state.books, (book, index) => <Book key={index} book={book}/>) : ''}
+                _.map(searchedBooks, (book, index) => <Book key={index} book={book}/>) : ''}
           </Card.Group>
         </Container>
     );

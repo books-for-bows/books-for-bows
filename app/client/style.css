@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Josefin+Sans|Courgette);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400');
 
 .josefinSans {
   font-family: 'Josefin Sans';
@@ -6,11 +7,6 @@
 
 .courgette {
   font-family: 'Courgette';
-}
-
-.landing-background-img {
-  background: url("images/landing-background.jpg") no-repeat center center fixed;
-  background-size: cover;
 }
 
 footer {
@@ -21,4 +17,82 @@ footer {
 .footerICON {
   background-color: #21b372 !important;
   margin: 21px 7px !important;
+}
+
+.landing-page, .page-container {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.page-container {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 20px 50px 20px 50px;
+  min-height: 70vh;
+}
+
+.landing-text {
+  font-size: 20px;
+  color: whitesmoke;
+  opacity: 0.75;
+  text-align: left;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif !important;
+  letter-spacing: 2px;
+}
+
+landing-header {
+  font-size: 32px;
+  line-height: 1.75em;
+  color: whitesmoke;
+  text-align: left;
+}
+
+/* Welcome To B4B, Open Book Picture*/
+.landing-panel-1 {
+  background-image: url("/images/Landing1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #012a45;
+  width: 100vw;
+  height: 700px;
+  padding: 20vh 0 20vh 0;
+}
+
+/* Marketplace Book Stack Picture */
+.landing-panel-2 {
+  background-image: url("/images/Landing2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #012a45;
+  width: 100vw;
+  height: 700px;
+  padding: 20vh 0 20vh 0;
+}
+
+/* Listing Comparison Scale Picture */
+.landing-panel-3 {
+  background-image: url("/images/Landing3.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #012a45;
+  width: 100vw;
+  height: 700px;
+  padding: 20vh 0 20vh 0;
+}
+
+/* Buy and Sell Money Stack Picture */
+.landing-panel-4 {
+  background-image: url("/images/Landing4.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #012a45;
+  width: 100vw;
+  height: 700px;
+  padding: 20vh 0 20vh 0;
 }

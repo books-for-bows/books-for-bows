@@ -44,7 +44,7 @@ class EditListing extends React.Component {
   renderPage() {
     return (
         <div>
-          <Header as="h2" textAlign="center">Edit Listing</Header>
+          <Header as="h2" textAlign="center" inverted>Edit Listing</Header>
           <Grid container centered>
             <Grid.Row centered columns={12}>
               <Grid.Column width={6}>

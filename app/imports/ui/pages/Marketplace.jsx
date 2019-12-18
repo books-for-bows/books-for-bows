@@ -72,7 +72,7 @@ class Marketplace extends React.Component {
   renderEmpty() {
     return (
         <Container>
-          <SearchBar/>
+          <SearchBar />
           <Header as='h1' textAlign='center'>No books currently on the Marketplace</Header>
         </Container>
     );

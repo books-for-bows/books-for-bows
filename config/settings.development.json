@@ -12,7 +12,7 @@
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
 
-  "defaultBook": [
+  "defaultCourseBook": [
     {
       "publisher": "Copley Custom Textbooks",
       "image": "https://images.isbndb.com/covers/57/93/9781581525793.jpg",
@@ -71,7 +71,6 @@
       "isbn13": "0000000000000"
     }
   ],
-
   "defaultListing": [
     {
       "ISBN": 9780134112831,

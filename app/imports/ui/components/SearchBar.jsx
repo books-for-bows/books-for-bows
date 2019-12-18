@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
 import { Redirect } from 'react-router';
+import { CourseBooks } from '../../api/coursebooks/CourseBooks';
 import { Books } from '../../api/books/Books';
+import { Listings } from '../../api/listings/Listings';
 
 const resultRenderer = ({ title, description, picture }) => <Card>
   <Card.Content>
@@ -106,9 +108,18 @@ SearchBar.propTypes = {
 
 export default withTracker(() => {
   // Get access to books documents.
-  const subscription = Meteor.subscribe('Books');
+  const subscription = Meteor.subscribe('CourseBooks');
+  const subscription2 = Meteor.subscribe('Books');
+  const subscription3 = Meteor.subscribe('Listings');
+
   return {
-    books: Books.find().fetch(),
+    books: CourseBooks.find().fetch(),
+    books2: Books.find().fetch(),
+    listing: Listings.find().fetch(),
+
     ready: subscription.ready(),
+    ready2: subscription2.ready(),
+    ready3: subscription3.ready(),
+
   };
 })(SearchBar);

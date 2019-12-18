@@ -12,7 +12,6 @@ import Book from '../components/Book.jsx';
 class Marketplace extends React.Component {
   state = {
     books: [],
-    booksFiltered: [],
     books_ready: false,
     searchInput: '',
     searchValue: '',
@@ -82,8 +81,10 @@ class Marketplace extends React.Component {
     const searchStyle = { paddingLeft: '100px', paddingRight: '100px' };
     const searchedBooks = this.state.books.filter(
         (books) => books.title.toLowerCase().indexOf(this.state.searchValue.toLowerCase()) !== -1 ||
-            books.industryIdentifiers[0].identifier.indexOf(this.state.searchValue.toLowerCase().replace(/-/g, '')) !== -1 ||
-            books.industryIdentifiers[1].identifier.indexOf(this.state.searchValue.toLowerCase().replace(/-/g, '')) !== -1,
+            books.industryIdentifiers[0].identifier.toLowerCase()
+                .indexOf(this.state.searchValue.toLowerCase().replace(/-/g, '')) !== -1 ||
+            books.industryIdentifiers[1].identifier.toLowerCase()
+                .indexOf(this.state.searchValue.toLowerCase().replace(/-/g, '')) !== -1,
     );
 
     return (

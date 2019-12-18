@@ -142,6 +142,118 @@
       "description": "Book is in good condition. The first two pages have minor water damage.",
       "binding": "paperback",
       "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780226239736,
+      "price": 76.99,
+      "description": "Lightly used, in good condition.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780226239736,
+      "price": 110.00,
+      "description": "Like new. Dropped the class but forgot to return it.",
+      "binding": "hardcover",
+      "seller": "john@foo.com"
+    },
+    {
+      "ISBN": 9781605353807,
+      "price": 105.00,
+      "description": "Good condition.",
+      "binding": "hardcover",
+      "seller": "john@foo.com"
+    },
+    {
+      "ISBN": 9781605353807,
+      "price": 40.00,
+      "description": "Poor condition from heavy use. Not bad if you don't mind the damage.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9781944659011,
+      "price": 60.00,
+      "description": "Has some highlighting that I've done when I took the course. No damage and in otherwise good condition",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780134484488,
+      "price": 30.00,
+      "description": "I'm at least the second owner of this book. It's seen better days.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9781444333428,
+      "price": 60.00,
+      "description": "Fair condition",
+      "binding": "paperback",
+      "seller": "john@foo.com"
+    },
+    {
+      "ISBN": 9781444333428,
+      "price": 100.00,
+      "description": "Well taken care of. Only damage is a stray sharpie mark on page 102.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780133388084,
+      "price": 78.00,
+      "description": "Some highlights and underlines from myself and previous owners. Fair condition.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780133388084,
+      "price": 78.00,
+      "description": "Some highlights and underlines from myself and previous owners. Fair condition.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780134244167,
+      "price": 55.00,
+      "description": "Good condition. Minor spine damage.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780134244167,
+      "price": 40.00,
+      "description": "Fair condition.",
+      "binding": "paperback",
+      "seller": "john@foo.com"
+    },
+    {
+      "ISBN": 9781305937079,
+      "price": 55.00,
+      "description": "Fair condition.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780961673802,
+      "price": 48.00,
+      "description": "Good condition.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9781305971509,
+      "price": 50.00,
+      "description": "Good condition but lots of highlighting done on the pages.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9781259290633,
+      "price": 40.00,
+      "description": "Poor condition. Lots of highlighting done on the pages.",
+      "binding": "paperback",
+      "seller": "john@foo.com"
     }
   ]
 }

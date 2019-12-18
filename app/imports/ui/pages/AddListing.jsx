@@ -56,10 +56,10 @@ class AddListing extends React.Component {
   handleChange(field, value) {
     if (field === 'ISBN') {
       this.setState({ isbn: value });
-      if (value.length === 10) {
-        this.setState({ isbn: value, isbn_13: this.toISBN13(value) });
-      } else if (value.length === 13) {
-        this.setState({ isbn_13: value });
+      if (value.replace(/-/g, '').length === 10) {
+        this.setState({ isbn: value, isbn_13: this.toISBN13(value).replace(/-/g, '') });
+      } else if (value.replace(/-/g, '').length === 13) {
+        this.setState({ isbn_13: value.replace(/-/g, '') });
       }
     }
   }
@@ -85,7 +85,7 @@ class AddListing extends React.Component {
         <Grid container centered>
           <Grid.Row centered columns={12}>
             <Grid.Column width={6}>
-              <BookPreview isbn={ this.state.isbn }/>
+              <BookPreview isbn={ this.state.isbn_13 }/>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>

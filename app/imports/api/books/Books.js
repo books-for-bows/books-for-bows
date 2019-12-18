@@ -2,8 +2,10 @@ import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
+const booksName = 'Books';
+
 /** Define a Mongo collection to hold the data. */
-const Books = new Mongo.Collection('Books');
+const Books = new Mongo.Collection(booksName);
 
 /** Define a schema to specify the structure of each document in the collection. */
 const BooksSchema = new SimpleSchema({
@@ -25,4 +27,4 @@ const BooksSchema = new SimpleSchema({
 Books.attachSchema(BooksSchema);
 
 /** Make the collection and schema available to other code. */
-export { Books, BooksSchema };
+export { Books, BooksSchema, booksName };

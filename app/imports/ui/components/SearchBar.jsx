@@ -7,20 +7,20 @@ import { Meteor } from 'meteor/meteor';
 import { Redirect } from 'react-router';
 import { Books } from '../../api/books/Books';
 
-const resultRenderer = ({ name, description, picture }) => <Card>
+const resultRenderer = ({ title, description, picture }) => <Card>
   <Card.Content>
     <Image
         floated='right'
         size='mini'
         src={picture}
     />
-    <Card.Header>{name}</Card.Header>
+    <Card.Header>{title}</Card.Header>
     <Card.Description>{description}</Card.Description>
   </Card.Content>
 </Card>;
 
 resultRenderer.propTypes = {
-  name: PropTypes.string,
+  title: PropTypes.string,
   description: PropTypes.string,
   picture: PropTypes.string,
 };
@@ -33,7 +33,7 @@ class SearchBar extends Component {
       value: '',
       results: [],
       renderResults: false,
-      name: '',
+      title: '',
     };
   }
 
@@ -41,7 +41,7 @@ class SearchBar extends Component {
     this.resetComponent();
   }
 
-  resetComponent = () => this.setState({ isLoading: false, results: [], value: '' });
+  resetComponent = () => this.setState({ isLoading: false, results: [], value: '', title: '' });
 
   handleResultSelect = () => {
     this.setState({ renderResults: true });
@@ -56,13 +56,15 @@ class SearchBar extends Component {
       if (this.state.value.length < 1) return this.resetComponent();
 
       const re = new RegExp(_.escapeRegExp(this.state.value), 'i');
-      const isMatch = result => re.test(result.name);
+      const isMatch = result => re.test(result.title);
 
       this.setState({
         isLoading: false,
         results: _.filter(this.props.books, isMatch),
       });
+      console.log(this.state.results)
     }, 300);
+
   };
 
   render() {
@@ -70,7 +72,7 @@ class SearchBar extends Component {
 
     if (this.state.renderResults) {
       return <Redirect to={{
-        pathname: '/Books',
+        pathname: '/books',
         state: { referrer: results },
       }}/>;
     }

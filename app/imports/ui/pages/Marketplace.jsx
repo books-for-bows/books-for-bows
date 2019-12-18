@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 import { HTTP } from 'meteor/http';
 import { _ } from 'meteor/underscore';
 import { Listings } from '../../api/listings/Listings.js';
+import { SearchBar } from '../components/SearchBar';
 import Book from '../components/Book.jsx';
-import SearchBar from '/imports/ui/components/SearchBar';
 
 /** Renders the Profile Collection as a set of Cards. */
 class Marketplace extends React.Component {
@@ -59,7 +59,7 @@ class Marketplace extends React.Component {
 
   renderPage() {
     return (
-        <Container centered>
+        <Container>
           <SearchBar />
           <Card.Group centered>
             {this.state.books_ready ?
@@ -71,7 +71,7 @@ class Marketplace extends React.Component {
 
   renderEmpty() {
     return (
-        <Container centered>
+        <Container>
           <SearchBar/>
           <Header as='h1' textAlign='center'>No books currently on the Marketplace</Header>
         </Container>

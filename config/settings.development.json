@@ -1,7 +1,8 @@
 {
   "defaultAccounts": [
     { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    { "email": "john@foo.com", "password": "changeme" },
+    { "email": "jane@foo.com", "password": "mechange" }
   ],
 
   "defaultData": [
@@ -73,28 +74,74 @@
 
   "defaultListing": [
     {
-      "title": "Chemistry: A Molecular Approach (4th Edition)",
       "ISBN": 9780134112831,
-      "price": "$100",
-      "description": "CHEM 161, 162",
+      "price": 100.00,
+      "description": "This book has gone through some use. Not in the best condition but still usable.",
       "binding": "hardcover",
       "seller": "john@foo.com"
     },
     {
-      "title": "C Programming Language (2nd Edition)",
       "ISBN": 9780131103627,
-      "price": "$100",
-      "description": "ICS 212",
+      "price": 105.00,
+      "description": "Bought used from a friend. Still in decent condition",
       "binding": "hardcover",
       "seller": "john@foo.com"
     },
     {
-      "title": "Looking at Movies (Sixth Edition)",
       "ISBN": 9780393674712,
-      "price": "$100",
-      "description": "ASAN 330",
+      "price": 110.00,
+      "description": "Lightly used over the course of one semester.",
       "binding": "hardcover",
       "seller": "john@foo.com"
+    },
+    {
+      "ISBN": 9780824809447,
+      "price": 45.00,
+      "description": "Just short of falling apart.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780865478978,
+      "price": 70.00,
+      "description": "Just like new! Was just collecting dust in my room",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780195085570,
+      "price": 20.00,
+      "description": "My sister's old textbook. She doesn't need it anymore. Poor condition.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9781138747241,
+      "price": 90.00,
+      "description": "Good condition. Only damage is a few dog-eared pages.",
+      "binding": "paperback",
+      "seller": "john@foo.com"
+    },
+    {
+      "ISBN": 9780201662122,
+      "price": 105.00,
+      "description": "Sealed and unopened. Missed the return window at the bookstore.",
+      "binding": "paperback",
+      "seller": "john@foo.com"
+    },
+    {
+      "ISBN": 9780201662122,
+      "price": 95.00,
+      "description": "Lightly used for one semester.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
+    },
+    {
+      "ISBN": 9780131103627,
+      "price": 77.00,
+      "description": "Book is in good condition. The first two pages have minor water damage.",
+      "binding": "paperback",
+      "seller": "jane@foo.com"
     }
   ]
 }

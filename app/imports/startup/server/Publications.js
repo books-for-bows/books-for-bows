@@ -3,8 +3,8 @@ import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { Books } from '../../api/books/Books';
 import { Listings } from '../../api/listings/Listings';
+import { CourseBooks } from '../../api/coursebooks/CourseBooks';
 
-/** This subscription publishes only the documents associated with the logged in user */
 Meteor.publish('Stuff', function publish() {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
@@ -21,5 +21,8 @@ Meteor.publish('StuffAdmin', function publish() {
   return this.ready();
 });
 
-Meteor.publish(booksName, () => Books.find());
+Meteor.publish('CourseBooks', () => CourseBooks.find());
+
+Meteor.publish('Books', () => Books.find());
+
 Meteor.publish('Listings', () => Listings.find());

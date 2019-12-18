@@ -62,7 +62,7 @@ class SearchBar extends Component {
         isLoading: false,
         results: _.filter(this.props.books, isMatch),
       });
-      console.log(this.state.results)
+      console.log(this.state.results);
     }, 300);
 
   };

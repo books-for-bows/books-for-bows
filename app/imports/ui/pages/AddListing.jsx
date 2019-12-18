@@ -1,6 +1,6 @@
 import React from 'react';
 import { Listings } from '/imports/api/listings/Listings';
-import { Grid, Segment, Header, Image } from 'semantic-ui-react';
+import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import NumField from 'uniforms-semantic/NumField';
@@ -9,14 +9,14 @@ import SubmitField from 'uniforms-semantic/SubmitField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
-import { HTTP } from 'meteor/http';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import SimpleSchema from 'simpl-schema';
+import BookPreview from '../components/BookPreview';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   price: String,
-  ISBN: Number,
+  ISBN: String,
   description: String,
   binding: {
     type: String,
@@ -30,20 +30,19 @@ class AddListing extends React.Component {
 
   constructor(props) {
     super(props);
-    Meteor.subscribe('Books');
-  }
 
-  state = {
-    isbn: 0,
-    book: undefined,
-    book_found: undefined,
-  };
+    this.state = {
+      isbn: '',
+      isbn_13: '',
+    };
+  }
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { price, ISBN, description, binding } = data;
+    this.setState({ isbn: '' });
+    const { price, description, binding } = data;
     const seller = Meteor.user().username;
-    Listings.insert({ seller, price, ISBN, description, binding },
+    Listings.insert({ seller, price, ISBN: this.state.isbn_13, description, binding },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -54,72 +53,58 @@ class AddListing extends React.Component {
       });
   }
 
-  handleChange(isbn) {
-    if (isbn.toString().length === 10 || isbn.toString().length === 13) {
-      const url = 'https://openlibrary.org/api/books';
-      HTTP.get(
-        url,
-        {
-          params: {
-            bibkeys: `ISBN:${isbn.toString()}`,
-            format: 'json',
-            jscmd: 'data',
-          },
-        },
-        (error, result) => {
-          if (!error) {
-            const book = result.data[`ISBN:${isbn.toString()}`];
-            if (book !== undefined) {
-              this.setState({ isbn: isbn, book: book, book_found: true });
-            } else {
-              this.setState({ isbn: isbn, book_found: false });
-            }
-          }
-        },
-      );
+  handleChange(field, value) {
+    if (field === 'ISBN') {
+      this.setState({ isbn: value });
+      if (value.length === 10) {
+        this.setState({ isbn: value, isbn_13: this.toISBN13(value) });
+      } else if (value.length === 13) {
+        this.setState({ isbn_13: value });
+      }
     }
+  }
+
+  toISBN13(isbn) {
+    let isbn10 = isbn.toString().trim();
+    isbn10 = `978${isbn10}`;
+    isbn10 = isbn10.substring(0, 12);
+    let sum = 0;
+    for (let i = 0; i < 12; i++) {
+      sum += isbn10.charAt(i) * ((i % 2 === 0) ? 1 : 3);
+    }
+    sum %= 10;
+    return isbn10 + ((sum > 0) ? 10 - sum : 0);
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
     let fRef = null;
     return (
+      <div>
+        <Header as="h2" textAlign="center">Add Listing</Header>
         <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Add Listing</Header>
-            { this.state.book !== undefined && this.state.book_found &&
-              <Grid.Row columns={2}>
-                <Grid.Column>
-                  { this.state.book.cover ? ([
-                      <Image size="small" key="cover" src={this.state.book.cover.small}/>,
-                    ]) : 'No Cover Found'
-                  }
-                  <Header as="h4">{this.state.book.title}</Header>
-                </Grid.Column>
-                <Grid.Column>
-                  Author: {this.state.book.authors ?
-                    this.state.book.authors.map(author => `${author.name}, `) : 'None'} <br/>
-                  ISBN: {this.state.isbn} <br/>
-                  Publisher: {this.state.book.publishers ? this.state.book.publishers[0].name : 'None'}<br/>
-                  Publish Date: {this.state.book.publish_date ? this.state.book.publish_date : 'None'}
-                </Grid.Column>
-              </Grid.Row>
-            }
-            { this.state.book_found === false &&
-                <Header as="h4">Book Not Found.</Header>
-            }
-            <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
-              <Segment>
-                <TextField name='price'/>
-                <NumField name='ISBN' decimal={false} onChange={this.handleChange.bind(this)} value={this.state.isbn}/>
-                <TextField name='description'/>
-                <SelectField name='binding'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
+          <Grid.Row centered columns={12}>
+            <Grid.Column width={6}>
+              <BookPreview isbn={ this.state.isbn }/>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column>
+              <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}
+                onChange={this.handleChange.bind(this)}>
+                <Segment>
+                  <TextField name='ISBN' value={this.state.isbn}/>
+                  <NumField name='price' icon='dollar' iconLeft/>
+                  <TextField name='description'/>
+                  <SelectField name='binding'/>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid.Row>
         </Grid>
+      </div>
     );
   }
 }

@@ -11,14 +11,14 @@ class UserProfile extends React.Component {
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+    return (this.props.ready) ? this.renderPage() : <Loader inverted active>Getting data</Loader>;
   }
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
         <Container>
-          <Header as="h2" textAlign="center">User Profile</Header>
+          <Header as="h2" textAlign="center" inverted>User Profile</Header>
           <Table celled>
             <Table.Header>
               <Table.Row>

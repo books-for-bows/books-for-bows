@@ -14,7 +14,7 @@ import BookPreview from '../components/BookPreview';
 class Shelf extends React.Component {
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+    return (this.props.ready) ? this.renderPage() : <Loader inverted active>Getting data</Loader>;
   }
 
   /** Render the page once subscriptions have been received. */
@@ -22,7 +22,7 @@ class Shelf extends React.Component {
     const listings = Listings.find({ ISBN: this.props.book_isbn }).fetch();
     return (
         <div>
-          <Header as="h1" textAlign="center">Shelf</Header>
+          <Header as="h1" textAlign="center" inverted>Shelf</Header>
           <Grid celled container>
             <Grid.Row stretched centered>
               <Grid.Column width={6}>

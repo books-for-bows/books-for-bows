@@ -74,7 +74,8 @@ class Marketplace extends React.Component {
     if (this.props.empty) {
       return this.renderEmpty();
     }
-    return (this.state.books_ready && this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+    return (this.state.books_ready && this.props.ready) ? this.renderPage() :
+        <Loader inverted active>Getting data</Loader>;
   }
 
   renderPage() {

@@ -58,13 +58,14 @@ class BookPreview extends React.Component {
   }
 
   render() {
+    const style = { color: 'white' };
     return (
       <Item.Group>
         {(this.state.book_found ? this.renderPage() : (
           <Item>
             <Item.Image key="thumbnail" size="small" src='/images/no_cover_available.png'/>
             <Item.Content verticalAlign="middle">
-              <Item.Header as="h3">Book Not Found</Item.Header>
+              <Item.Header as="h3" style={style}>Book Not Found</Item.Header>
             </Item.Content>
           </Item>
         ))}
@@ -73,16 +74,17 @@ class BookPreview extends React.Component {
   }
 
   renderPage() {
+    const style = { color: 'white' };
     return (
       <Item>
         <Item.Image key="thumbnail" size="small"
                     src={this.state.book.imageLinks ? this.state.book.imageLinks.thumbnail :
                         '/images/no_cover_available.png'}/>
         <Item.Content verticalAlign="middle">
-          <Item.Header as="h3">{ this.state.book.subtitle ?
+          <Item.Header as="h3" style={style}>{ this.state.book.subtitle ?
               `${this.state.book.title}: ${this.state.book.subtitle}` : `${this.state.book.title}`}
           </Item.Header>
-          <Item.Description>
+          <Item.Description style={style}>
             Author: {this.state.book.authors ? this.state.book.authors.map(author => `${author}, `) : 'None'}<br/>
             { this.state.book.industryIdentifiers.map((identifier, index) => {
               const string = `${identifier.type.replace('_', '')}: ${identifier.identifier}`;

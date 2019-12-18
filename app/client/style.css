@@ -53,7 +53,7 @@ landing-header {
   background-color: #012a45;
   width: 100vw;
   height: 700px;
-  padding: 20vh 0vh 20vh 0vh;
+  padding: 20vh 0 20vh 0;
 }
 
 /* Marketplace Book Stack Picture */
@@ -65,7 +65,7 @@ landing-header {
   background-color: #012a45;
   width: 100vw;
   height: 700px;
-  padding: 20vh 0vh 20vh 0vh;
+  padding: 20vh 0 20vh 0;
 }
 
 /* Listing Comparison Scale Picture */
@@ -77,7 +77,7 @@ landing-header {
   background-color: #012a45;
   width: 100vw;
   height: 700px;
-  padding: 20vh 0vh 20vh 0vh;
+  padding: 20vh 0 20vh 0;
 }
 
 /* Buy and Sell Money Stack Picture */
@@ -89,5 +89,5 @@ landing-header {
   background-color: #012a45;
   width: 100vw;
   height: 700px;
-  padding: 20vh 0vh 20vh 0vh;
+  padding: 20vh 0 20vh 0;
 }

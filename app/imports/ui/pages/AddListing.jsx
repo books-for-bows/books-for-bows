@@ -15,7 +15,7 @@ import BookPreview from '../components/BookPreview';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
-  price: String,
+  price: Number,
   ISBN: String,
   description: String,
   binding: {
